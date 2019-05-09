@@ -4,9 +4,9 @@ Theme Name: Yassine Chakri
 
 /* ----------------------------------------- Start Upper Bar ----------------------------- */
 .upper-bar {
-  background-color: #4267b2;
-  color: #FFF;
-  padding: 15px;
+    background-color: #4267b2;
+    color: #FFF;
+    padding: 15px;
 }
 
 /* .upper-bar .bs{
@@ -15,42 +15,42 @@ Theme Name: Yassine Chakri
 } */
 
 .upper-bar span {
-  color:#bfc6c9
+    color:#bfc6c9
 }
 
 .upper-bar .get-quote {
-  display: inline-block;
-  border: 2px solid #CECDD2;
-  padding: 2px 10px;
-  margin-left: 120px;
+    display: inline-block;
+    border: 2px solid #CECDD2;
+    padding: 2px 10px;
+    margin-left: 120px;
 }
 /* ----------------------------------------- End Upper Bar -----------------------------------------------------*/
 
 /* ------------------------------------------Start NAV BAR ---------------------------------------------------- */
 
 .navbar-brand > span {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 .navbar-brand span:first-child {
-  font-weight:  bold;
-  color: #08526d;
+    font-weight:  bold;
+    color: #08526d;
 }
 
 .navbar-brand span:last-child {
-  color:#ec1c23;
+    color:#ec1c23;
 }
 
 .navbar-nav .nav-link {
-  font-size: 13px;
-  text-transform: uppercase;
-  margin-left: 20px;
-  color: #08526d;
-  font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: #08526d;
+    font-weight: bold;
 }
 
 .navbar-nav .active > .nav-link {
-  color:#ec1c23 !important
+    color:#ec1c23 !important
 }
 
 .dropdown-item {
@@ -59,149 +59,149 @@ Theme Name: Yassine Chakri
 /* ------------------------------------------End NAV BAR ---------------------------------------------------- */
 /* ------------------------------------------Start Slider ---------------------------------------------------- */
 .slider {
-  background-color: #DDD;
+    background-color: #DDD;
 }
 
 .slider .carousel-inner {
-  display: flex;
-  align-items: center;
-  justify-content: left;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 .slider .carousel-inner h2 {
-  position: absolute;
-  color: #FFF;
-  z-index: 3;
-  font-size: 40px;
-  font-weight: normal;
-  max-width: 1000px;
-  left: 75px;
-  line-height: 1.5;
+    position: absolute;
+    color: #FFF;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: normal;
+    max-width: 1000px;
+    left: 75px;
+    line-height: 1.5;
 }
 
 .slider .carousel-inner h2 span {
-  /*background-color: #ec1c23; */
-  color: 	#FFEBCD;
-  font-weight: bold;
-  font-style: oblique;
-  z-index: 3;
-  display: inline-block;
-  /* padding: 2px 8px; */
+    /*background-color: #ec1c23; */
+    color: 	#FFEBCD;
+    font-weight: bold;
+    font-style: oblique;
+    z-index: 3;
+    display: inline-block;
+    /* padding: 2px 8px; */
 }
 
 .slider .carousel-inner h2 span span{
-  background-color: #ec1c23;
-  padding: 2px 8px;
+    background-color: #ec1c23;
+    padding: 2px 8px;
 }
 
 .slider .carousel-inner .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, .3);
-  z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 2;
 }
 
 .slider .carousel-item {
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-attachment:fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
 }
 
 .slider .carousel-one {
-  background-image: url('../images/hbrs2.jpg');
+    background-image: url('../images/hbrs2.jpg');
 }
 
 .slider .carousel-two {
-  background-image: url('../images/hbrs3.jpg');
+    background-image: url('../images/hbrs3.jpg');
 }
 
 .slider .carousel-three {
-  background-image: url('../images/hbrs1.jpg');
+    background-image: url('../images/hbrs1.jpg');
 }
 
 .slider .carousel-four {
-  background-image: url('../images/Graphcoloring2.jpg');
+    background-image: url('../images/Graphcoloring2.jpg');
 }
 
 .slider .carousel-indicators li {
-  height: 8px;
-  cursor: pointer;
+    height: 8px;
+    cursor: pointer;
 }
 
 /*  ----------------------------------------- End Slider-- ----------------------------------------------------------*/
 /*  ----------------------------------------- Start Einfuerung-- ----------------------------------------------------*/
 .startBody .myHeading h1 {
-  font-size: 2em;
-  font-weight:700;
-  line-height: 1.25em;
-  color: #4c4a4a;
-  margin-top: 0.9em !important;
-  padding-bottom: .4em;
-  border-bottom: 2px solid #4267b2;
-  /* margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;   color: #333333 */
+    font-size: 2em;
+    font-weight:700;
+    line-height: 1.25em;
+    color: #4c4a4a;
+    margin-top: 0.9em !important;
+    padding-bottom: .4em;
+    border-bottom: 2px solid #4267b2;
+    /* margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;   color: #333333 */
 }
 
 .startBody .myHeading h2 {
-  font-size: 1.5em;
-  font-weight:600;
-  line-height: 1.25em;
-  color: #24292e;
-  padding-bottom: .4em;
-  border-bottom: 2px solid #a9d6f2;
-  display: block;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  margin-top: 1em !important;
+    font-size: 1.5em;
+    font-weight:600;
+    line-height: 1.25em;
+    color: #24292e;
+    padding-bottom: .4em;
+    border-bottom: 2px solid #a9d6f2;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 1em !important;
 
 }
 
 .startBody .myHeading h3 {
-  font-size: 1.18em;
-  font-weight: 600;
-  line-height: 1.25;
-  margin-bottom: 16px;
-  margin-top: 24px;
+    font-size: 1.18em;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    margin-top: 24px;
 }
 
 .startBody span {
-  font-size: 1em;
-  font-weight: bold;
-  color: #08526d;
+    font-size: 1em;
+    font-weight: bold;
+    color: #08526d;
 }
 
 .startBody h4 {
-  font-size: 1.1em;
-  font-weight: 600;
-  line-height: 1.25;
-  margin-bottom: 11px;
-  margin-top: 19px;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 11px;
+    margin-top: 19px;
 }
 
 .startBody .myHeading h3 {
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #eaecef;
 }
 
 .implementierung .myHeading p {
-  font-family: 'Quattrocento', serif;
-  line-height: 1.8em;
-  color: #444;
-  font-size: 119%;
+    font-family: 'Quattrocento', serif;
+    line-height: 1.8em;
+    color: #444;
+    font-size: 119%;
 }
 
 .btn-secondary {
-  background-color: #4267b2;
+    background-color: #4267b2;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
@@ -215,27 +215,27 @@ Theme Name: Yassine Chakri
 
 /* -------------------------------- Start Upload File for Coloring -------------------------------------------- */
 .dropdown {
-  display: block;
-  margin-bottom: 10px;
-   /* border: 1px solid #000000; */
-   display: inline-block;
- }
+    display: block;
+    margin-bottom: 10px;
+    /* border: 1px solid #000000; */
+    display: inline-block;
+}
 
- #wrapper {
-   display: flex;
- }
+#wrapper {
+    display: flex;
+}
 
 .dropdown {
-   flex: 0 0 25%;
- }
+    flex: 0 0 25%;
+}
 
- .Mydropdown {
-   flex: 1;
- }
+.Mydropdown {
+    flex: 1;
+}
 
- .btn-secondary:hover {
-   background-color: #128ff2
- }
+.btn-secondary:hover {
+    background-color: #128ff2
+}
 
 .uploadContainer {
     max-width: 750px;
@@ -274,14 +274,14 @@ Theme Name: Yassine Chakri
 }
 
 .single-upload h3{
-  display: block;
-  font-size: 1.18em;
-  font-weight: bold;
-  font-style: normal;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+    display: block;
+    font-size: 1.18em;
+    font-weight: bold;
+    font-style: normal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .uploadContainer input[type="file"] {
@@ -311,27 +311,27 @@ Theme Name: Yassine Chakri
 
 /* ------------------------------------------- Start Sudoku ------------------------------------------------------- */
 .sudokuSolver span {
-  color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 img.myLogo {
-	display: block;
-	margin-top: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 550px;
-	height: 180px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    height: 180px;
 }
 
 table {
-	position: relative;
-	border-spacing: 0;
-	border: 4px solid #0abb9c;
-	color: #686868;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  margin-top: 1em;
-  box-sizing: inherit;
+    position: relative;
+    border-spacing: 0;
+    border: 4px solid #0abb9c;
+    color: #686868;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 1em;
+    box-sizing: inherit;
 }
 
 *, ::after, ::before {
@@ -339,80 +339,80 @@ table {
 }
 
 td input.emptyCell {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 td input {
-	border: 1.5px solid #0abb9c;
-	padding: 1px;
-	cursor: context-menu;
+    border: 1.5px solid #0abb9c;
+    padding: 1px;
+    cursor: context-menu;
 }
 
 #t0r2, #t0r5, #t1r2, #t1r5, #t2r5,
 #t3r2,#t3r5, #t4r2, #t4r5, #t5r2, #t5r5,
 #t6r2, #t6r5, #t7r2, #t7r5, #t8r2, #t8r5 {
-	border-right: 3px solid #0abb9c;
+    border-right: 3px solid #0abb9c;
 }
 
 #t2r0, #t2r1, #t2r3, #t2r4, #t2r6, #t2r7,#t2r8,
 #t5r8,#t5r0, #t5r1, #t5r3, #t5r4, #t5r6, #t5r7 {
-	border-bottom: 3px solid #0abb9c;
+    border-bottom: 3px solid #0abb9c;
 }
 
 #t2r2, #t2r5, #t5r2, #t5r5 {
-	border-bottom: 3px solid #0abb9c;
-	border-right: 3px solid #0abb9c;
+    border-bottom: 3px solid #0abb9c;
+    border-right: 3px solid #0abb9c;
 }
 
 .inner td {
-  width: 50px;
-	height: 50px;
-	text-align: center;
-	font-size: 2.0em;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 2.0em;
 }
 
 .inner td:hover {
-	background-color:#0abb9c;
+    background-color:#0abb9c;
 }
 
 .inner td.selected {
-	background-color:#ffbce2;
+    background-color:#ffbce2;
 }
 
 input {
-	text-align: center;
-  width: 50px;
-  height: 50px;
-  font-size: 24px;
-  outline: none;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    outline: none;
 }
 
 input:disabled {
-	background-color: #EEEEEE;
+    background-color: #EEEEEE;
 }
 
 .formbutton {
-	position: relative;
-	background: #689fce;
-	display: inline-block;
-	padding: 8px;
-	color: #fff;
-	text-decoration: none;
-	font-family: Arial, sans-serif;
-  font-weight: bold;
-	line-height: 1;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	cursor: pointer;
+    position: relative;
+    background: #689fce;
+    display: inline-block;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 #formwrapper{
-	margin-top: 3em;
+    margin-top: 3em;
 }
 
 #finished{
-	margin-top: 1em;
+    margin-top: 1em;
 }
 
 /* --------------------------------------------End Sudoku ------------------------------------------------------------ */

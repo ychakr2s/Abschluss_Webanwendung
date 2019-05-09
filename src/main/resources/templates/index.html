@@ -1,47 +1,645 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
 
     <title>Abschussarbeit Informatik</title>
-
 </head>
 <body>
-
-<h1>Spring Boot file upload example</h1>
-
-<form method="POST" action="/upload" enctype="multipart/form-data">
-    <input type="file" name="file"/><br/><br/>
-    <input type="submit" value="Submit"/>
-    <!--<button id="hochladenFile" type="submit" class="primary submit-btn">Hochladen</button>-->
-
-</form>
-
-<div class="uploadContainer">
-    <div class="upload-header">
-        <h3 >Graph Hochladen / Das Ergebnis der Färbungsalgorithmen</h3>
-    </div>
-    <div class="upload-content">
-        <div class="single-upload">
-            <h3>File Hochladen</h3>
-            <form method="POST" action="/upload" id="singleUploadForm" name="singleUploadForm">
-                <input id="singleFileUploadInput" type="file" name="file" class="file-input" required="" />
-                <button id ="hochladenFile" type="submit" class="primary submit-btn">Hochladen</button>
-            </form>
-            <form method="POST" action="/upload" enctype="multipart/form-data">
-                <input type="file" name="file"/><br/><br/>
-                <input type="submit" value="Submit"/>
-                <!--<button id="hochladenFile" type="submit" class="primary submit-btn">Hochladen</button>-->
-
-            </form>
-
+<!--  Start Upper Bar -->
+<div class="upper-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <i class="fa fa-envelope"></i> <span>yassine.chakri@smail.inf.h-brs.de</span>
+            </div>
+            <div class="col-sm text-right bs">
+                Bachelorarbeit im Studiengang Informatik
+            </div>
+            <div class="col-sm">
+                <span class="get-quote">Hochschule Bonn-Rhein-Sieg</span>
+            </div>
         </div>
     </div>
 </div>
+
+<!-- End Upper Bar -->
+<!-- Start Nav bar  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <span>Graph </span><span>Coloring</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto" id="myDIV">
+                <li class="nav-item">
+                    <a class="nav-link einfuer" href="#">Einführung </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link anwendun" href="#">Anwendungen</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Algorithmen <span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item exakte" href="#">Exakte Algorithmen</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item heuristische" href="#">Heuristike Algorithmen</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link implementier" href="#">Implementierung</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link observat" href="#">Observation</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Nav Bar  -->
+
+<!--  Start Slider -->
+<div class="slider">
+    <div id="main-slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <h2>Bachelorarbeit <br/> <span>Implementierung und Evaluation von <span id="firstt">
+            Färbungsalgorithmen</span></span>
+            </h2>
+            <div class="overlay"></div>
+            <div class="carousel-item carousel-one active">
+            </div>
+            <div class="carousel-item carousel-two">
+            </div>
+            <div class="carousel-item carousel-three">
+            </div>
+            <div class="carousel-item carousel-four">
+            </div>
+        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#main-slider" data-slide-to="1"></li>
+            <li data-target="#main-slider" data-slide-to="2"></li>
+            <li data-target="#main-slider" data-slide-to="3"></li>
+        </ol>
+
+    </div>
+</div>
+<!--  End Slider  -->
+<!--  Start Einfuerung  -->
+<div class="startBody">
+    <div class="einfuerung">
+        <div class="container">
+            <div class="myHeading this">
+                <h1>Graph Coloring</h1>
+                <h2 class="einf">Einführung</h2>
+                <p>In der Graphentheorie ist die Graphfärbung ein Spezialfall der Graphbeschriftung; Hierbei handelt es
+                    sich um eine Zuordnung von Beschriftungen,
+                    die traditionell "Farben" genannt werden, zu Elementen eines Diagramms, die bestimmten
+                    Einschränkungen unterliegen.
+                    In seiner einfachsten Form können die Scheitelpunkte eines Diagramms so gefärbt werden, dass keine
+                    zwei benachbarten Scheitelpunkte dieselbe
+                    Farbe haben. Dies wird als Scheitelpunktfärbung bezeichnet. In ähnlicher Weise weist eine
+                    Kantenfärbung jeder Kante eine Farbe zu, so dass keine
+                    zwei benachbarten Kanten dieselbe Farbe haben, und eine Flächenfarbe eines ebenen Graphen weist
+                    jeder Fläche oder Region eine Farbe zu, so dass
+                    keine zwei Flächen, die eine Grenze haben, dieselbe Farbe haben Farbe.</p>
+                <p>
+                    In der Graphentheorie ist die Graphfärbung eine Zuordnung von Beschriftungen, die traditionell
+                    "Farben" genannt werden, zu Elementen eines Graphen,
+                    die bestimmten Einschränkungen unterliegen. In seiner einfachsten Form können die Scheitelpunkte
+                    eines Diagramms so gefärbt werden,
+                    dass keine zwei benachbarten Scheitelpunkte dieselbe Farbe haben. Dies wird als Scheitelpunktfärbung
+                    bezeichnet.
+                    In ähnlicher Weise weist eine Kantenfärbung jeder Kante eine Farbe zu, so dass keine zwei
+                    benachbarten Kanten dieselbe Farbe haben,
+                    und eine Flächenfarbe eines ebenen Graphen weist jeder Fläche oder Region eine Farbe zu, so dass
+                    keine zwei Flächen,
+                    die eine Grenze haben, dieselbe Farbe haben Farbe.
+                </p>
+                <p>
+                    In diesem Projekt behandeln wir das Problem der Scheitelpunktfärbung mit verschiedenen Algorithmen
+                    in einer Reihe von zufällig generierten Graphen.
+                    Wir lösen das Minimierungsproblem (ermitteln Sie die minimale Anzahl von Farben, die zum Färben
+                    eines Diagramms verwendet werden können) und
+                    das Maximierungsproblem (finden Sie den maximalen Prozentsatz des Diagramms, der mit x Farben
+                    eingefärbt werden kann). Wir erstellen auch
+                    eine Sudoku-Solver-Anwendung, die zur Lösung Graph-Farben verwendet. Wir vergleichen diese
+                    verschiedenen Algorithmen auch mit einem riesigen
+                    Datenbestand aus der realen Welt, um die Zeit- und Farbeffizienz zu vergleichen.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--  End Einfuerung  -->
+    <!-- Start Anwendung  -->
+    <div class="anwendung">
+        <div class="container">
+            <div class="myHeading this">
+                <h2 class="anwend">Anwendungen</h2>
+                <h3>Scheduling</h3>
+                <p>Vertex-Modelle für eine Reihe von Planungsproblemen. [30] In der saubersten Form muss ein bestimmter
+                    Satz von Jobs Zeitfenstern
+                    zugewiesen werden, jeder Job erfordert einen solchen Slot. Jobs können in beliebiger Reihenfolge
+                    eingeplant werden.
+                    Jobpaare können jedoch in einem Konflikt miteinander stehen, dass sie möglicherweise nicht demselben
+                    Zeitfenster zugewiesen werden,
+                    z. B. weil beide auf einer gemeinsam genutzten Ressource basieren. Der entsprechende Graph enthält
+                    einen Scheitelpunkt für jeden
+                    Job und eine Kante für jedes in Konflikt stehende Jobpaar. Die Farbzahl des Diagramms ist genau die
+                    minimale Zeitspanne,
+                    die optimale Zeit, um alle Jobs ohne Konflikte zu beenden.</p>
+                <p>Details zum Planungsproblem definieren die Struktur des Diagramms. Beim Zuweisen von Flugzeugen zu
+                    Flügen ist das resultierende
+                    Konfliktdiagramm beispielsweise ein Intervalldiagramm, sodass das Farbproblem effizient gelöst
+                    werden kann. Bei der Bandbreitenzuweisung
+                    für Radiosender ist der resultierende Konfliktgraph ein Einheitsdiskgraph, sodass das Farbproblem
+                    3-approximierbar ist.</p>
+
+                <h3>Registerzuteilung</h3>
+                <p>Ein Compiler ist ein Computerprogramm, das eine Computersprache in eine andere übersetzt. Um die
+                    Ausführungszeit des resultierenden
+                    Codes zu verbessern, ist eine der Techniken der Compiler-Optimierung die Registerzuweisung, bei der
+                    die am häufigsten verwendeten Werte
+                    des kompilierten Programms in den schnellen Prozessorregistern gespeichert werden. Idealerweise
+                    werden Werte Registern zugewiesen,
+                    sodass sie bei ihrer Verwendung alle in den Registern gespeichert werden können.</p>
+                <p>Der Lehrbuchansatz für dieses Problem besteht darin, es als ein Diagrammfärbungsproblem zu
+                    modellieren. [31] Der Compiler erstellt
+                    ein Interferenzdiagramm, wobei Vertices Variablen sind und eine Kante zwei Vertices verbindet, wenn
+                    sie gleichzeitig benötigt werden.
+                    Wenn der Graph mit k Farben gefärbt werden kann, kann jeder Satz von Variablen, der gleichzeitig
+                    benötigt wird, in höchstens
+                    k Registern gespeichert werden.</p>
+                <h3>Sudoku-Puzzle</h3>
+                <p>Ein <span>Sudoku-Puzzle </span>kann als Farbproblem der Grafik ausgedrückt werden. Ziel ist es, eine
+                    9-Färbung eines
+                    bestimmten Graphen bei einer teilweisen 9-Färbung zu konstruieren.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Anwendung  -->
+    <!--  Start Algorithmen  -->
+    <div class="algorithmen">
+        <div class="container">
+            <div class="myHeading">
+                <h2>Algorithmen</h2>
+                <h3 class="exakt">Exakte Algorithmen</h3>
+                <h4>Backtracking Algorithmus</h4>
+                <p>hey</p>
+                <h4>Lineare Programmierung Algorithmus</h4>
+                <p>hey</p>
+                <h3 class="heuristi">Heuristike Algorithmen</h3>
+                <h4>Greedy Algorithmus</h4>
+                <p>hey</p>
+                <h4>Largest First Algorithmus</h4>
+                <p>hey</p>
+                <h4>DSATUR Algorithmus</h4>
+                <p>hey</p>
+                <h4>Recursive Largest First Algorithmus</h4>
+                <p>hey</p>
+                <h4>Welsh Powell Algorithmus</h4>
+                <p>hey</p>
+                <h4>Tiefensuche und Breitensuche Algorithmus</h4>
+            </div>
+        </div>
+    </div>
+    <!-- End Algorithmen  -->
+    <!--  Start IMPLEMENTIERUNG  -->
+    <div class="implementierung">
+        <div class="container">
+            <div class="myHeading">
+                <h2 class="implemen"> Implementierung der Algorithmen</h2>
+                <h3>Implementierung der exakten / heuristische Algorithmen</h3>
+            </div>
+
+            <div id="wrapper">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Heuristische Algorithmen
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Greedy Algorithmus</a>
+                        <a class="dropdown-item" href="#">Largest First Algorithmus</a>
+                        <a class="dropdown-item" href="#">DSATUR Algorithmus</a>
+                        <a class="dropdown-item" href="#">Recursive Largest First Algorithmus</a>
+                        <a class="dropdown-item" href="#">Welsh Powell Algorithmus</a>
+                        <a class="dropdown-item" href="#">Tiefensuche Algorithmus</a>
+                        <a class="dropdown-item" href="#">Breitensuche Algorithmus</a>
+                    </div>
+                </div>
+                <div class="Mydropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenue"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Exakte Algorithmen
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Backtracking Algorithmus </a>
+                        <a class="dropdown-item" href="#">Lineare Programmierung</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uploadContainer">
+                <div class="upload-header">
+                    <h3>Graph Hochladen / Das Ergebnis der Färbungsalgorithmen</h3>
+                </div>
+                <div class="upload-content">
+                    <div class="single-upload">
+                        <h3>File Hochladen</h3>
+                        <form method="POST" action="/upload" enctype="multipart/form-data">
+                            <input type="file" name="file" required=""/>
+                            <button type="submit" class="primary submit-btn" >Hochladen</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="myHeading">
+                <h3>Softwarearchitektur</h3>
+                <div class="sudokuSolver">
+                    <h3>Sudoku-Löser</h3>
+                    <p> Gib die Ziffern deines Sudokurätsels ein und klick auf "Lösung(en) suchen"!
+                    </p>
+                    <section id="logosection">
+                        <img class="myLogo" src="images/sudoku.png"/>
+                    </section>
+                    <center>
+                        <form id="formwrapper">
+                            <span id="newGame" class="formbutton"> Gave me another</span>
+                            <!--//  onclick="myFunction()" -->
+                            <span id="myOwn" class="formbutton">Enter my Own </span>
+                        </form>
+                    </center>
+                    <table class="inner myContainer" align="center" id="grid">
+                        <tr>
+                            <td id="t0r0"><input id="t0x8" type="text"/></td>
+                            <td id="t0r1"><input id="t0x0" type="text"/></td>
+                            <td id="t0r2"><input id="t0x1" type="text"/></td>
+
+                            <td id="t0r3"><input id="t0x2" type="text"/></td>
+                            <td id="t0r4"><input id="t0x3" type="text"/></td>
+                            <td id="t0r5"><input id="t0x4" type="text"/></td>
+
+                            <td id="t0r6"><input id="t0x5" type="text"/></td>
+                            <td id="t0r7"><input id="t0x6" type="text"/></td>
+                            <td id="t0r8"><input id="t0x7" type="text"/></td>
+                        </tr>
+
+                        <tr>
+                            <td id="t1r0"><input id="t1x0" type="text"/></td>
+                            <td id="t1r1"><input id="t1x1" type="text"/></td>
+                            <td id="t1r2"><input id="t1x2" type="text"/></td>
+
+                            <td id="t1r3"><input id="t1x3" type="text"/></td>
+                            <td id="t1r4"><input id="t1x4" type="text"/></td>
+                            <td id="t1r5"><input id="t1x5" type="text"/></td>
+
+                            <td id="t1r6"><input id="t1x6" type="text"/></td>
+                            <td id="t1r7"><input id="t1x7" type="text"/></td>
+                            <td id="t1r8"><input id="t1x8" type="text"/></td>
+                        </tr>
+
+                        <tr>
+                            <td id="t2r0"><input id="t2x0" type="text"/></td>
+                            <td id="t2r1"><input id="t2x1" type="text"/></td>
+                            <td id="t2r2"><input id="t2x2" type="text"/></td>
+
+                            <td id="t2r3"><input id="t2x3" type="text"/></td>
+                            <td id="t2r4"><input id="t2x4" type="text"/></td>
+                            <td id="t2r5"><input id="t2x5" type="text"/></td>
+
+                            <td id="t2r6"><input id="t2x6" type="text"/></td>
+                            <td id="t2r7"><input id="t2x7" type="text"/></td>
+                            <td id="t2r8"><input id="t2x8" type="text"/></td>
+                        </tr>
+
+                        <tr>
+                            <td id="t3r0"><input id="t3x0" type="text"/></td>
+                            <td id="t3r1"><input id="t3x1" type="text"/></td>
+                            <td id="t3r2"><input id="t3x2" type="text"/></td>
+
+                            <td id="t3r3"><input id="t3x3" type="text"/></td>
+                            <td id="t3r4"><input id="t3x4" type="text"/></td>
+                            <td id="t3r5"><input id="t3x5" type="text"/></td>
+
+                            <td id="t3r6"><input id="t3x6" type="text"/></td>
+                            <td id="t3r7"><input id="t3x7" type="text"/></td>
+                            <td id="t3r8"><input id="t3x8" type="text"/></td>
+                        </tr>
+
+                        <tr>
+                            <td id="t4r0"><input id="t4x0" type="text"/></td>
+                            <td id="t4r1"><input id="t4x1" type="text"/></td>
+                            <td id="t4r2"><input id="t4x2" type="text"/></td>
+
+                            <td id="t4r3"><input id="t4x3" type="text"/></td>
+                            <td id="t4r4"><input id="t4x4" type="text"/></td>
+                            <td id="t4r5"><input id="t4x5" type="text"/></td>
+
+                            <td id="t4r6"><input id="t4x6" type="text"/></td>
+                            <td id="t4r7"><input id="t4x7" type="text"/></td>
+                            <td id="t4r8"><input id="t4x8" type="text"/></td>
+                        </tr>
+
+                        <tr>
+                            <td id="t5r0"><input id="t5x0" type="text"/></td>
+                            <td id="t5r1"><input id="t5x1" type="text"/></td>
+                            <td id="t5r2"><input id="t5x2" type="text"/></td>
+
+                            <td id="t5r3"><input id="t5x3" type="text"/></td>
+                            <td id="t5r4"><input id="t5x4" type="text"/></td>
+                            <td id="t5r5"><input id="t5x5" type="text"/></td>
+
+                            <td id="t5r6"><input id="t5x6" type="text"/></td>
+                            <td id="t5r7"><input id="t5x7" type="text"/></td>
+                            <td id="t5r8"><input id="t5x8" type="text"/></td>
+                        </tr>
+
+                        <tr>
+                            <td><input id="t6x0" type="text"/></td>
+                            <td><input id="t6x1" type="text"/></td>
+                            <td id="t6r2"><input id="t6x2" type="text"/></td>
+
+                            <td><input id="t6x3" type="text"/></td>
+                            <td><input id="t6x4" type="text"/></td>
+                            <td id="t6r5"><input id="t6x5" type="text"/></td>
+
+                            <td><input id="t6x6" type="text"/></td>
+                            <td><input id="t6x7" type="text"/></td>
+                            <td><input id="t6x8" type="text"/></td>
+                        </tr>
+
+                        <tr>
+                            <td><input id="t7x0" type="text"/></td>
+                            <td><input id="t7x1" type="text"/></td>
+                            <td id="t7r2"><input id="t7x2" type="text"/></td>
+
+                            <td><input id="t7x3" type="text"/></td>
+                            <td><input id="t7x4" type="text"/></td>
+                            <td id="t7r5"><input id="t7x5" type="text"/></td>
+
+                            <td><input id="t7x6" type="text"/></td>
+                            <td><input id="t7x7" type="text"/></td>
+                            <td><input id="t7x8" type="text"/></td>
+                        </tr>
+
+                        <tr>
+                            <td><input id="t8x0" type="text"/></td>
+                            <td><input id="t8x1" type="text"/></td>
+                            <td id="t8r2"><input id="t8x2" type="text"/></td>
+
+                            <td><input id="t8x3" type="text"/></td>
+                            <td><input id="t8x4" type="text"/></td>
+                            <td id="t8r5"><input id="t8x5" type="text"/></td>
+
+                            <td><input id="t8x6" type="text"/></td>
+                            <td><input id="t8x7" type="text"/></td>
+                            <td><input id="t8x8" type="text"/></td>
+                        </tr>
+                    </table>
+                    <center>
+                        <span id="finished" class="formbutton">Submit</span>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  End IMPLEMENTIERUNG -->
+    <!--  Start OBSERVATION  -->
+    <div class="observation">
+        <div class="container">
+            <div class="observ">
+
+            </div>
+            <!-- font-family: 'Quattrocento', serif; -->
+        </div>
+
+    </div>
+</div>
+<!-- End OBSERVATION -->
+
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script language="javascript" type="text/javascript">
+    //<![CDATA[
+    var puzzle;
+    var selectedTile;
+    var matrix = [];
+    var myMatrix = [];
+    $(document).ready(function () {
+        init(); //444
+        $("#newGame").click(function () {
+            init();
+        });
+        $("#grid").fadeIn(900);
+        $("#myOwn").click(function () {
+            initMyOwn();
+        });
+        $("#finished").click(function () {
+            readTableToSend();
+            sendArrayToJava();
+            //   generate_table();
+        });
+
+        console.log("Salam i am from Ready jQuery: ", matrix);
+    });
+
+    function ownInput() {
+        puzzle = new generateMyOwn();
+
+        for (var i = 0; i < 9; i++) {
+            for (var j = 0; j < 9; j++) {
+                var tile = document.getElementById("t" + i + "x" + j);
+                if (puzzle.getTileNumber(i, j) === 0) {
+                    tile.className = "emptyCell";
+                    tile.value = "";
+                    tile.style.backgroundColor = "#FFFFFF";
+                    tile.disabled = false;
+                    tile.onclick = tOnClick;
+                } else {
+                    tile.className = "cell";
+                    tile.value = puzzle.getTileNumber(i, j);
+                }
+            }
+        }
+    }
+
+    /*
+    This method should serve to read and fill the Matrix with the inputed value from HTML
+    */
+    function readTableToSend() {
+        for (var i = 0; i < 9; i++) {
+            matrix[i] = [];
+            for (var j = 0; j < 9; j++) {
+                var tile = document.getElementById("t" + i + "x" + j);
+                if (tile == "") {
+                    matrix[i][j] = 0;
+                } else {
+                    matrix[i][j] = tile.value;
+                }
+
+            }
+        }
+    }
+
+    function init() {
+        puzzle = new generateSudoku();
+        console.log("I AM in THE method init(): ", matrix);
+
+        for (var i = 0; i < 9; i++) {
+            for (var j = 0; j < 9; j++) {
+                var tile = document.getElementById("t" + i + "x" + j);
+                if (puzzle.getTileNumber(i, j) === 0) {
+                    tile.className = "cell";
+                    tile.value = "";
+                    tile.style.backgroundColor = "#FFFFFF";
+                    tile.disabled = true;
+                    tile.onclick = tOnClick;
+                } else {
+                    tile.style.backgroundColor = "#33FFD5";
+                    tile.className = "cell";
+                    tile.value = puzzle.getTileNumber(i, j);
+                    tile.disabled = true;
+                }
+            }
+        }
+    }
+
+    function tOnClick() {
+        if (selectedTile == null) {
+            selectedTile = this;
+            selectedTile.className = "emptyCell selected";
+        } else {
+            deselect();
+        }
+    }
+
+    function deselect() {
+        selectedTile.className = "emptyCell";
+        selectedTile = null;
+    }
+
+    function initMyOwn() {
+        ownInput();
+    }
+
+    /*
+    This method convert a Matrix, which is self entered or generated with the Button "gave me another"
+    to Array in order to send it to the java server to solve the Problem Sudoku.
+    */
+    function convertMarixToArray() {
+        var myArray = Array(81);
+        var count = 0;
+        for (var i = 0; i < 9; i++) {
+            for (var j = 0; j < 9; j++) {
+                myArray[count] = matrix[i][j];
+                count++;
+            }
+        }
+        return myArray;
+    }
+
+    function convertArrayToMatrix(array) {
+
+        var count = 0;
+        for (var i = 0; i < 9; i++) {
+            myMatrix[i] = [];
+            for (var j = 0; j < 9; j++) {
+                myMatrix[i][j] = array[count];
+                count++;
+
+            }
+        }
+        return myMatrix;
+    }
+
+    /*
+    This Methode send an array to java using ajax and get the response as Array.
+    This response will be printed using Method generate_Table()
+    */
+    function sendArrayToJava() {
+        //var tempId = id;
+        var dataArrayToSend = convertMarixToArray();
+        $.ajax({
+            contentType: "application/json",
+            type: "POST",
+            data: JSON.stringify(dataArrayToSend),
+            url: "/appUrl",
+            success: function (data) {
+                console.log('done');
+
+                console.log("my data ", convertArrayToMatrix(data));
+                // alert("Salam: "+convertArrayToMatrix(data));
+                generate_table(data);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log('error while post');
+            }
+
+        });
+
+    }
+
+    /*
+    This Method generates a table which read from java and print the results in Browser
+     */
+    function generate_table(array) {
+        // get the reference for the body
+        var matrixx = convertArrayToMatrix(array);
+        var body = document.getElementsByTagName("body")[0];
+
+        // creates a <table> element and a <tbody> element
+        var tbl = document.createElement("table");
+
+        var tblBody = document.createElement("tbody");
+
+        // creating all cells
+        for (var i = 0; i < 9; i++) {
+            // creates a table row
+            var row = document.createElement("tr");
+            for (var j = 0; j < 9; j++) {
+                // Create a <td> element and a text node, make the text
+                // node the contents of the <td>, and put the <td> at
+                // the end of the table row
+                var cell = document.createElement("td");
+                var cellText = document.createTextNode(matrixx[i][j]);
+                //  cell.setAttribute("id", "t"+i+"r"+j);
+                cell.appendChild(cellText);
+                row.appendChild(cell);
+            }
+
+            // add the row to the end of the table body
+            tblBody.appendChild(row);
+        }
+
+        // put the <tbody> in the <table>
+        tbl.appendChild(tblBody);
+        // appends <table> into
+        body.appendChild(tbl);
+        // sets the border attribute of tbl to 2;
+        tbl.setAttribute("border", "4px solid #0abb9c");
+        tbl.setAttribute("width", "40%");
+    }
+
+    //]]>
+</script>
 
 </body>
 </html>
