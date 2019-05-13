@@ -7,17 +7,17 @@ $(function () {
   $('.slider, .carousel-item').height(windowHeigh - ( upperH + navH ));
 });
 
-// ++++++++++++++++++++++++++Start Change the Color if the link be clicked +++++++++++++++++++++++++++++++++++++++++
-var header = document.getElementById("myDIV");
-var btns = header.getElementsByClassName("nav-item");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}
-// ++++++++++++++++++++++++++End Change the Color if the link be clicked +++++++++++++++++++++++++++++++++++++++++
+// // ++++++++++++++++++++++++++Start Change the Color if the link be clicked +++++++++++++++++++++++++++++++++++++++++
+// var header = document.getElementById("myDIV");
+// var btns = header.getElementsByClassName("nav-item");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//   var current = document.getElementsByClassName("active");
+//   current[0].className = current[0].className.replace(" active", "");
+//   this.className += " active";
+//   });
+// }
+// // ++++++++++++++++++++++++++End Change the Color if the link be clicked +++++++++++++++++++++++++++++++++++++++++
 
 // ++++++++++++++++++++++++++++++ Start scroll from navbar to the determined element ++++++++++++++++++++++++++++++++++++
 $('.nav-item .einfuer').click(function () {
@@ -73,8 +73,21 @@ $('.nav-item .observat').click(function () {
 
   }, 1000);
 });
+// ++++++++++++++++++++++++++++++ Start Select Algorithmen ++++++++++++++++++++++++++++++++
+var expanded = false;
 
-// ++++++++++++++++++++++++++++++ End scroll from navbar to the determined element ++++++++++++++++++++++++++++++++++++
+function showCheckboxes() {
+    var checkboxes = document.getElementById("checkboxes");
+    if (!expanded) {
+        checkboxes.style.display = "block";
+        expanded = true;
+    } else {
+        checkboxes.style.display = "none";
+        expanded = false;
+    }
+}
+
+// ++++++++++++++++++++++++++++++ End Select Algorithmen ++++++++++++++++++++++++++++++++++
 function generateSudoku() {
 
     var grid = [
@@ -110,14 +123,14 @@ function generateSudoku() {
 
 
 }
-    var fun1 = function() {
-       // print('Hi there from Javascript, ' + name);
-        return "greetings from javascript";
-    };
-
-    var fun2 = function (object) {
-        print("JS Class Definition: " + Object.prototype.toString.call(object));
-    };
+    // var fun1 = function() {
+    //    // print('Hi there from Javascript, ' + name);
+    //     return "greetings from javascript";
+    // };
+    //
+    // var fun2 = function (object) {
+    //     print("JS Class Definition: " + Object.prototype.toString.call(object));
+    // };
 
 function shuffle(grid) {
 
@@ -223,26 +236,24 @@ function generateMyOwn() {
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0]
     ];
-    //hideTiles(hGrid, hGrid);
 
     this.getTileNumber = function (row, col) {
         return hGrid[row][col];
     };
 }
 
-function myFunction() {
-    //var hrid = new Object();
-    var hrid = [
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0], //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0], //++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0]
-    ];
-
-    return hrid;
-}
+// function myFunction() {
+//     //var hrid = new Object();
+//     var hrid = [
+//         [0, 0, 0, 0, 0, 0, 0, 0, 0],
+//         [0, 0, 0, 0, 0, 0, 0, 0, 0], //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//         [0, 0, 0, 0, 0, 0, 0, 0, 0],
+//         [0, 0, 0, 0, 0, 0, 0, 0, 0],
+//         [0, 0, 0, 0, 0, 0, 0, 0, 0], //++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//         [0, 0, 0, 0, 0, 0, 0, 0, 0],
+//         [0, 0, 0, 0, 0, 0, 0, 0, 0],
+//         [0, 0, 0, 0, 0, 0, 0, 0, 0],
+//         [0, 0, 0, 0, 0, 0, 0, 0, 0]
+//     ];
+//     return hrid;
+// }

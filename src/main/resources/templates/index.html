@@ -226,34 +226,6 @@
                 <h3>Implementierung der exakten / heuristische Algorithmen</h3>
             </div>
 
-            <div id="wrapper">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Heuristische Algorithmen
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Greedy Algorithmus</a>
-                        <a class="dropdown-item" href="#">Largest First Algorithmus</a>
-                        <a class="dropdown-item" href="#">DSATUR Algorithmus</a>
-                        <a class="dropdown-item" href="#">Recursive Largest First Algorithmus</a>
-                        <a class="dropdown-item" href="#">Welsh Powell Algorithmus</a>
-                        <a class="dropdown-item" href="#">Tiefensuche Algorithmus</a>
-                        <a class="dropdown-item" href="#">Breitensuche Algorithmus</a>
-                    </div>
-                </div>
-                <div class="Mydropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenue"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Exakte Algorithmen
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Backtracking Algorithmus </a>
-                        <a class="dropdown-item" href="#">Lineare Programmierung</a>
-                    </div>
-                </div>
-            </div>
-
             <div class="uploadContainer">
                 <div class="upload-header">
                     <h3>Graph Hochladen / Das Ergebnis der Färbungsalgorithmen</h3>
@@ -263,12 +235,50 @@
                         <h3>File Hochladen</h3>
                         <form method="POST" action="/upload" enctype="multipart/form-data">
                             <input type="file" name="file" required=""/>
-                            <button type="submit" class="primary submit-btn" >Hochladen</button>
+                            <button type="submit" class="primary submit-btn">Hochladen</button>
                         </form>
-
                     </div>
                 </div>
             </div>
+
+            <div class="submitAlgor">
+                <form>
+                    <div class="multiselect">
+                        <div class="selectBox" onclick="showCheckboxes()">
+                            <select>
+                                <option>Algorithmus auswählen</option>
+                            </select>
+                            <div class="overSelect"></div>
+                        </div>
+                        <div id="checkboxes">
+                            <option class="divide">Exakte Algorithmen</option>
+                            <label for="one">
+                                <input type="checkbox" id="one"/>Backtracking Algorithm</label>
+                            <label for="two">
+                                <input type="checkbox" id="two"/>Lineare Programmierung</label>
+
+                            <option class="divide">Heuristische Algorithmen</option>
+                            <!-- <br/> -->
+                            <label for="one">
+                                <input type="checkbox" id="three"/>Greedy Algorithmus</label>
+                            <label for="two">
+                                <input type="checkbox" id="five"/>Largest First </label>
+                            <label for="three">
+                                <input type="checkbox" id="sex"/>DSATUR Algorithmus</label>
+                            <label for="one">
+                                <input type="checkbox" id="seven"/>Recursive Largest First</label>
+                            <label for="two">
+                                <input type="checkbox" id="eight"/>Welsh Powell</label>
+                            <label for="three">
+                                <input type="checkbox" id="nine"/>Tiefensuche</label>
+                            <label for="three">
+                                <input type="checkbox" id="ten"/>Breitensuche</label>
+                        </div>
+                    </div>
+                </form>
+                <button class="submitAlgorithm">Submit</button>
+            </div>
+
             <div class="myHeading">
                 <h3>Softwarearchitektur</h3>
                 <div class="sudokuSolver">
@@ -456,6 +466,9 @@
             readTableToSend();
             sendArrayToJava();
             //   generate_table();
+        });
+        $("submit-btn").click(function () {
+            checkAlgorithmSelected();
         });
 
         console.log("Salam i am from Ready jQuery: ", matrix);

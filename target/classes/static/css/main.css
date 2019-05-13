@@ -144,10 +144,6 @@ Theme Name: Yassine Chakri
     margin-top: 0.9em !important;
     padding-bottom: .4em;
     border-bottom: 2px solid #4267b2;
-    /* margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;   color: #333333 */
 }
 
 .startBody .myHeading h2 {
@@ -158,10 +154,10 @@ Theme Name: Yassine Chakri
     padding-bottom: .4em;
     border-bottom: 2px solid #a9d6f2;
     display: block;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    /*margin-block-start: 0.83em;*/
+    /*margin-block-end: 0.83em;*/
+    /*margin-inline-start: 0px;*/
+    /*margin-inline-end: 0px;*/
     margin-top: 1em !important;
 
 }
@@ -260,8 +256,8 @@ Theme Name: Yassine Chakri
     box-sizing: border-box;
     display: block;
     font-size: 1.3em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
+    /*margin-block-start: 0.83em;*/
+    /*margin-block-end: 0.83em;*/
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.58;
 }
@@ -278,10 +274,10 @@ Theme Name: Yassine Chakri
     font-size: 1.18em;
     font-weight: bold;
     font-style: normal;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    /*margin-block-start: 1em;*/
+    /*margin-block-end: 1em;*/
+    /*margin-inline-start: 0px;*/
+    /*margin-inline-end: 0px;*/
 }
 
 .uploadContainer input[type="file"] {
@@ -289,6 +285,7 @@ Theme Name: Yassine Chakri
     padding: 6px;
     max-width: 98%;
     min-width: 70%;
+    border-radius: 4px;
 }
 
 .uploadContainer .submit-btn {
@@ -306,8 +303,76 @@ Theme Name: Yassine Chakri
     border-radius: 2px;
 }
 
-/* --------------------------------End Upload File for Coloring ---------------------------------------- */
+/* --------------------------------End Upload File ---------------------------------------- */
 
+/* -------------------------------- Start Select Algorithm --------------------------------------------- */
+
+.multiselect {
+    max-width: 200px;
+    margin-bottom: 8px;
+}
+
+.selectBox {
+    position: relative;
+
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+    padding: 7px;
+    background-color: #0684f4;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.multiselect #checkboxes {
+    width: 100%;
+    display: none;
+    border: 1px #dadada solid;
+    font-style: normal;
+    font-family: cursive;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+.multiselect #checkboxes label {
+    display: block;
+
+}
+
+.multiselect #checkboxes label:hover {
+    background-color: #3AAE8C;
+    border-radius: 3px;
+}
+
+.multiselect #checkboxes .divide {
+    font-weight: bold;
+    border-bottom: 1px solid #dadde1;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.submitAlgorithm {
+    padding: 8px;
+    border-radius: 2px;
+    color: #FFFFFF;
+    background: #0684f4;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid transparent;
+
+}
+/* -------------------------------- End Select Algorithm --------------------------------------------- */
 
 /* ------------------------------------------- Start Sudoku ------------------------------------------------------- */
 .sudokuSolver span {
@@ -379,7 +444,7 @@ td input {
     background-color:#ffbce2;
 }
 
-input {
+.inner input {
     text-align: center;
     width: 50px;
     height: 50px;
@@ -387,13 +452,13 @@ input {
     outline: none;
 }
 
-input:disabled {
+.inner input:disabled {
     background-color: #EEEEEE;
 }
 
 .formbutton {
     position: relative;
-    background: #689fce;
+    background: #0684f4;
     display: inline-block;
     padding: 8px;
     color: #fff;
