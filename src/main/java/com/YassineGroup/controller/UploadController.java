@@ -1,9 +1,7 @@
 package com.YassineGroup.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -44,6 +42,30 @@ public class UploadController {
 
         return "redirect:/uploadStatus";
     }
+    @RequestMapping(value = "/editCustomer" , method = RequestMethod. POST)
+    public void editCustomer(@RequestParam(value = "checkboxName", required = false) String checkboxValue)
+    {
+        if(checkboxValue != null)
+        {
+            System.out.println("checkbox is checked Yassssssss");
+        }
+        else
+        {
+            System.out.println("checkbox is not checked Yassssssss");
+        }
+    }
+
+//    @PostMapping("/admin/rates/prices")
+//    public String delete(@RequestParam("idChecked") List<String> idrates){
+//
+//        if(idrates != null){
+//            for(String idrateStr : idrates){
+//                int idrate = Integer.parseInt(idrateStr);
+//                rateRepository.deleteRate(idrate);
+//            }
+//        }
+//        return "redirect:/admin/rates/prices";
+//    }
 
     @GetMapping("/uploadStatus")
     public String uploadStatus() {

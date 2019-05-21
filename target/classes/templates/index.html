@@ -230,6 +230,7 @@
                 <div class="upload-header">
                     <h3>Graph Hochladen / Das Ergebnis der Färbungsalgorithmen</h3>
                 </div>
+                <!--<form action="editCustomer" method="post">-->
                 <div class="upload-content">
                     <div class="single-upload">
                         <h3>File Hochladen</h3>
@@ -239,10 +240,11 @@
                         </form>
                     </div>
                 </div>
+                <!--</form>-->
             </div>
 
             <div class="submitAlgor">
-                <form>
+                <form action="editCustomer" method="post">
                     <div class="multiselect">
                         <div class="selectBox" onclick="showCheckboxes()">
                             <select>
@@ -251,6 +253,7 @@
                             <div class="overSelect"></div>
                         </div>
                         <div id="checkboxes">
+
                             <option class="divide">Exakte Algorithmen</option>
                             <label for="one">
                                 <input type="checkbox" id="one"/>Backtracking Algorithm</label>
