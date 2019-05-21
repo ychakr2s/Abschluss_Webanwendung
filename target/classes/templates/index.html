@@ -554,8 +554,8 @@
     }
 
     /*
-    This method convert a Matrix, which is self entered or generated with the Button "gave me another"
-    to Array in order to send it to the java server to solve the Problem Sudoku.
+    * This method convert a Matrix, which is self entered or generated with the Button "gave me another"
+    * to Array in order to send it to the java server to solve the Problem Sudoku.
     */
     function convertMarixToArray() {
         var myArray = Array(81);
@@ -605,9 +605,7 @@
             error: function (jqXHR, textStatus, errorThrown) {
                 console.log('error while post');
             }
-
         });
-
     }
 
     /*

@@ -1,77 +1,77 @@
 $(function () {
-  'use strict';
-  // Adjust Slider Height
-  var windowHeigh = $(window).height();
-  var upperH          = $('.upper-bar').innerHeight();
-  var navH            = $('.navbar').innerHeight();
-  $('.slider, .carousel-item').height(windowHeigh - ( upperH + navH ));
+    'use strict';
+    // HEADER: Adjust Slider Height
+    var windowHeigh = $(window).height();
+    var upperH = $('.upper-bar').innerHeight();
+    var navH = $('.navbar').innerHeight();
+    $('.slider, .carousel-item').height(windowHeigh - (upperH + navH));
 });
 
-// // ++++++++++++++++++++++++++Start Change the Color if the link be clicked +++++++++++++++++++++++++++++++++++++++++
-// var header = document.getElementById("myDIV");
-// var btns = header.getElementsByClassName("nav-item");
-// for (var i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener("click", function() {
-//   var current = document.getElementsByClassName("active");
-//   current[0].className = current[0].className.replace(" active", "");
-//   this.className += " active";
-//   });
-// }
-// // ++++++++++++++++++++++++++End Change the Color if the link be clicked +++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++ Start Change the Color if the link be clicked +++++++++++++++++++++++++++++++++++++++++
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("nav-item");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+}
+// ++++++++++++++++++++++++++ End Change the Color if the link be clicked +++++++++++++++++++++++++++++++++++++++++++
 
 // ++++++++++++++++++++++++++++++ Start scroll from navbar to the determined element ++++++++++++++++++++++++++++++++++++
 $('.nav-item .einfuer').click(function () {
 
-  $('html, body').animate({
+    $('html, body').animate({
 
-    scrollTop: $('.einf').offset().top
+        scrollTop: $('.einf').offset().top
 
-  }, 1000);
+    }, 1000);
 });
 
 $('.nav-item .anwendun').click(function () {
 
-  $('html, body').animate({
+    $('html, body').animate({
 
-    scrollTop: $('.anwend').offset().top
+        scrollTop: $('.anwend').offset().top
 
-  }, 1000);
+    }, 1000);
 });
 
 $('.nav-item .exakte').click(function () {
 
-  $('html, body').animate({
+    $('html, body').animate({
 
-    scrollTop: $('.exakt').offset().top
+        scrollTop: $('.exakt').offset().top
 
-  }, 1000);
+    }, 1000);
 });
 
 $('.nav-item .heuristische').click(function () {
 
-  $('html, body').animate({
+    $('html, body').animate({
 
-    scrollTop: $('.heuristi').offset().top
+        scrollTop: $('.heuristi').offset().top
 
-  }, 1000);
+    }, 1000);
 });
 
 $('.nav-item .implementier').click(function () {
 
-  $('html, body').animate({
+    $('html, body').animate({
 
-    scrollTop: $('.implemen').offset().top
+        scrollTop: $('.implemen').offset().top
 
-  }, 1000);
+    }, 1000);
 });
 
 $('.nav-item .observat').click(function () {
 
-  $('html, body').animate({
+    $('html, body').animate({
 
-    scrollTop: $('.observ').offset().top
+        scrollTop: $('.observ').offset().top
 
-  }, 1000);
+    }, 1000);
 });
 // ++++++++++++++++++++++++++++++ Start Select Algorithmen ++++++++++++++++++++++++++++++++
 var expanded = false;
@@ -120,17 +120,7 @@ function generateSudoku() {
     this.getTileNumber = function (row, col) {
         return hGrid[row][col];
     };
-
-
 }
-    // var fun1 = function() {
-    //    // print('Hi there from Javascript, ' + name);
-    //     return "greetings from javascript";
-    // };
-    //
-    // var fun2 = function (object) {
-    //     print("JS Class Definition: " + Object.prototype.toString.call(object));
-    // };
 
 function shuffle(grid) {
 
@@ -241,19 +231,3 @@ function generateMyOwn() {
         return hGrid[row][col];
     };
 }
-
-// function myFunction() {
-//     //var hrid = new Object();
-//     var hrid = [
-//         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-//         [0, 0, 0, 0, 0, 0, 0, 0, 0], //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-//         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-//         [0, 0, 0, 0, 0, 0, 0, 0, 0], //++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-//         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-//         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-//         [0, 0, 0, 0, 0, 0, 0, 0, 0]
-//     ];
-//     return hrid;
-// }
