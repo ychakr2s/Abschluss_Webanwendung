@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 
 @Controller
 public class UploadController {
@@ -42,30 +43,21 @@ public class UploadController {
 
         return "redirect:/uploadStatus";
     }
-    @RequestMapping(value = "/editCustomer" , method = RequestMethod. POST)
-    public void editCustomer(@RequestParam(value = "checkboxName", required = false) String checkboxValue)
-    {
-        if(checkboxValue != null)
-        {
-            System.out.println("checkbox is checked Yassssssss");
-        }
-        else
-        {
-            System.out.println("checkbox is not checked Yassssssss");
-        }
-    }
 
-//    @PostMapping("/admin/rates/prices")
-//    public String delete(@RequestParam("idChecked") List<String> idrates){
-//
-//        if(idrates != null){
-//            for(String idrateStr : idrates){
-//                int idrate = Integer.parseInt(idrateStr);
-//                rateRepository.deleteRate(idrate);
-//            }
-//        }
-//        return "redirect:/admin/rates/prices";
-//    }
+    @RequestMapping(value = "/check", method = RequestMethod.POST)
+    public @ResponseBody
+    String yourMethod(@RequestBody ArrayList<String> selected) {
+        int k = 0;
+        String a[] = new String[selected.size()];
+
+        for (String data : selected) {
+            a[k] = data;
+            System.out.println(a[k]);
+            k++;
+        }
+
+        return "i am from java to frontEnd";
+    }
 
     @GetMapping("/uploadStatus")
     public String uploadStatus() {

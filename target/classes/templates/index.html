@@ -244,41 +244,43 @@
             </div>
 
             <div class="submitAlgor">
-                <form action="editCustomer" method="post">
-                    <div class="multiselect">
-                        <div class="selectBox" onclick="showCheckboxes()">
-                            <select>
-                                <option>Algorithmus auswählen</option>
-                            </select>
-                            <div class="overSelect"></div>
-                        </div>
+                <div class="multiselect">
+                    <div class="selectBox" onclick="showCheckboxes()">
+                        <select>
+                            <option>Algorithmus auswählen</option>
+                        </select>
+                        <div class="overSelect"></div>
+                    </div>
+                    <form class="CheckBox" action="editCustomer" method="post">
                         <div id="checkboxes">
-
                             <option class="divide">Exakte Algorithmen</option>
-                            <label for="one">
-                                <input type="checkbox" id="one"/>Backtracking Algorithm</label>
-                            <label for="two">
-                                <input type="checkbox" id="two"/>Lineare Programmierung</label>
+                            <label>
+                                <input type="checkbox" class="chk" value="Backtracking"/>Backtracking Algorithm</label>
+                            <label>
+                                <input type="checkbox" class="chk" value="Lineare Programmierung"/>Lineare
+                                Programmierung</label>
 
                             <option class="divide">Heuristische Algorithmen</option>
                             <!-- <br/> -->
-                            <label for="one">
-                                <input type="checkbox" id="three"/>Greedy Algorithmus</label>
-                            <label for="two">
-                                <input type="checkbox" id="five"/>Largest First </label>
-                            <label for="three">
-                                <input type="checkbox" id="sex"/>DSATUR Algorithmus</label>
-                            <label for="one">
-                                <input type="checkbox" id="seven"/>Recursive Largest First</label>
-                            <label for="two">
-                                <input type="checkbox" id="eight"/>Welsh Powell</label>
-                            <label for="three">
-                                <input type="checkbox" id="nine"/>Tiefensuche</label>
-                            <label for="three">
-                                <input type="checkbox" id="ten"/>Breitensuche</label>
+                            <label>
+                                <input type="checkbox" class="chk" value="Greedy"/>Greedy Algorithmus</label>
+                            <label>
+                                <input type="checkbox" class="chk" value="Largest First "/>Largest First </label>
+                            <label>
+                                <input type="checkbox" class="chk" value="DSATUR"/>DSATUR Algorithmus</label>
+                            <label>
+                                <input type="checkbox" class="chk" value="Recursive Largest First"/>Recursive Largest
+                                First</label>
+                            <label>
+                                <input type="checkbox" class="chk" value="Welsh Powell"/>Welsh Powell</label>
+                            <label>
+                                <input type="checkbox" class="chk" value="Tiefensuche"/>Tiefensuche</label>
+                            <label>
+                                <input type="checkbox" class="chk" value="Breitensuche"/>Breitensuche</label>
                         </div>
-                    </div>
-                </form>
+
+                    </form>
+                </div>
                 <button class="submitAlgorithm">Submit</button>
             </div>
 
@@ -470,12 +472,20 @@
             sendArrayToJava();
             //   generate_table();
         });
-        $("submit-btn").click(function () {
-            checkAlgorithmSelected();
+        // $(".submit-btn").click(function () {
+        //     // checkAlgorithmSelected();
+        // });
+        // $(".submitAlgorithm" ).click(function () {
+        //     sendcheckList();
+        // });
+
+        $('.submitAlgorithm').click(function () {
+            getValueUsingClass();
         });
 
         console.log("Salam i am from Ready jQuery: ", matrix);
     });
+
 
     function ownInput() {
         puzzle = new generateMyOwn();
@@ -557,8 +567,8 @@
     }
 
     /*
-    * This method convert a Matrix, which is self entered or generated with the Button "gave me another"
-    * to Array in order to send it to the java server to solve the Problem Sudoku.
+    * This method convert a Matrix, which is self entered or generated with the Button "gave me another" to Array in
+    * order to send it to the java server to solve the Problem Sudoku.
     */
     function convertMarixToArray() {
         var myArray = Array(81);
