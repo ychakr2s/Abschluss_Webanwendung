@@ -2,12 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46dea276-067e-40a5-ad5d-85139184bbaf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/AbstractGraphColoring/Algorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/AbstractGraphColoring/GraphColoring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Applications/Solve_Sudoku.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Applications/SudokuGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Exact_Algorithm/Backtracking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Exact_Algorithm/Linear_Programming.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Graph/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Depth_First_Search_Algorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Greedy_Algorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Largest_First_Algorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/dSatur_Algorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/welsh_Powell_Algorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/ReadFile/readFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/factory/FactoryAlgorithms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/model/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/model/JsonOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/AbstractGraphColoring/Algorithm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/AbstractGraphColoring/GraphColoring.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Applications/Solve_Sudoku.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Applications/SudokuGraph.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Exact_Algorithm/Backtracking.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Exact_Algorithm/Linear_Programming.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Graph/Graph.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Heuristic_Algorithms/Breadth_First_Search_Algorithm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Heuristic_Algorithms/Depth_First_Search_Algorithm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Heuristic_Algorithms/Greedy_Algorithm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Heuristic_Algorithms/Largest_First_Algorithm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Heuristic_Algorithms/dSatur_Algorithm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Heuristic_Algorithms/welsh_Powell_Algorithm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/ReadFile/readFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/factory/FactoryAlgorithms.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/model/Context.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/model/JsonOutput.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploadingDir/hamming6-4.clq" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppBachelorarbeit.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/UploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/controller/UploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/controller/UploadController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,34 +56,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/UploadController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
+            <state relative-caret-position="256">
+              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2270#2271#0" expanded="true" />
-                <element signature="e#2306#2307#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/ReadFile/readFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="611" column="32" selection-start-line="611" selection-start-column="32" selection-end-line="611" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            <state relative-caret-position="-184">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -90,12 +118,30 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html___jb_old___" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/main.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/indexStatus.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/GlobalExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/main.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/AbstractGraphColoring/Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/Graph/Graph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/AbstractGraphColoring/GraphColoring.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/Exact_Algorithm/Backtracking.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/Exact_Algorithm/Linear_Programming.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Depth_First_Search_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/dSatur_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Largest_First_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Greedy_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/welsh_Powell_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/model/Context.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/model/JsonOutput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/factory/FactoryAlgorithms.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/Applications/Solve_Sudoku.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/Applications/SudokuGraph.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/ReadFile/readFile.java" />
       </list>
     </option>
   </component>
@@ -128,10 +174,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="105" />
-    <option name="y" value="175" />
+    <option name="x" value="320" />
+    <option name="y" value="85" />
     <option name="width" value="1530" />
-    <option name="height" value="960" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -139,44 +185,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="WebAppBachelorarbeit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppBachelorarbeit" type="462c0819:PsiDirectoryNode" />
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebAppBachelorarbeit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppBachelorarbeit" type="462c0819:PsiDirectoryNode" />
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebAppBachelorarbeit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppBachelorarbeit" type="462c0819:PsiDirectoryNode" />
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebAppBachelorarbeit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppBachelorarbeit" type="462c0819:PsiDirectoryNode" />
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebAppBachelorarbeit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppBachelorarbeit" type="462c0819:PsiDirectoryNode" />
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebAppBachelorarbeit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppBachelorarbeit" type="462c0819:PsiDirectoryNode" />
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -184,8 +229,28 @@
               <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebAppBachelorarbeit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppBachelorarbeit" type="462c0819:PsiDirectoryNode" />
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
+              <item name="AbstractGraphColoring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
+              <item name="Applications" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -194,15 +259,93 @@
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebAppBachelorarbeit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppBachelorarbeit" type="462c0819:PsiDirectoryNode" />
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
+              <item name="Exact_Algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
+              <item name="Heuristic_Algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
+              <item name="ReadFile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,12 +357,18 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558544484786" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SudokuSpringboot" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558829517130" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-file-upload-example" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.YassineGroup.factory" />
+      <recent name="com.YassineGroup.Graph" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -262,11 +411,15 @@
       <workItem from="1558459045130" duration="12276000" />
       <workItem from="1558526781336" duration="6000" />
       <workItem from="1558528101091" duration="8778000" />
+      <workItem from="1558545596571" duration="2205000" />
+      <workItem from="1558736424820" duration="2637000" />
+      <workItem from="1558747073125" duration="636000" />
+      <workItem from="1558788783794" duration="8767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73695000" />
+    <option name="totallyTimeSpent" value="87940000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -280,7 +433,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86372006" visible="true" weight="0.19463088" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86372006" visible="true" weight="0.21006711" />
       <window_info id="Structure" order="1" sideWeight="0.13627993" side_tool="true" weight="0.19463088" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -290,7 +443,7 @@
       <window_info id="Web" order="7" sideWeight="0.50213677" side_tool="true" weight="0.24966443" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3455344" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26793557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -374,30 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/GlobalExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/SpringBootWebApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
@@ -417,27 +546,260 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
+        <state relative-caret-position="589">
           <caret line="611" column="32" selection-start-line="611" selection-start-column="32" selection-end-line="611" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="1886">
+          <caret line="82" column="1" lean-forward="true" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Graph/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/AbstractGraphColoring/GraphColoring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/GlobalExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/Exact_Algorithm/kleinTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/Exact_Algorithm/Linear_Programming.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/Exact_Algorithm/Backtracking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/AbstractGraphColoring/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/dSatur_Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-710">
+          <caret line="82" column="14" lean-forward="true" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Largest_First_Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Depth_First_Search_Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="76" column="48" lean-forward="true" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#949#950#0" expanded="true" />
+            <element signature="e#1882#1883#0" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/welsh_Powell_Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1978">
+          <caret line="92" column="35" lean-forward="true" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Greedy_Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/model/JsonOutput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="14" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/model/FactoryAlgorithms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/Applications/testSudoku.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/model/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/Graph/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/factory/FactoryAlgorithms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-397">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/Applications/Solve_Sudoku.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="42" lean-forward="true" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/Applications/SudokuGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/UploadController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
+        <state relative-caret-position="256">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2270#2271#0" expanded="true" />
-            <element signature="e#2306#2307#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/ReadFile/readFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-184">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
         </state>
       </provider>
     </entry>

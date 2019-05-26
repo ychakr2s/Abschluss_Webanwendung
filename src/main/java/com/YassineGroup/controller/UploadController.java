@@ -1,5 +1,7 @@
 package com.YassineGroup.controller;
 
+import com.YassineGroup.Graph.Graph;
+import com.YassineGroup.ReadFile.readFile;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -34,7 +36,9 @@ public class UploadController {
             byte[] bytes = file.getBytes();
             Path path = Paths.get(UPLOADED_FOLDER + file.getOriginalFilename());
             Files.write(path, bytes);
-
+            readFile rd = new readFile();
+            Graph gr = rd.readGraph(path.toString());
+            System.out.println(gr.toString());
             redirectAttributes.addFlashAttribute("message", "You successfully uploaded '" + file.getOriginalFilename() + "'");
 
         } catch (IOException e) {
