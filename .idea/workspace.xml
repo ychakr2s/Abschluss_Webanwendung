@@ -2,49 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46dea276-067e-40a5-ad5d-85139184bbaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/AbstractGraphColoring/Algorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/AbstractGraphColoring/GraphColoring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Applications/Solve_Sudoku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Applications/SudokuGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Exact_Algorithm/Backtracking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Exact_Algorithm/Linear_Programming.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Graph/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Depth_First_Search_Algorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Greedy_Algorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Largest_First_Algorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/dSatur_Algorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/welsh_Powell_Algorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/ReadFile/readFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/factory/FactoryAlgorithms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/model/Context.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/model/JsonOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/AbstractGraphColoring/Algorithm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/AbstractGraphColoring/GraphColoring.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Applications/Solve_Sudoku.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Applications/SudokuGraph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Exact_Algorithm/Backtracking.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Exact_Algorithm/Linear_Programming.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Graph/Graph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Heuristic_Algorithms/Breadth_First_Search_Algorithm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Heuristic_Algorithms/Depth_First_Search_Algorithm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Heuristic_Algorithms/Greedy_Algorithm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Heuristic_Algorithms/Largest_First_Algorithm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Heuristic_Algorithms/dSatur_Algorithm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/Heuristic_Algorithms/welsh_Powell_Algorithm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/ReadFile/readFile.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/factory/FactoryAlgorithms.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/model/Context.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/model/JsonOutput.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploadingDir/hamming6-4.clq" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppBachelorarbeit.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/UploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/controller/UploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/controller/UploadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploadingDir/hamming6-4.clq" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -73,7 +32,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/ReadFile/readFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-184">
+            <state relative-caret-position="-115">
               <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
             </state>
           </provider>
@@ -357,7 +316,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558829517130" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558830812592" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-file-upload-example" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -414,12 +373,12 @@
       <workItem from="1558545596571" duration="2205000" />
       <workItem from="1558736424820" duration="2637000" />
       <workItem from="1558747073125" duration="636000" />
-      <workItem from="1558788783794" duration="8767000" />
+      <workItem from="1558788783794" duration="9376000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87940000" />
+    <option name="totallyTimeSpent" value="88549000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -798,7 +757,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/ReadFile/readFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-184">
+        <state relative-caret-position="-115">
           <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
         </state>
       </provider>
