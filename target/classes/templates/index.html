@@ -282,7 +282,13 @@
                     </form>
                 </div>
                 <button class="submitAlgorithm">Submit</button>
+                <!--onclick="shwoJson()-->
             </div>
+            <div>
+                <div id="showmyjson">
+                </div>
+            </div>
+
 
             <div class="myHeading">
                 <h3>Softwarearchitektur</h3>
@@ -296,7 +302,6 @@
                     <center>
                         <form id="formwrapper">
                             <span id="newGame" class="formbutton"> Gave me another</span>
-                            <!--//  onclick="myFunction()" -->
                             <span id="myOwn" class="formbutton">Enter my Own </span>
                         </form>
                     </center>
@@ -463,29 +468,24 @@
         $("#newGame").click(function () {
             init();
         });
+
         $("#grid").fadeIn(900);
+
         $("#myOwn").click(function () {
             initMyOwn();
         });
+
         $("#finished").click(function () {
             readTableToSend();
             sendArrayToJava();
             //   generate_table();
         });
-        // $(".submit-btn").click(function () {
-        //     // checkAlgorithmSelected();
-        // });
-        // $(".submitAlgorithm" ).click(function () {
-        //     sendcheckList();
-        // });
 
         $('.submitAlgorithm').click(function () {
-            getValueUsingClass();
+            submitSelectedAlgorithms();
         });
-
         console.log("Salam i am from Ready jQuery: ", matrix);
     });
-
 
     function ownInput() {
         puzzle = new generateMyOwn();
@@ -597,8 +597,8 @@
     }
 
     /*
-    This Methode send an array to java using ajax and get the response as Array.
-    This response will be printed using Method generate_Table()
+    * This Methode send an array to java using ajax and get the response as Array.
+    * This response will be printed using Method generate_Table()
     */
     function sendArrayToJava() {
         //var tempId = id;

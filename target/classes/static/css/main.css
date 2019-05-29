@@ -9,13 +9,8 @@ Theme Name: Yassine Chakri
     padding: 15px;
 }
 
-/* .upper-bar .bs{
-  text-transform: uppercase;
-  text-size: 10px;
-} */
-
 .upper-bar span {
-    color:#bfc6c9
+    color: #bfc6c9
 }
 
 .upper-bar .get-quote {
@@ -24,21 +19,21 @@ Theme Name: Yassine Chakri
     padding: 2px 10px;
     margin-left: 120px;
 }
+
 /* ----------------------------------------- End Upper Bar -----------------------------------------------------*/
 
 /* ------------------------------------------Start NAV BAR ---------------------------------------------------- */
-
 .navbar-brand > span {
     font-size: 30px;
 }
 
 .navbar-brand span:first-child {
-    font-weight:  bold;
+    font-weight: bold;
     color: #08526d;
 }
 
 .navbar-brand span:last-child {
-    color:#ec1c23;
+    color: #ec1c23;
 }
 
 .navbar-nav .nav-link {
@@ -50,12 +45,13 @@ Theme Name: Yassine Chakri
 }
 
 .navbar-nav .active > .nav-link {
-    color:#ec1c23 !important
+    color: #ec1c23 !important
 }
 
 .dropdown-item {
     width: auto;
 }
+
 /* ------------------------------------------End NAV BAR ---------------------------------------------------- */
 /* ------------------------------------------Start Slider ---------------------------------------------------- */
 .slider {
@@ -80,16 +76,14 @@ Theme Name: Yassine Chakri
 }
 
 .slider .carousel-inner h2 span {
-    /*background-color: #ec1c23; */
-    color: 	#FFEBCD;
+    color: #FFEBCD;
     font-weight: bold;
     font-style: oblique;
     z-index: 3;
     display: inline-block;
-    /* padding: 2px 8px; */
 }
 
-.slider .carousel-inner h2 span span{
+.slider .carousel-inner h2 span span {
     background-color: #ec1c23;
     padding: 2px 8px;
 }
@@ -110,7 +104,7 @@ Theme Name: Yassine Chakri
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-attachment:fixed;
+    background-attachment: fixed;
 }
 
 .slider .carousel-one {
@@ -138,7 +132,7 @@ Theme Name: Yassine Chakri
 /*  ----------------------------------------- Start Einfuerung-- ----------------------------------------------------*/
 .startBody .myHeading h1 {
     font-size: 2em;
-    font-weight:700;
+    font-weight: 700;
     line-height: 1.25em;
     color: #4c4a4a;
     margin-top: 0.9em !important;
@@ -148,16 +142,12 @@ Theme Name: Yassine Chakri
 
 .startBody .myHeading h2 {
     font-size: 1.5em;
-    font-weight:600;
+    font-weight: 600;
     line-height: 1.25em;
     color: #24292e;
     padding-bottom: .4em;
     border-bottom: 2px solid #a9d6f2;
     display: block;
-    /*margin-block-start: 0.83em;*/
-    /*margin-block-end: 0.83em;*/
-    /*margin-inline-start: 0px;*/
-    /*margin-inline-end: 0px;*/
     margin-top: 1em !important;
 
 }
@@ -196,16 +186,16 @@ Theme Name: Yassine Chakri
     font-size: 119%;
 }
 
-.btn-secondary {
-    background-color: #4267b2;
-}
+/*.btn-secondary {*/
+/*background-color: #4267b2;*/
+/*}*/
 
-.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
-    color: #fff;
-    /* background-color: #545b62; */
-    border-color: #076dc4;
-    background-color: #076dc4;
-}
+/*.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {*/
+/*color: #fff;*/
+/*!* background-color: #545b62; *!*/
+/*border-color: #076dc4;*/
+/*background-color: #076dc4;*/
+/*}*/
 
 /*  ----------------------------------------- End Einfuerung-- -------------------------------------------------------*/
 
@@ -256,8 +246,6 @@ Theme Name: Yassine Chakri
     box-sizing: border-box;
     display: block;
     font-size: 1.3em;
-    /*margin-block-start: 0.83em;*/
-    /*margin-block-end: 0.83em;*/
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.58;
 }
@@ -269,15 +257,11 @@ Theme Name: Yassine Chakri
     border-bottom: 1px solid #e8e8e8;
 }
 
-.single-upload h3{
+.single-upload h3 {
     display: block;
     font-size: 1.18em;
     font-weight: bold;
     font-style: normal;
-    /*margin-block-start: 1em;*/
-    /*margin-block-end: 1em;*/
-    /*margin-inline-start: 0px;*/
-    /*margin-inline-end: 0px;*/
 }
 
 .uploadContainer input[type="file"] {
@@ -293,6 +277,7 @@ Theme Name: Yassine Chakri
     margin-top: 15px;
     min-width: 100px;
 }
+
 .uploadContainer button.primary {
     background-color: #128ff2;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
@@ -314,7 +299,6 @@ Theme Name: Yassine Chakri
 
 .selectBox {
     position: relative;
-
 }
 
 .selectBox select {
@@ -372,8 +356,40 @@ Theme Name: Yassine Chakri
     border: 1px solid transparent;
 
 }
-/* -------------------------------- End Select Algorithm --------------------------------------------- */
 
+/* -------------------------------- End Select Algorithm --------------------------------------------- */
+/* -------------------------------- Start Show Ergebnisse in JSON ------------------------------------ */
+
+#showmyjson div {
+    margin: 10px 0px;
+}
+
+#showmyjson div a {
+    color: #0684f4;
+}
+
+#showmyjson div a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    background-color: #0684f4;
+    opcaity: 0.1;
+}
+
+pre {
+    display: none;
+    margin-top: 8px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #e9ecef;
+}
+
+/* ------------------------------------------- End Show Ergebnisse in JSON ---------------------------------------- */
 /* ------------------------------------------- Start Sudoku ------------------------------------------------------- */
 .sudokuSolver span {
     color: #FFFFFF;
@@ -414,13 +430,13 @@ td input {
 }
 
 #t0r2, #t0r5, #t1r2, #t1r5, #t2r5,
-#t3r2,#t3r5, #t4r2, #t4r5, #t5r2, #t5r5,
+#t3r2, #t3r5, #t4r2, #t4r5, #t5r2, #t5r5,
 #t6r2, #t6r5, #t7r2, #t7r5, #t8r2, #t8r5 {
     border-right: 3px solid #0abb9c;
 }
 
-#t2r0, #t2r1, #t2r3, #t2r4, #t2r6, #t2r7,#t2r8,
-#t5r8,#t5r0, #t5r1, #t5r3, #t5r4, #t5r6, #t5r7 {
+#t2r0, #t2r1, #t2r3, #t2r4, #t2r6, #t2r7, #t2r8,
+#t5r8, #t5r0, #t5r1, #t5r3, #t5r4, #t5r6, #t5r7 {
     border-bottom: 3px solid #0abb9c;
 }
 
@@ -437,11 +453,11 @@ td input {
 }
 
 .inner td:hover {
-    background-color:#0abb9c;
+    background-color: #0abb9c;
 }
 
 .inner td.selected {
-    background-color:#ffbce2;
+    background-color: #ffbce2;
 }
 
 .inner input {
@@ -472,12 +488,12 @@ td input {
     cursor: pointer;
 }
 
-#formwrapper{
+#formwrapper {
     margin-top: 3em;
 }
 
-#finished{
+#finished {
     margin-top: 1em;
 }
 
-/* --------------------------------------------End Sudoku ------------------------------------------------------------ */
+/* --------------------------------------------End Sudoku --------------------------------------------------------- */

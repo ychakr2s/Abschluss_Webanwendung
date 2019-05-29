@@ -25,7 +25,7 @@ public class FactoryAlgorithms {
             if (algorithm1.contains("Greedy")) {
                 algorithm.add(new Greedy_Algorithm(gr));
             }
-            if (algorithm1.contains("Depth")) {
+            if (algorithm1.contains("Tiefen")) {
                 algorithm.add(new Depth_First_Search_Algorithm(gr));
             }
             if (algorithm1.contains("Recursive")) {
@@ -34,16 +34,16 @@ public class FactoryAlgorithms {
             if (algorithm1.contains("Largest")) {
                 algorithm.add(new Largest_First_Algorithm(gr));
             }
-            if (algorithm1.contains("Breadth")) {
+            if (algorithm1.contains("Breiten")) {
                 algorithm.add(new Breadth_First_Search_Algorithm(gr));
             }
-            if (algorithm1.contains("dSatur")) {
+            if (algorithm1.contains("DSATUR")) {
                 algorithm.add(new dSatur_Algorithm(gr));
             }
-            if (algorithm1.contains("welsh")) {
+            if (algorithm1.contains("Welsh")) {
                 algorithm.add(new welsh_Powell_Algorithm(gr));
             }
-            if (algorithm1.contains("Linear")) {
+            if (algorithm1.contains("Lineare")) {
                 algorithm.add(new Linear_Programming(gr));
             }
             if (algorithm1.contains("Backtracking")) {

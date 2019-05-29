@@ -7,71 +7,69 @@ $(function () {
     $('.slider, .carousel-item').height(windowHeigh - (upperH + navH));
 });
 
-function getValueUsingClass(){
+/*
+* in this methods send a list of Algorithms to Java Server in order to implement this selected Algorithms and send it back
+* using AJAX.
+ */
+function submitSelectedAlgorithms() {
     /* declare an checkbox array */
     var chkArray = [];
 
     /* look for all checkboes that have a class 'chk' attached to it and check if it was checked */
-    $(".chk:checked").each(function() {
+    $(".chk:checked").each(function () {
         chkArray.push($(this).val());
     });
 
     /* we join the array separated by the comma */
-     var selected = JSON.stringify(chkArray);
-     console.log(selected);
+    var selected = JSON.stringify(chkArray);
+    console.log(selected);
     $.ajax({
         contentType: "application/json",
         type: "POST",
         data: selected,
         url: "/check",
         success: function (data) {
-            console.log('done');
+            console.log('done done done');
 
-            console.log("my data ", data);
-            // alert("Salam: "+convertArrayToMatrix(data));
-            // generate_table(data);
+            var myObj = JSON.parse(data);
+            // var x = "<div>" + "<hr>";
+            // x += "<h4>" + "Das Ergebnis der Implementierung der Algorithmen ist in JSON Format ausgegeben:" + "</h4>";
+            // x += "<b>" + "<a " + " id = " + "showJsonText " + " onclick=" + "showAndHide()" + " >" + "Das Ergebnis einblenden"
+            //     + "</a>" + "</b>";
+            var y = "";
+            var x = "<div>" + "<hr>"
+            x += "<h4>" + "Das Ergebnis der Implementierung der Algorithmen:" + "</h4>";
+            for (var i = 0; i < myObj.algorithms.length; i++) {
+                y += "<p>" + "Es wird für " + myObj.algorithms[i].algorithm + " " + myObj.algorithms[i].numberColors +
+                    " Farben gebraucht." + "</p>"
+            }
+            x += "<p>" + y + "</p>";
+            x += "<b>" + "<a " + " id = " + "showJsonText " + " onclick=" + "showAndHide()" + " >" + "Das ganze Ergebnis in JSON Format anzeigen"
+                + "</a>" + "</b>";
+            x += "<pre>" + JSON.stringify(myObj, null, '\t') + "</pre>";
+            x += "<hr>" + "</div>";
+
+            document.getElementById("showmyjson").innerHTML = x;
         },
         error: function (jqXHR, textStatus, errorThrown) {
             console.log('error while post');
         }
     });
-
-    /* check if there is selected checkboxes, by default the length is 1 as it contains one single comma */
-    // if(selected.length > 0){
-    //     alert("You have selected " + selected);
-    // }else{
-    //     alert("Please at least check one of the checkbox");
-    // }
 }
 
-// function sendcheckList() {
-//     //var tempId = id;
-//     var dataArrayToSend = $(".myCheckBox").serialize();
-//
-//     $.ajax({
-//         // contentType: "application/json",
-//         type: "POST",
-//         data: dataArrayToSend,
-//         url: "/editCustomer",
-//         success: function (data) {
-//             console.log('done');
-//
-//             console.log("my data ", convertArrayToMatrix(data));
-//             // alert("Salam: "+convertArrayToMatrix(data));
-//             generate_table(data);
-//         },
-//         error: function (jqXHR, textStatus, errorThrown) {
-//             console.log('error while post');
-//         }
-//
-//     });
-// }
+function showAndHide() {
 
+    document.getElementsByTagName('pre')[0].style.display =
+        (document.getElementsByTagName('pre')[0].style.display !== "block") ?
+            "block" : "none";
+    if (document.getElementsByTagName('pre')[0].style.display === "block") {
+        document.getElementById("showJsonText").innerText = "Das Ergebnis ausblenden"
+    } else {
+        document.getElementById("showJsonText").innerText = "Das ganze Ergebnis in JSON Format anzeigen"
+    }
+}
 
-
-
-
-// ++++++++++++++++++++++++++ Start Change the Color if the link be clicked +++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++ Start Change the Color if the link is clicked +++++++++++++++++++++++++++++++++++++++++
 var header = document.getElementById("myDIV");
 var btns = header.getElementsByClassName("nav-item");
 for (var i = 0; i < btns.length; i++) {
@@ -81,7 +79,7 @@ for (var i = 0; i < btns.length; i++) {
         this.className += " active";
     });
 }
-// ++++++++++++++++++++++++++ End Change the Color if the link be clicked +++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++ End Change the Color if the link is clicked +++++++++++++++++++++++++++++++++++++++++++
 
 // ++++++++++++++++++++++++++++++ Start scroll from navbar to the determined element ++++++++++++++++++++++++++++++++++++
 $('.nav-item .einfuer').click(function () {
@@ -295,3 +293,4 @@ function generateMyOwn() {
         return hGrid[row][col];
     };
 }
+

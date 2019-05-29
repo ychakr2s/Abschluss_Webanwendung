@@ -11,10 +11,10 @@ import java.util.ArrayList;
  * Instead, Context refers to the Strategy interface for performing an algorithm (algorithm.execute()),
  * which makes Context independent of how an algorithm is implemented.
  */
-class Context {
+public class Context {
     private ArrayList<GraphColoring> algorithms;
 
-    Context(ArrayList<GraphColoring> algorithms) {
+    public Context(ArrayList<GraphColoring> algorithms) {
         this.algorithms = algorithms;
     }
 
