@@ -7,67 +7,7 @@ $(function () {
     $('.slider, .carousel-item').height(windowHeigh - (upperH + navH));
 });
 
-/*
-* in this methods send a list of Algorithms to Java Server in order to implement this selected Algorithms and send it back
-* using AJAX.
- */
-function submitSelectedAlgorithms() {
-    /* declare an checkbox array */
-    var chkArray = [];
 
-    /* look for all checkboes that have a class 'chk' attached to it and check if it was checked */
-    $(".chk:checked").each(function () {
-        chkArray.push($(this).val());
-    });
-
-    /* we join the array separated by the comma */
-    var selected = JSON.stringify(chkArray);
-    console.log(selected);
-    $.ajax({
-        contentType: "application/json",
-        type: "POST",
-        data: selected,
-        url: "/check",
-        success: function (data) {
-            console.log('done done done');
-
-            var myObj = JSON.parse(data);
-            // var x = "<div>" + "<hr>";
-            // x += "<h4>" + "Das Ergebnis der Implementierung der Algorithmen ist in JSON Format ausgegeben:" + "</h4>";
-            // x += "<b>" + "<a " + " id = " + "showJsonText " + " onclick=" + "showAndHide()" + " >" + "Das Ergebnis einblenden"
-            //     + "</a>" + "</b>";
-            var y = "";
-            var x = "<div>" + "<hr>"
-            x += "<h4>" + "Das Ergebnis der Implementierung der Algorithmen:" + "</h4>";
-            for (var i = 0; i < myObj.algorithms.length; i++) {
-                y += "<p>" + "Es wird für " + myObj.algorithms[i].algorithm + " " + myObj.algorithms[i].numberColors +
-                    " Farben gebraucht." + "</p>"
-            }
-            x += "<p>" + y + "</p>";
-            x += "<b>" + "<a " + " id = " + "showJsonText " + " onclick=" + "showAndHide()" + " >" + "Das ganze Ergebnis in JSON Format anzeigen"
-                + "</a>" + "</b>";
-            x += "<pre>" + JSON.stringify(myObj, null, '\t') + "</pre>";
-            x += "<hr>" + "</div>";
-
-            document.getElementById("showmyjson").innerHTML = x;
-        },
-        error: function (jqXHR, textStatus, errorThrown) {
-            console.log('error while post');
-        }
-    });
-}
-
-function showAndHide() {
-
-    document.getElementsByTagName('pre')[0].style.display =
-        (document.getElementsByTagName('pre')[0].style.display !== "block") ?
-            "block" : "none";
-    if (document.getElementsByTagName('pre')[0].style.display === "block") {
-        document.getElementById("showJsonText").innerText = "Das Ergebnis ausblenden"
-    } else {
-        document.getElementById("showJsonText").innerText = "Das ganze Ergebnis in JSON Format anzeigen"
-    }
-}
 
 // ++++++++++++++++++++++++++ Start Change the Color if the link is clicked +++++++++++++++++++++++++++++++++++++++++
 var header = document.getElementById("myDIV");
@@ -81,7 +21,7 @@ for (var i = 0; i < btns.length; i++) {
 }
 // ++++++++++++++++++++++++++ End Change the Color if the link is clicked +++++++++++++++++++++++++++++++++++++++++++
 
-// ++++++++++++++++++++++++++++++ Start scroll from navbar to the determined element ++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++ Start scroll from navbar to the determined element ++++++++++++++++++++++++++++++++
 $('.nav-item .einfuer').click(function () {
 
     $('html, body').animate({
@@ -135,7 +75,7 @@ $('.nav-item .observat').click(function () {
 
     }, 1000);
 });
-// ++++++++++++++++++++++++++++++ Start Select Algorithmen ++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++ Start Select Algorithmen +++++++++++++++++++++++++++++++++
 var expanded = false;
 
 function showCheckboxes() {
@@ -147,6 +87,82 @@ function showCheckboxes() {
         checkboxes.style.display = "none";
         expanded = false;
     }
+}
+
+/*
+* in this methods send a list of Algorithms to Java Server in order to implement this selected Algorithms and send it back
+* using AJAX.
+ */
+function submitSelectedAlgorithms() {
+    /* declare an checkbox array */
+    var chkArray = [];
+
+    /* look for all checkboes that have a class 'chk' attached to it and check if it was checked */
+    $(".chk:checked").each(function () {
+        chkArray.push($(this).val());
+    });
+
+    /* we join the array separated by the comma */
+    var selected = JSON.stringify(chkArray);
+    console.log(selected);
+
+    if (chkArray.length > 0) {
+        var x ="";
+        $.ajax({
+            contentType: "application/json",
+            type: "POST",
+            data: selected,
+            url: "/check",
+            success: function (data) {
+                console.log('done done done');
+
+                if (isJson(data)) {
+                    var myObj = JSON.parse(data);
+                    var y = "";
+                    x = "<div>" + "<hr>"
+                    x += "<h4>" + "Das Ergebnis der Implementierung der Algorithmen:" + "</h4>";
+                    for (var i = 0; i < myObj.algorithms.length; i++) {
+                        y += "<p>" + "Es wird für " + myObj.algorithms[i].algorithm + " " + myObj.algorithms[i].numberColors +
+                            " Farben gebraucht." + "</p>"
+                    }
+                    x += "<p>" + y + "</p>";
+                    x += "<b>" + "<a " + " id = " + "showJsonText " + " onclick=" + "showAndHide()" + " >" + "Das ganze Ergebnis in JSON Format anzeigen"
+                        + "</a>" + "</b>";
+                    x += "<pre>" + JSON.stringify(myObj, null, '\t') + "</pre>";
+                    x += "<hr>" + "</div>";
+                    document.getElementById("showmyjson").innerHTML = x;
+
+                } else
+                    document.getElementById("showmyjson").innerHTML = "<h3>" + data + "</h3>";
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log('error while post to java');
+            }
+        });
+    } else {
+        alert("Bitte mindestens eines der Checkboxen anzreuzen");
+    }
+}
+
+function showAndHide() {
+
+    document.getElementsByTagName('pre')[0].style.display =
+        (document.getElementsByTagName('pre')[0].style.display !== "block") ?
+            "block" : "none";
+    if (document.getElementsByTagName('pre')[0].style.display === "block") {
+        document.getElementById("showJsonText").innerText = "Das Ergebnis ausblenden"
+    } else {
+        document.getElementById("showJsonText").innerText = "Das ganze Ergebnis in JSON Format anzeigen"
+    }
+}
+
+function isJson(str) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
 }
 
 // ++++++++++++++++++++++++++++++ End Select Algorithmen ++++++++++++++++++++++++++++++++++
@@ -166,10 +182,10 @@ function generateSudoku() {
 
     var hGrid = [
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0], //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0], //++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -279,10 +295,10 @@ function generateMyOwn() {
 
     var hGrid = [
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0], //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0], //++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -293,4 +309,3 @@ function generateMyOwn() {
         return hGrid[row][col];
     };
 }
-

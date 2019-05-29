@@ -230,17 +230,15 @@
                 <div class="upload-header">
                     <h3>Graph Hochladen / Das Ergebnis der Färbungsalgorithmen</h3>
                 </div>
-                <!--<form action="editCustomer" method="post">-->
                 <div class="upload-content">
                     <div class="single-upload">
                         <h3>File Hochladen</h3>
-                        <form method="POST" action="/upload" enctype="multipart/form-data">
-                            <input type="file" name="file" required=""/>
+                        <form method="POST" action="/upload" target="_blank" enctype="multipart/form-data">
+                            <input type="file" name="file" id="myGraphSubmit" required=""/>
                             <button type="submit" class="primary submit-btn">Hochladen</button>
                         </form>
                     </div>
                 </div>
-                <!--</form>-->
             </div>
 
             <div class="submitAlgor">
@@ -265,7 +263,7 @@
                             <label>
                                 <input type="checkbox" class="chk" value="Greedy"/>Greedy Algorithmus</label>
                             <label>
-                                <input type="checkbox" class="chk" value="Largest First "/>Largest First </label>
+                                <input type="checkbox" class="chk" value="Largest First"/>Largest First </label>
                             <label>
                                 <input type="checkbox" class="chk" value="DSATUR"/>DSATUR Algorithmus</label>
                             <label>

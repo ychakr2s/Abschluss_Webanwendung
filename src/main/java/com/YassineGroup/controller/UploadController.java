@@ -11,79 +11,75 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Objects;
 
 @Controller
 public class UploadController {
 
     public static String UPLOADED_FOLDER = "uploadingDir/";
-    String fileName = "";
+    private String fileName = "";
 
 
     @GetMapping("/")
     public String index() {
+        readFile.deleteFiles(UPLOADED_FOLDER);
+        fileName = "";
+
         return "index";
     }
 
-    @PostMapping("/upload") // //new annotation since 4.3
+    @PostMapping("/upload") //new annotation since 4.3
     public String singleFileUpload(@RequestParam("file") MultipartFile file,
                                    RedirectAttributes redirectAttributes) {
-        Graph gr = null;
-
         if (file.isEmpty()) {
             redirectAttributes.addFlashAttribute("message", "Please select a file to upload");
             return "redirect:indexStatus";
         }
 
         try {
+            /*
+             * This checks whether a directory contains a file or not. If yes than delete everything and add
+             * the new File to the directory.
+             */
+            readFile.deleteFiles(UPLOADED_FOLDER);
+
+            // Upload the new File to the Directory "uploadingDir"
             byte[] bytes = file.getBytes();
             Path path = Paths.get(UPLOADED_FOLDER + file.getOriginalFilename());
             Files.write(path, bytes);
 
-            readFile rd = new readFile();
             fileName = path.toString();
-//            gr = rd.readGraph(fileName);
-//            System.out.println(gr.toString());
-
-//            Greedy_Algorithm gree = new Greedy_Algorithm(gr);
-//            gree.executeGraphAlgorithm();
-//            fileName =path.toString();
 
             redirectAttributes.addFlashAttribute("message", "You successfully uploaded '" + file.getOriginalFilename() + "'");
-
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return "redirect:/uploadStatus";
     }
 
     @RequestMapping(value = "/check", method = RequestMethod.POST)
     public @ResponseBody
     String yourMethod(@RequestBody ArrayList<String> selected) {
-//        int k = 0;
-//        String a[] = new String[selected.size()];
-//
-//        for (String data : selected) {
-//            a[k] = data;
-//            System.out.println(a[k]);
-//            k++;
-//        }
-        readFile rd = new readFile();
-        Graph gr = rd.readGraph(fileName);
-        Context imp = new Context(FactoryAlgorithms.getAlgorithms(selected, gr));
-        JsonOutput jso = new JsonOutput(gr, imp.execute());
-        Gson gs = new Gson();
-        String json = gs.toJson(jso);
 
+        if (fileName.equals("")) {
+            return "Bitte laden Sie eine Graph-Datei hoch";
+        } else {
+            readFile rd = new readFile();
+            Graph gr = rd.readGraph(fileName);
+            Context imp = new Context(FactoryAlgorithms.getAlgorithms(selected, gr));
+            imp.execute();
+            JsonOutput jso = new JsonOutput(gr, imp.execute());
+            Gson gs = new Gson();
 
-
-
-        return json;
+            return gs.toJson(jso);
+        }
     }
 
     @GetMapping("/uploadStatus")

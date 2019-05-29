@@ -7,10 +7,23 @@ import com.YassineGroup.Graph.Graph;
 import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.Objects;
 
 public class readFile {
 
     public readFile() {
+    }
+
+    public static void deleteFiles(String filename ){
+        File myfile = new File(filename);
+
+        if (myfile.isDirectory()) {
+            if (Objects.requireNonNull(myfile.list()).length > 0) {
+                Arrays.stream(Objects.requireNonNull(new File(filename).listFiles())).forEach(File::delete);
+//                fileName = "";
+            }
+        }
     }
 
     /*

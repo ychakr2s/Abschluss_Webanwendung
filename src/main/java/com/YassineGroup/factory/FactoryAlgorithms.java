@@ -28,10 +28,10 @@ public class FactoryAlgorithms {
             if (algorithm1.contains("Tiefen")) {
                 algorithm.add(new Depth_First_Search_Algorithm(gr));
             }
-            if (algorithm1.contains("Recursive")) {
+            if (algorithm1.equals("Recursive Largest First")) {
                 algorithm.add(new Recursive_Largest_First_Algorithm(gr));
             }
-            if (algorithm1.contains("Largest")) {
+            if (algorithm1.equals("Largest First")) {
                 algorithm.add(new Largest_First_Algorithm(gr));
             }
             if (algorithm1.contains("Breiten")) {
