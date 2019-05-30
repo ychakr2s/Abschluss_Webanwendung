@@ -426,7 +426,7 @@ td input.emptyCell {
 td input {
     border: 1.5px solid #0abb9c;
     padding: 1px;
-    cursor: context-menu;
+    /*cursor: context-menu;*/
 }
 
 #t0r2, #t0r5, #t1r2, #t1r5, #t2r5,

@@ -1,7 +1,5 @@
 package com.YassineGroup.Applications;
 
-import java.util.Iterator;
-
 public class Solve_Sudoku extends SudokuGraph {
 
     private int V;
@@ -93,7 +91,6 @@ public class Solve_Sudoku extends SudokuGraph {
 
     public String toString() {
         StringBuilder string = new StringBuilder();
-        string.append("This is the JsonOutput of the Sudoku Problem using Graph Coloring: \n");
 
         int j = 0;
         for (int i = 0; i <= V - 9; i = i + 9) {

@@ -8,7 +8,6 @@ $(function () {
 });
 
 
-
 // ++++++++++++++++++++++++++ Start Change the Color if the link is clicked +++++++++++++++++++++++++++++++++++++++++
 var header = document.getElementById("myDIV");
 var btns = header.getElementsByClassName("nav-item");
@@ -107,7 +106,7 @@ function submitSelectedAlgorithms() {
     console.log(selected);
 
     if (chkArray.length > 0) {
-        var x ="";
+        let x = "";
         $.ajax({
             contentType: "application/json",
             type: "POST",
@@ -117,9 +116,9 @@ function submitSelectedAlgorithms() {
                 console.log('done done done');
 
                 if (isJson(data)) {
-                    var myObj = JSON.parse(data);
-                    var y = "";
-                    x = "<div>" + "<hr>"
+                    let myObj = JSON.parse(data);
+                    let y = "";
+                    x = "<div>" + "<hr>";
                     x += "<h4>" + "Das Ergebnis der Implementierung der Algorithmen:" + "</h4>";
                     for (var i = 0; i < myObj.algorithms.length; i++) {
                         y += "<p>" + "Es wird für " + myObj.algorithms[i].algorithm + " " + myObj.algorithms[i].numberColors +
@@ -222,7 +221,7 @@ function shuffle(grid) {
         sub = Math.floor(Math.random() * 3);
         col1 = Math.floor(Math.random() * 3);
         col2 = Math.floor(Math.random() * 3);
-        while (col1 == col2) col2 = Math.floor(Math.random() * 3);
+        while (col1 === col2) col2 = Math.floor(Math.random() * 3);
         for (j = 0; j < grid.length; j++) {
             temp = grid[j][sub * 3 + col1];
             grid[j][sub * 3 + col1] = grid[j][sub * 3 + col2];
@@ -236,7 +235,7 @@ function shuffle(grid) {
         sub = Math.floor(Math.random() * 3);
         row1 = Math.floor(Math.random() * 3);
         row2 = Math.floor(Math.random() * 3);
-        while (row1 == row2) row2 = Math.floor(Math.random() * 3);
+        while (row1 === row2) row2 = Math.floor(Math.random() * 3);
         for (j = 0; j < grid.length; j++) {
             temp = grid[sub * 3 + row1][j];
             grid[sub * 3 + row1][j] = grid[sub * 3 + row2][j];
@@ -248,12 +247,12 @@ function shuffle(grid) {
     for (i = 0; i < 25; i++) {
         num1 = Math.floor(Math.random() * 9 + 1);
         num2 = Math.floor(Math.random() * 9 + 1);
-        while (num1 == num2) num2 = Math.floor(Math.random() * 9 + 1);
+        while (num1 === num2) num2 = Math.floor(Math.random() * 9 + 1);
         for (j = 0; j < grid.length; j++) {
             for (k = 0; k < grid[j].length; k++) {
-                if (grid[j][k] == num1)
+                if (grid[j][k] === num1)
                     grid[j][k] = num2;
-                else if (grid[j][k] == num2)
+                else if (grid[j][k] === num2)
                     grid[j][k] = num1;
             }
         }

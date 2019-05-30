@@ -1,5 +1,6 @@
 package com.YassineGroup.controller;
 
+import com.YassineGroup.Applications.Solve_Sudoku;
 import com.YassineGroup.Graph.Graph;
 import com.YassineGroup.factory.FactoryAlgorithms;
 import com.YassineGroup.model.Context;
@@ -11,14 +12,11 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Objects;
 
 @Controller
 public class UploadController {
@@ -80,6 +78,39 @@ public class UploadController {
 
             return gs.toJson(jso);
         }
+    }
+
+    @RequestMapping(value = "/appUrl", method = RequestMethod.POST)
+    public @ResponseBody
+    int[] sudoku(@RequestBody int[] dataArrayToSend) {
+        int k = 0;
+        int[] a = new int[81];
+        int[] b = new int[81];
+
+        for (Integer data : dataArrayToSend) {
+            a[k] = data;
+            k++;
+        }
+        Solve_Sudoku sd = readFile.readGraphSudoku(a);
+        String out = sd.executeGraphAlgorithm();
+        System.out.println(out.toString());
+        int count = 0;
+        String[] splited = out.split("\\s+");
+        for (int i = 0; i < 81; i++) {
+//            if (out.charAt(count) != ' ') {
+                b[i] = Integer.parseInt(splited[count]);
+                System.out.println(b[i]);
+//            }
+            count++;
+        }
+//        for (int i = 0; i < 81; i++) {
+////            if (out.charAt(count) != ' ') {
+//            System.out.println(b[i]);
+////            }
+////            count++;
+//        }
+
+        return b;
     }
 
     @GetMapping("/uploadStatus")

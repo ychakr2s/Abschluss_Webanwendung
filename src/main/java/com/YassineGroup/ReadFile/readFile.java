@@ -15,13 +15,12 @@ public class readFile {
     public readFile() {
     }
 
-    public static void deleteFiles(String filename ){
+    public static void deleteFiles(String filename) {
         File myfile = new File(filename);
 
         if (myfile.isDirectory()) {
             if (Objects.requireNonNull(myfile.list()).length > 0) {
                 Arrays.stream(Objects.requireNonNull(new File(filename).listFiles())).forEach(File::delete);
-//                fileName = "";
             }
         }
     }
@@ -59,34 +58,21 @@ public class readFile {
     }
 
     /*
-     * This method read a Sudoku File and produce from him a Sudoku File.
+     * This method read a Sudoku File and produce from him a Sudoku Table.
      */
-    public Solve_Sudoku readGraphSudoku(String filename) {
-
-        Path path = Paths.get(filename);
+    public static Solve_Sudoku readGraphSudoku(int[] arr) {
         Solve_Sudoku sd = new Solve_Sudoku();
 
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader(String.valueOf(path)));
-            String line = reader.readLine();
-            int vertex = 0;
+//        String[] splited = line.split("\\s+");
+        int vertex = 0;
 
-            while (line != null) {
-                for (int j = 0; j < line.length(); j++) {
-
-                    if (Character.isDigit(line.charAt(j))) {
-                        int color = Character.getNumericValue(line.charAt(j));
-                        sd.setColor(vertex, color);
-                        sd.setFixedColor(vertex);
-                    }
-                    vertex++;
-
-                }
-                line = reader.readLine();
+        for (int j = 0; j < arr.length; j++) {
+            if (arr[j] != 0) {
+                int color = arr[j];
+                sd.setColor(vertex, color);
+                sd.setFixedColor(vertex);
             }
-
-        } catch (IOException e) {
-            e.printStackTrace();
+            vertex++;
         }
         return sd;
     }
