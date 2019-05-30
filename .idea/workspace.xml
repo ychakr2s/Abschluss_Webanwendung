@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d36cd62-85e2-494a-b884-8801ce0a74a6" name="Default Changelist" comment="">
+    <list default="true" id="735711f9-29f5-40ac-b877-2890b07880c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/UploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/controller/UploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/controller/UploadController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +15,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/UploadController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-394">
-              <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+              <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3414#3415#0" expanded="true" />
@@ -37,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/indexStatus.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
-              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="17" />
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -63,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="636" column="44" lean-forward="true" selection-start-line="636" selection-start-column="44" selection-end-line="636" selection-end-column="44" />
+            <state relative-caret-position="1173">
+              <caret line="628" column="28" selection-start-line="628" selection-start-column="28" selection-end-line="628" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -73,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -117,37 +109,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/model/Context.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/model/JsonOutput.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/indexStatus.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/factory/FactoryAlgorithms.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/Heuristic_Algorithms/Largest_First_Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/Applications/Solve_Sudoku.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/ReadFile/readFile.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/main.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/UploadController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/main.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-      </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="320" />
-    <option name="y" value="85" />
-    <option name="width" value="1530" />
-    <option name="height" value="980" />
-  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -160,6 +121,11 @@
             <path>
               <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
@@ -310,14 +276,6 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="WebAppSecond" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppSecond" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -335,7 +293,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559243050375" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559243638749" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Graph_Algorithm_Second" />
   </component>
   <component name="RunDashboard">
@@ -399,17 +357,18 @@
       <workItem from="1559004774430" duration="5041000" />
       <workItem from="1559044659262" duration="11706000" />
       <workItem from="1559134103102" duration="33144000" />
-      <workItem from="1559216842338" duration="14775000" />
+      <workItem from="1559216842338" duration="15351000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84509000" />
+    <option name="totallyTimeSpent" value="85085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86372006" visible="true" weight="0.23489933" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86372006" visible="true" weight="0.23489933" />
       <window_info id="Structure" order="1" sideWeight="0.13627993" side_tool="true" weight="0.19463088" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -419,7 +378,7 @@
       <window_info id="Web" order="7" sideWeight="0.50213677" side_tool="true" weight="0.24966443" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35871157" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25622255" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39970717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -741,14 +700,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/UploadController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-394">
-          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3414#3415#0" expanded="true" />
@@ -760,7 +719,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/indexStatus.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="17" />
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -780,8 +739,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="636" column="44" lean-forward="true" selection-start-line="636" selection-start-column="44" selection-end-line="636" selection-end-column="44" />
+        <state relative-caret-position="1173">
+          <caret line="628" column="28" selection-start-line="628" selection-start-column="28" selection-end-line="628" selection-end-column="28" />
         </state>
       </provider>
     </entry>
