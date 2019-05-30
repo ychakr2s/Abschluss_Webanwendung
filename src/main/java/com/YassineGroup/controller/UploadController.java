@@ -83,34 +83,17 @@ public class UploadController {
     @RequestMapping(value = "/appUrl", method = RequestMethod.POST)
     public @ResponseBody
     int[] sudoku(@RequestBody int[] dataArrayToSend) {
-        int k = 0;
-        int[] a = new int[81];
-        int[] b = new int[81];
 
-        for (Integer data : dataArrayToSend) {
-            a[k] = data;
-            k++;
-        }
-        Solve_Sudoku sd = readFile.readGraphSudoku(a);
+        Solve_Sudoku sd = readFile.readGraphSudoku(dataArrayToSend);
+
         String out = sd.executeGraphAlgorithm();
-        System.out.println(out.toString());
-        int count = 0;
         String[] splited = out.split("\\s+");
-        for (int i = 0; i < 81; i++) {
-//            if (out.charAt(count) != ' ') {
-                b[i] = Integer.parseInt(splited[count]);
-                System.out.println(b[i]);
-//            }
-            count++;
-        }
-//        for (int i = 0; i < 81; i++) {
-////            if (out.charAt(count) != ' ') {
-//            System.out.println(b[i]);
-////            }
-////            count++;
-//        }
 
-        return b;
+        for (int i = 0; i < 81; i++) {
+            dataArrayToSend[i] = Integer.parseInt(splited[i]);
+        }
+
+        return dataArrayToSend;
     }
 
     @GetMapping("/uploadStatus")

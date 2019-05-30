@@ -89,8 +89,8 @@ function showCheckboxes() {
 }
 
 /*
-* in this methods send a list of Algorithms to Java Server in order to implement this selected Algorithms and send it back
-* using AJAX.
+* in this methods send a list of Algorithms to Java Server in order to implement this selected Algorithms and send it
+* back using AJAX.
  */
 function submitSelectedAlgorithms() {
     /* declare an checkbox array */
@@ -164,7 +164,9 @@ function isJson(str) {
     return true;
 }
 
-// ++++++++++++++++++++++++++++++ End Select Algorithmen ++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++ End Select Algorithmen +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++ Start Susoku +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 function generateSudoku() {
 
     var grid = [
@@ -307,4 +309,55 @@ function generateMyOwn() {
     this.getTileNumber = function (row, col) {
         return hGrid[row][col];
     };
+}
+
+function is_natural(s) {
+    if (s === "") {
+        return true;
+    } else {
+        let n = parseInt(s);
+        return n > 0 && n < 10 && n.toString() === s;
+    }
+}
+
+function isValid(arraySolution) {
+
+    for (let y = 0; y < 9; ++y) {
+        for (let x = 0; x < 9; ++x) {
+
+            let value = arraySolution[y][x];
+
+            if (is_natural(value)) {
+                if (value) {
+                    // Check the line
+                    for (var x2 = 0; x2 < 9; ++x2) {
+                        if (x2 !== x && arraySolution[y][x2] === value) {
+                            return false;
+                        }
+                    }
+
+                    // Check the column
+                    for (let y1 = 0; y1 < 9; ++y1) {
+                        if (y1 !== y && arraySolution[y1][x] === value) {
+                            return false;
+                        }
+                    }
+
+                    // Check the square
+                    let startY = Math.floor(y / 3) * 3;
+                    for (let y2 = startY; y2 < startY + 3; ++y2) {
+                        let startX = Math.floor(x / 3) * 3;
+                        for (x2 = startX; x2 < startX + 3; ++x2) {
+                            if ((x2 !== x || y2 !== y) && arraySolution[y2][x2] === value) {
+                                return false;
+                            }
+                        }
+                    }
+                }
+            } else {
+                return false;
+            }
+        }
+    }
+    return true;
 }

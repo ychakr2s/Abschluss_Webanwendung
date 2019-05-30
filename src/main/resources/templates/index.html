@@ -474,17 +474,38 @@
             initMyOwn();
         });
 
-        $("#finished").click(function () {
-            readTableToSend();
-            sendArrayToJava();
-            //   generate_table();
-        });
-
         $('.submitAlgorithm').click(function () {
             submitSelectedAlgorithms();
         });
+
+        $("#finished").click(function () {
+            readTableToSend();
+            sendArrayToJava();
+        });
         console.log("Salam i am from Ready jQuery: ", matrix);
     });
+
+    function init() {
+        puzzle = new generateSudoku();
+
+        for (var i = 0; i < 9; i++) {
+            for (var j = 0; j < 9; j++) {
+                var tile = document.getElementById("t" + i + "x" + j);
+                if (puzzle.getTileNumber(i, j) === 0) {
+                    tile.className = "cell";
+                    tile.value = "";
+                    tile.style.backgroundColor = "#FFFFFF";
+                    tile.disabled = true;
+                    tile.onclick = tOnClick;
+                } else {
+                    tile.style.backgroundColor = "#33FFD5";
+                    tile.className = "cell";
+                    tile.value = puzzle.getTileNumber(i, j);
+                    tile.disabled = true;
+                }
+            }
+        }
+    }
 
     function ownInput() {
         puzzle = new generateMyOwn();
@@ -510,25 +531,27 @@
     This method should serve to read and fill the Matrix with the inputed value from HTML
     */
     function readTableToSend() {
-        for (var i = 0; i < 9; i++) {
+        for (let i = 0; i < 9; i++) {
             matrix[i] = [];
-            for (var j = 0; j < 9; j++) {
-                var tile = document.getElementById("t" + i + "x" + j);
-                if (tile == "") {
+            for (let j = 0; j < 9; j++) {
+                let tile = document.getElementById("t" + i + "x" + j);
+                if (tile === "") {
                     matrix[i][j] = 0;
                 } else {
                     matrix[i][j] = tile.value;
                 }
-
             }
         }
     }
 
+    /*
+   This Method generates a table which read from java and print the results in Browser
+    */
     function printSudoku(array) {
-        var count = 0;
-        for (var i = 0; i < 9; i++) {
-            for (var j = 0; j < 9; j++) {
-                var tile = document.getElementById("t" + i + "x" + j);
+        let count = 0;
+        for (let i = 0; i < 9; i++) {
+            for (let j = 0; j < 9; j++) {
+                let tile = document.getElementById("t" + i + "x" + j);
                 if (tile.value === "") {
 
                     tile.style.backgroundColor = "#FFFFFF";
@@ -537,35 +560,12 @@
                 } else {
                     tile.style.backgroundColor = "#33ffd5";
                     tile.disabled = true;
-
                 }
                 count++;
             }
         }
     }
 
-    function init() {
-        puzzle = new generateSudoku();
-        console.log("I AM in THE method init(): ", matrix);
-
-        for (var i = 0; i < 9; i++) {
-            for (var j = 0; j < 9; j++) {
-                var tile = document.getElementById("t" + i + "x" + j);
-                if (puzzle.getTileNumber(i, j) === 0) {
-                    tile.className = "cell";
-                    tile.value = "";
-                    tile.style.backgroundColor = "#FFFFFF";
-                    tile.disabled = true;
-                    tile.onclick = tOnClick;
-                } else {
-                    tile.style.backgroundColor = "#33FFD5";
-                    tile.className = "cell";
-                    tile.value = puzzle.getTileNumber(i, j);
-                    tile.disabled = true;
-                }
-            }
-        }
-    }
 
     function tOnClick() {
         if (selectedTile == null) {
@@ -589,11 +589,11 @@
     * This method convert a Matrix, which is self entered or generated with the Button "gave me another" to Array in
     * order to send it to the java server to solve the Problem Sudoku.
     */
-    function convertMarixToArray() {
-        var myArray = Array(81);
-        var count = 0;
-        for (var i = 0; i < 9; i++) {
-            for (var j = 0; j < 9; j++) {
+    function convertMarixToArray(matrix) {
+        let myArray = Array(81);
+        let count = 0;
+        for (let i = 0; i < 9; i++) {
+            for (let j = 0; j < 9; j++) {
                 myArray[count] = matrix[i][j];
                 count++;
             }
@@ -601,92 +601,45 @@
         return myArray;
     }
 
-    // function convertArrayToMatrix(array) {
-    //
-    //     var count = 0;
-    //     for (var i = 0; i < 9; i++) {
-    //         myMatrix[i] = [];
-    //         for (var j = 0; j < 9; j++) {
-    //             myMatrix[i][j] = array[count];
-    //             count++;
-    //         }
-    //     }
-    //     return myMatrix;
-    // }
-
     /*
     * This Methode send an array to java using ajax and get the response as Array.
     * This response will be printed using Method generate_Table()
     */
     function sendArrayToJava() {
-        var dataArrayToSend = convertMarixToArray();
-        if (!isSolved(dataArrayToSend)) {
-            $.ajax({
-                contentType: "application/json",
-                type: "POST",
-                data: JSON.stringify(dataArrayToSend),
-                url: "/appUrl",
-                success: function (data) {
-                    console.log('done ' + data);
-                    printSudoku(data)
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    console.log('error while post');
-                }
-            });
+        // console.log("i am the matrix " + matrix);
+        if (isValid(matrix)) {
+            let dataArrayToSend = convertMarixToArray(matrix);
+
+            if (!isSolved(dataArrayToSend)) {
+
+                $.ajax({
+                    contentType: "application/json",
+                    type: "POST",
+                    data: JSON.stringify(dataArrayToSend),
+                    url: "/appUrl",
+                    success: function (data) {
+                        printSudoku(data)
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.log('error while post');
+                    }
+                });
+            }
+        } else {
+            alert("Halten Sie bitte die Regeln des Sudoku Spiels ein \n" +
+                "Es darf nur die Zahlen 1 bis 9 eingegeben werden \n"
+            );
         }
     }
 
     function isSolved(dataArrayToSend) {
         for (var i = 0; i < 81; i++) {
-            if (dataArrayToSend[i] == 0)
+            if (dataArrayToSend[i] === '') {
                 return false;
+            }
         }
         return true;
     }
-
-    /*
-    This Method generates a table which read from java and print the results in Browser
-     */
-    // function generate_table(array) {
-    //
-    //     // get the reference for the body
-    //     var matrixx = convertArrayToMatrix(array);
-    //     console.log(matrixx);
-    //     var body = document.getElementsByTagName("body")[0];
-    //
-    //     // creates a <table> element and a <tbody> element
-    //     var tbl = document.createElement("table");
-    //     var tblBody = document.createElement("tbody");
-    //
-    //     // creating all cells
-    //     for (var i = 0; i < 9; i++) {
-    //         // creates a table row
-    //         var row = document.createElement("tr");
-    //         for (var j = 0; j < 9; j++) {
-    //             // Create a <td> element and a text node, make the text
-    //             // node the contents of the <td>, and put the <td> at
-    //             // the end of the table row
-    //             var cell = document.createElement("td");
-    //             var cellText = document.createTextNode(matrixx[i][j]);
-    //             //  cell.setAttribute("id", "t"+i+"r"+j);
-    //             cell.appendChild(cellText);
-    //             row.appendChild(cell);
-    //         }
-    //
-    //         // add the row to the end of the table body
-    //         tblBody.appendChild(row);
-    //     }
-    //
-    //     // put the <tbody> in the <table>
-    //     tbl.appendChild(tblBody);
-    //     // appends <table> into
-    //     body.appendChild(tbl);
-    //     // sets the border attribute of tbl to 2;
-    //     tbl.setAttribute("border", "4px solid #0abb9c");
-    //     tbl.setAttribute("width", "40%");
-    // }
-
 
     //]]>
 </script>
