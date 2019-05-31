@@ -1,11 +1,11 @@
 package com.YassineGroup.factory;
 
 
-import com.YassineGroup.AbstractGraphColoring.GraphColoring;
-import com.YassineGroup.Exact_Algorithm.Backtracking;
-import com.YassineGroup.Exact_Algorithm.Linear_Programming;
-import com.YassineGroup.Graph.Graph;
-import com.YassineGroup.Heuristic_Algorithms.*;
+import com.YassineGroup.service.AbstractGraphColoring.GraphColoring;
+import com.YassineGroup.service.Exact_Algorithm.Backtracking;
+import com.YassineGroup.service.Exact_Algorithm.Linear_Programming;
+import com.YassineGroup.service.Graph.Graph;
+import com.YassineGroup.service.Heuristic_Algorithms.*;
 
 import java.util.ArrayList;
 import java.util.Scanner;

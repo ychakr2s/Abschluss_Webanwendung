@@ -1,10 +1,10 @@
 package com.YassineGroup.controller;
 
-import com.YassineGroup.Applications.Solve_Sudoku;
-import com.YassineGroup.Graph.Graph;
+import com.YassineGroup.service.Applications.Solve_Sudoku;
+import com.YassineGroup.service.Graph.Graph;
 import com.YassineGroup.factory.FactoryAlgorithms;
 import com.YassineGroup.model.Context;
-import com.YassineGroup.ReadFile.readFile;
+import com.YassineGroup.service.ReadFile.readFile;
 import com.YassineGroup.model.JsonOutput;
 import com.google.gson.Gson;
 import org.springframework.stereotype.Controller;

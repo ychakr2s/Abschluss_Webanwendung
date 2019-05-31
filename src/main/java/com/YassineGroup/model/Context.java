@@ -1,8 +1,8 @@
 package com.YassineGroup.model;
 
 
-import com.YassineGroup.AbstractGraphColoring.Algorithm;
-import com.YassineGroup.AbstractGraphColoring.GraphColoring;
+import com.YassineGroup.service.AbstractGraphColoring.Algorithm;
+import com.YassineGroup.service.AbstractGraphColoring.GraphColoring;
 
 import java.util.ArrayList;
 
