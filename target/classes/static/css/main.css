@@ -52,6 +52,10 @@ Theme Name: Yassine Chakri
     width: auto;
 }
 
+h3 {
+    margin-top: 10px;
+}
+
 /* ------------------------------------------End NAV BAR ---------------------------------------------------- */
 /* ------------------------------------------Start Slider ---------------------------------------------------- */
 .slider {
@@ -185,17 +189,6 @@ Theme Name: Yassine Chakri
     color: #444;
     font-size: 119%;
 }
-
-/*.btn-secondary {*/
-/*background-color: #4267b2;*/
-/*}*/
-
-/*.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {*/
-/*color: #fff;*/
-/*!* background-color: #545b62; *!*/
-/*border-color: #076dc4;*/
-/*background-color: #076dc4;*/
-/*}*/
 
 /*  ----------------------------------------- End Einfuerung-- -------------------------------------------------------*/
 
@@ -331,7 +324,6 @@ Theme Name: Yassine Chakri
 
 .multiselect #checkboxes label {
     display: block;
-
 }
 
 .multiselect #checkboxes label:hover {

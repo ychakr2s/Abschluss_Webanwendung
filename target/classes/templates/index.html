@@ -456,6 +456,7 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script language="javascript" type="text/javascript">
     //<![CDATA[
     var puzzle;
@@ -626,9 +627,12 @@
                 });
             }
         } else {
-            alert("Halten Sie bitte die Regeln des Sudoku Spiels ein \n" +
-                "Es darf nur die Zahlen 1 bis 9 eingegeben werden \n"
-            );
+            Swal.fire({
+                title: "Ein­ga­be­feh­ler",
+                text: "Halten Sie bitte die Regeln des Sudoku Spiels ein!" +
+                    "Es darf nur die Zahlen 1 bis 9 eingegeben werden",
+                type: "warning"
+            })
         }
     }
 

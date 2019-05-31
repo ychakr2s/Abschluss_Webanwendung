@@ -132,14 +132,18 @@ function submitSelectedAlgorithms() {
                     document.getElementById("showmyjson").innerHTML = x;
 
                 } else
-                    document.getElementById("showmyjson").innerHTML = "<h3>" + data + "</h3>";
+                    document.getElementById("showmyjson").innerHTML = "<h3>" + data + "!" + "</h3>";
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.log('error while post to java');
             }
         });
     } else {
-        alert("Bitte mindestens eines der Checkboxen anzreuzen");
+        Swal.fire({
+            type: "warning",
+            title: "Ankreuzen",
+            text: "Bitte mindestens eines der Checkboxen anzreuzen",
+        })
     }
 }
 
