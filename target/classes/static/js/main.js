@@ -7,71 +7,8 @@ $(function () {
     $('.slider, .carousel-item').height(windowHeigh - (upperH + navH));
 });
 
-function getValueUsingClass(){
-    /* declare an checkbox array */
-    var chkArray = [];
 
-    /* look for all checkboes that have a class 'chk' attached to it and check if it was checked */
-    $(".chk:checked").each(function() {
-        chkArray.push($(this).val());
-    });
-
-    /* we join the array separated by the comma */
-     var selected = JSON.stringify(chkArray);
-     console.log(selected);
-    $.ajax({
-        contentType: "application/json",
-        type: "POST",
-        data: selected,
-        url: "/check",
-        success: function (data) {
-            console.log('done');
-
-            console.log("my data ", data);
-            // alert("Salam: "+convertArrayToMatrix(data));
-            // generate_table(data);
-        },
-        error: function (jqXHR, textStatus, errorThrown) {
-            console.log('error while post');
-        }
-    });
-
-    /* check if there is selected checkboxes, by default the length is 1 as it contains one single comma */
-    // if(selected.length > 0){
-    //     alert("You have selected " + selected);
-    // }else{
-    //     alert("Please at least check one of the checkbox");
-    // }
-}
-
-// function sendcheckList() {
-//     //var tempId = id;
-//     var dataArrayToSend = $(".myCheckBox").serialize();
-//
-//     $.ajax({
-//         // contentType: "application/json",
-//         type: "POST",
-//         data: dataArrayToSend,
-//         url: "/editCustomer",
-//         success: function (data) {
-//             console.log('done');
-//
-//             console.log("my data ", convertArrayToMatrix(data));
-//             // alert("Salam: "+convertArrayToMatrix(data));
-//             generate_table(data);
-//         },
-//         error: function (jqXHR, textStatus, errorThrown) {
-//             console.log('error while post');
-//         }
-//
-//     });
-// }
-
-
-
-
-
-// ++++++++++++++++++++++++++ Start Change the Color if the link be clicked +++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++ Start Change the Color if the link is clicked +++++++++++++++++++++++++++++++++++++++++
 var header = document.getElementById("myDIV");
 var btns = header.getElementsByClassName("nav-item");
 for (var i = 0; i < btns.length; i++) {
@@ -81,9 +18,9 @@ for (var i = 0; i < btns.length; i++) {
         this.className += " active";
     });
 }
-// ++++++++++++++++++++++++++ End Change the Color if the link be clicked +++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++ End Change the Color if the link is clicked +++++++++++++++++++++++++++++++++++++++++++
 
-// ++++++++++++++++++++++++++++++ Start scroll from navbar to the determined element ++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++ Start scroll from navbar to the determined element ++++++++++++++++++++++++++++++++
 $('.nav-item .einfuer').click(function () {
 
     $('html, body').animate({
@@ -137,7 +74,7 @@ $('.nav-item .observat').click(function () {
 
     }, 1000);
 });
-// ++++++++++++++++++++++++++++++ Start Select Algorithmen ++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++ Start Select Algorithmen +++++++++++++++++++++++++++++++++
 var expanded = false;
 
 function showCheckboxes() {
@@ -151,7 +88,89 @@ function showCheckboxes() {
     }
 }
 
-// ++++++++++++++++++++++++++++++ End Select Algorithmen ++++++++++++++++++++++++++++++++++
+/*
+* in this methods send a list of Algorithms to Java Server in order to implement this selected Algorithms and send it
+* back using AJAX.
+ */
+function submitSelectedAlgorithms() {
+    /* declare an checkbox array */
+    var chkArray = [];
+
+    /* look for all checkboes that have a class 'chk' attached to it and check if it was checked */
+    $(".chk:checked").each(function () {
+        chkArray.push($(this).val());
+    });
+
+    /* we join the array separated by the comma */
+    var selected = JSON.stringify(chkArray);
+    console.log(selected);
+
+    if (chkArray.length > 0) {
+        let x = "";
+        $.ajax({
+            contentType: "application/json",
+            type: "POST",
+            data: selected,
+            url: "/check",
+            success: function (data) {
+                console.log('done done done');
+
+                if (isJson(data)) {
+                    let myObj = JSON.parse(data);
+                    let y = "";
+                    x = "<div>" + "<hr>";
+                    x += "<h4>" + "Das Ergebnis der Implementierung der Algorithmen:" + "</h4>";
+                    for (var i = 0; i < myObj.algorithms.length; i++) {
+                        y += "<p>" + "Es wird für " + myObj.algorithms[i].algorithm + " " + myObj.algorithms[i].numberColors +
+                            " Farben gebraucht." + "</p>"
+                    }
+                    x += "<p>" + y + "</p>";
+                    x += "<b>" + "<a " + " id = " + "showJsonText " + " onclick=" + "showAndHide()" + " >" + "Das ganze Ergebnis in JSON Format anzeigen"
+                        + "</a>" + "</b>";
+                    x += "<pre>" + JSON.stringify(myObj, null, '\t') + "</pre>";
+                    x += "<hr>" + "</div>";
+                    document.getElementById("showmyjson").innerHTML = x;
+
+                } else
+                    document.getElementById("showmyjson").innerHTML = "<h3>" + data + "!" + "</h3>";
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log('error while post to java');
+            }
+        });
+    } else {
+        Swal.fire({
+            type: "warning",
+            title: "Ankreuzen",
+            text: "Bitte mindestens eines der Checkboxen anzreuzen",
+        })
+    }
+}
+
+function showAndHide() {
+
+    document.getElementsByTagName('pre')[0].style.display =
+        (document.getElementsByTagName('pre')[0].style.display !== "block") ?
+            "block" : "none";
+    if (document.getElementsByTagName('pre')[0].style.display === "block") {
+        document.getElementById("showJsonText").innerText = "Das Ergebnis ausblenden"
+    } else {
+        document.getElementById("showJsonText").innerText = "Das ganze Ergebnis in JSON Format anzeigen"
+    }
+}
+
+function isJson(str) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
+}
+
+// ++++++++++++++++++++++++++++++ End Select Algorithmen +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++ Start Susoku +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 function generateSudoku() {
 
     var grid = [
@@ -168,10 +187,10 @@ function generateSudoku() {
 
     var hGrid = [
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0], //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0], //++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -208,7 +227,7 @@ function shuffle(grid) {
         sub = Math.floor(Math.random() * 3);
         col1 = Math.floor(Math.random() * 3);
         col2 = Math.floor(Math.random() * 3);
-        while (col1 == col2) col2 = Math.floor(Math.random() * 3);
+        while (col1 === col2) col2 = Math.floor(Math.random() * 3);
         for (j = 0; j < grid.length; j++) {
             temp = grid[j][sub * 3 + col1];
             grid[j][sub * 3 + col1] = grid[j][sub * 3 + col2];
@@ -222,7 +241,7 @@ function shuffle(grid) {
         sub = Math.floor(Math.random() * 3);
         row1 = Math.floor(Math.random() * 3);
         row2 = Math.floor(Math.random() * 3);
-        while (row1 == row2) row2 = Math.floor(Math.random() * 3);
+        while (row1 === row2) row2 = Math.floor(Math.random() * 3);
         for (j = 0; j < grid.length; j++) {
             temp = grid[sub * 3 + row1][j];
             grid[sub * 3 + row1][j] = grid[sub * 3 + row2][j];
@@ -234,12 +253,12 @@ function shuffle(grid) {
     for (i = 0; i < 25; i++) {
         num1 = Math.floor(Math.random() * 9 + 1);
         num2 = Math.floor(Math.random() * 9 + 1);
-        while (num1 == num2) num2 = Math.floor(Math.random() * 9 + 1);
+        while (num1 === num2) num2 = Math.floor(Math.random() * 9 + 1);
         for (j = 0; j < grid.length; j++) {
             for (k = 0; k < grid[j].length; k++) {
-                if (grid[j][k] == num1)
+                if (grid[j][k] === num1)
                     grid[j][k] = num2;
-                else if (grid[j][k] == num2)
+                else if (grid[j][k] === num2)
                     grid[j][k] = num1;
             }
         }
@@ -281,10 +300,10 @@ function generateMyOwn() {
 
     var hGrid = [
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0], //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0], //++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -294,4 +313,55 @@ function generateMyOwn() {
     this.getTileNumber = function (row, col) {
         return hGrid[row][col];
     };
+}
+
+function is_natural(s) {
+    if (s === "") {
+        return true;
+    } else {
+        let n = parseInt(s);
+        return n > 0 && n < 10 && n.toString() === s;
+    }
+}
+
+function isValid(arraySolution) {
+
+    for (let y = 0; y < 9; ++y) {
+        for (let x = 0; x < 9; ++x) {
+
+            let value = arraySolution[y][x];
+
+            if (is_natural(value)) {
+                if (value) {
+                    // Check the line
+                    for (var x2 = 0; x2 < 9; ++x2) {
+                        if (x2 !== x && arraySolution[y][x2] === value) {
+                            return false;
+                        }
+                    }
+
+                    // Check the column
+                    for (let y1 = 0; y1 < 9; ++y1) {
+                        if (y1 !== y && arraySolution[y1][x] === value) {
+                            return false;
+                        }
+                    }
+
+                    // Check the square
+                    let startY = Math.floor(y / 3) * 3;
+                    for (let y2 = startY; y2 < startY + 3; ++y2) {
+                        let startX = Math.floor(x / 3) * 3;
+                        for (x2 = startX; x2 < startX + 3; ++x2) {
+                            if ((x2 !== x || y2 !== y) && arraySolution[y2][x2] === value) {
+                                return false;
+                            }
+                        }
+                    }
+                }
+            } else {
+                return false;
+            }
+        }
+    }
+    return true;
 }
