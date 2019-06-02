@@ -118,11 +118,9 @@ function submitSelectedAlgorithms() {
             }
         }
         selected = JSON.stringify(chkArray);
-        // console.log(selected);
         sendAlgorithms(selected);
     } else {
         selected = JSON.stringify(chkArray);
-        console.log(selected);
         sendAlgorithms(selected);
     }
 }

@@ -8,7 +8,6 @@ import com.YassineGroup.service.Graph.Graph;
 import com.YassineGroup.service.Heuristic_Algorithms.*;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 /*
  * Factory generates objects of concrete class based on given information.
@@ -20,7 +19,7 @@ public class FactoryAlgorithms {
     }
 
     public static ArrayList<GraphColoring> getAlgorithms(ArrayList<String> algorithms, Graph gr) {
-//        System.out.println(algorithms.get(algorithms.size() - 1));
+
         ArrayList<GraphColoring> algorithm = new ArrayList<>();
         String num = algorithms.get(algorithms.size() - 1);
         if (isNumber(num)) {
@@ -53,7 +52,6 @@ public class FactoryAlgorithms {
                 algorithm.add(new Linear_Programming(gr));
             }
             if (algorithm1.contains("Backtracking")) {
-                System.out.println("geben Sie fuer Backtracking Problem Anzahl der m Farben ein: ");
                 algorithm.add(new Backtracking(gr, m));
             }
         }
@@ -63,9 +61,7 @@ public class FactoryAlgorithms {
     private static boolean isNumber(String a) {
         try {
             Integer.parseInt(a);
-            // is an integer!
         } catch (NumberFormatException e) {
-            // not an integer!
             return false;
         }
         return true;
