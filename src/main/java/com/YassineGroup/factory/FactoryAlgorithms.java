@@ -15,10 +15,16 @@ import java.util.Scanner;
  */
 public class FactoryAlgorithms {
 
+    static int m;
+
     FactoryAlgorithms() {
     }
 
-    public static ArrayList<GraphColoring> getAlgorithms(ArrayList<String> algorithms, Graph gr) {
+    FactoryAlgorithms(int m) {
+        this.m = m;
+    }
+
+    public static ArrayList<GraphColoring> getAlgorithms(ArrayList<String> algorithms, Graph gr, int m) {
         ArrayList<GraphColoring> algorithm = new ArrayList<>();
 
         for (String algorithm1 : algorithms) {
@@ -47,9 +53,9 @@ public class FactoryAlgorithms {
                 algorithm.add(new Linear_Programming(gr));
             }
             if (algorithm1.contains("Backtracking")) {
-                System.out.println("geben Sie fuer Backtracking Problem Anzahl der m Farben ein: ");
-                Scanner sc = new Scanner(System.in);
-                int m = sc.nextInt();
+//                System.out.println("geben Sie fuer Backtracking Problem Anzahl der m Farben ein: ");
+//                Scanner sc = new Scanner(System.in);
+//                int m = sc.nextInt();
                 algorithm.add(new Backtracking(gr, m));
             }
         }

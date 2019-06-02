@@ -23,7 +23,7 @@ public class UploadController {
 
     public static String UPLOADED_FOLDER = "uploadingDir/";
     private String fileName = "";
-
+    private int m;
 
     @GetMapping("/")
     public String index() {
@@ -62,6 +62,14 @@ public class UploadController {
         return "redirect:/uploadStatus";
     }
 
+    @RequestMapping(value = "/backtracking", method = RequestMethod.POST)
+    public @ResponseBody
+    void notAloneBacktracking(@RequestBody int selected) {
+
+        this.m = selected;
+        System.out.println(m);
+    }
+
     @RequestMapping(value = "/check", method = RequestMethod.POST)
     public @ResponseBody
     String yourMethod(@RequestBody ArrayList<String> selected) {
@@ -71,7 +79,8 @@ public class UploadController {
         } else {
             readFile rd = new readFile();
             Graph gr = rd.readGraph(fileName);
-            Context imp = new Context(FactoryAlgorithms.getAlgorithms(selected, gr));
+            System.out.println(m);
+            Context imp = new Context(FactoryAlgorithms.getAlgorithms(selected, gr, this.m));
             imp.execute();
             JsonOutput jso = new JsonOutput(gr, imp.execute());
             Gson gs = new Gson();
