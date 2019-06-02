@@ -14,12 +14,18 @@ import java.util.Scanner;
  * Factory generates objects of concrete class based on given information.
  */
 public class FactoryAlgorithms {
+    private static int m;
 
     FactoryAlgorithms() {
     }
 
     public static ArrayList<GraphColoring> getAlgorithms(ArrayList<String> algorithms, Graph gr) {
+//        System.out.println(algorithms.get(algorithms.size() - 1));
         ArrayList<GraphColoring> algorithm = new ArrayList<>();
+        String num = algorithms.get(algorithms.size() - 1);
+        if (isNumber(num)) {
+            m = Integer.parseInt(num);
+        }
 
         for (String algorithm1 : algorithms) {
             if (algorithm1.contains("Greedy")) {
@@ -48,11 +54,20 @@ public class FactoryAlgorithms {
             }
             if (algorithm1.contains("Backtracking")) {
                 System.out.println("geben Sie fuer Backtracking Problem Anzahl der m Farben ein: ");
-                Scanner sc = new Scanner(System.in);
-                int m = sc.nextInt();
                 algorithm.add(new Backtracking(gr, m));
             }
         }
         return algorithm;
+    }
+
+    private static boolean isNumber(String a) {
+        try {
+            Integer.parseInt(a);
+            // is an integer!
+        } catch (NumberFormatException e) {
+            // not an integer!
+            return false;
+        }
+        return true;
     }
 }

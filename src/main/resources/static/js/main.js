@@ -95,56 +95,71 @@ function showCheckboxes() {
 function submitSelectedAlgorithms() {
     /* declare an checkbox array */
     var chkArray = [];
-
+    let mNumber;
+    let selected;
     /* look for all checkboes that have a class 'chk' attached to it and check if it was checked */
     $(".chk:checked").each(function () {
         chkArray.push($(this).val());
     });
-
-    /* we join the array separated by the comma */
-    var selected = JSON.stringify(chkArray);
-    console.log(selected);
-
-    if (chkArray.length > 0) {
-        let x = "";
-        $.ajax({
-            contentType: "application/json",
-            type: "POST",
-            data: selected,
-            url: "/check",
-            success: function (data) {
-                console.log('done done done');
-
-                if (isJson(data)) {
-                    let myObj = JSON.parse(data);
-                    let y = "";
-                    x = "<div>" + "<hr>";
-                    x += "<h4>" + "Das Ergebnis der Implementierung der Algorithmen:" + "</h4>";
-                    for (var i = 0; i < myObj.algorithms.length; i++) {
-                        y += "<p>" + "Es wird für " + myObj.algorithms[i].algorithm + " " + myObj.algorithms[i].numberColors +
-                            " Farben gebraucht." + "</p>"
-                    }
-                    x += "<p>" + y + "</p>";
-                    x += "<b>" + "<a " + " id = " + "showJsonText " + " onclick=" + "showAndHide()" + " >" + "Das ganze Ergebnis in JSON Format anzeigen"
-                        + "</a>" + "</b>";
-                    x += "<pre>" + JSON.stringify(myObj, null, '\t') + "</pre>";
-                    x += "<hr>" + "</div>";
-                    document.getElementById("showmyjson").innerHTML = x;
-
-                } else
-                    document.getElementById("showmyjson").innerHTML = "<h3>" + data + "!" + "</h3>";
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.log('error while post to java');
-            }
-        });
-    } else {
+    if (chkArray.length === 0) {
         Swal.fire({
             type: "warning",
             title: "Ankreuzen",
             text: "Bitte mindestens eines der Checkboxen anzreuzen",
         })
+    } else if (chkArray.includes("Backtracking")) {
+        mNumber = prompt(" geben Sie fuer Backtracking Problem Anzahl der m Farben ein:",);
+
+        if (is_natural(mNumber)) {
+            if (mNumber == null || mNumber === "") {
+                alert("Sie haben den Vorgang abgebrochen");
+            } else {
+                chkArray.push(mNumber);
+            }
+        }
+        selected = JSON.stringify(chkArray);
+        // console.log(selected);
+        sendAlgorithms(selected);
+    } else {
+        selected = JSON.stringify(chkArray);
+        console.log(selected);
+        sendAlgorithms(selected);
     }
+}
+
+function sendAlgorithms(selected) {
+    let x = "";
+    $.ajax({
+        contentType: "application/json",
+        type: "POST",
+        data: selected,
+        url: "/check",
+        success: function (data) {
+            console.log('done done done');
+
+            if (isJson(data)) {
+                let myObj = JSON.parse(data);
+                let y = "";
+                x = "<div>" + "<hr>";
+                x += "<h4>" + "Das Ergebnis der Implementierung der Algorithmen:" + "</h4>";
+                for (var i = 0; i < myObj.algorithms.length; i++) {
+                    y += "<p>" + "Es wird für " + myObj.algorithms[i].algorithm + " " + myObj.algorithms[i].numberColors +
+                        " Farben gebraucht." + "</p>"
+                }
+                x += "<p>" + y + "</p>";
+                x += "<b>" + "<a " + " id = " + "showJsonText " + " onclick=" + "showAndHide()" + " >" + "Das ganze Ergebnis in JSON Format anzeigen"
+                    + "</a>" + "</b>";
+                x += "<pre>" + JSON.stringify(myObj, null, '\t') + "</pre>";
+                x += "<hr>" + "</div>";
+                document.getElementById("showmyjson").innerHTML = x;
+
+            } else
+                document.getElementById("showmyjson").innerHTML = "<h3>" + data + "!" + "</h3>";
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log('error while post to java');
+        }
+    });
 }
 
 function showAndHide() {
