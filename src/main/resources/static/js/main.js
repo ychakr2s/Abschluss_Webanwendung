@@ -133,7 +133,6 @@ function sendAlgorithms(selected) {
         data: selected,
         url: "/check",
         success: function (data) {
-            console.log('done done done');
 
             if (isJson(data)) {
                 let myObj = JSON.parse(data);
@@ -141,8 +140,14 @@ function sendAlgorithms(selected) {
                 x = "<div>" + "<hr>";
                 x += "<h4>" + "Das Ergebnis der Implementierung der Algorithmen:" + "</h4>";
                 for (var i = 0; i < myObj.algorithms.length; i++) {
-                    y += "<p>" + "Es wird für " + myObj.algorithms[i].algorithm + " " + myObj.algorithms[i].numberColors +
-                        " Farben gebraucht." + "</p>"
+                    if (myObj.algorithms[i].numberColors === 0) {
+                        y += "<p>" + "Der Algorithmus " + myObj.algorithms[i].algorithm + " kann nicht gefärbt werden" + "</p>";
+                        myObj.algorithms[i].numberColors = "null";
+                        myObj.algorithms[i].usedColors = "null";
+                        myObj.algorithms[i].coloredNodes = "null";
+                    } else
+                        y += "<p>" + "Es wird für " + myObj.algorithms[i].algorithm + " " + myObj.algorithms[i].numberColors +
+                            " Farben gebraucht." + "</p>"
                 }
                 x += "<p>" + y + "</p>";
                 x += "<b>" + "<a " + " id = " + "showJsonText " + " onclick=" + "showAndHide()" + " >" + "Das ganze Ergebnis in JSON Format anzeigen"
