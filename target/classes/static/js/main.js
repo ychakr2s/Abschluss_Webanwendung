@@ -57,14 +57,14 @@ $('.nav-item .heuristische').click(function () {
     }, 1000);
 });
 
-$('.nav-item .implementier').click(function () {
-
-    $('html, body').animate({
-
-        scrollTop: $('.implemen').offset().top
-
-    }, 1000);
-});
+// $('.nav-item .implementier').click(function () {
+//
+//     $('html, body').animate({
+//
+//         scrollTop: $('.implemen').offset().top
+//
+//     }, 1000);
+// });
 
 $('.nav-item .observat').click(function () {
 
