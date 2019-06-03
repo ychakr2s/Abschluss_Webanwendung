@@ -141,7 +141,7 @@ function sendAlgorithms(selected) {
                 x += "<h4>" + "Das Ergebnis der Implementierung der Algorithmen:" + "</h4>";
                 for (var i = 0; i < myObj.algorithms.length; i++) {
                     if (myObj.algorithms[i].numberColors === 0) {
-                        y += "<p>" + "Der Algorithmus " + myObj.algorithms[i].algorithm + " kann nicht gefärbt werden" + "</p>";
+                        y += "<p>" + "Der Graph mit " + myObj.algorithms[i].algorithm + " kann nicht gefärbt werden" + "</p>";
                         myObj.algorithms[i].numberColors = "null";
                         myObj.algorithms[i].usedColors = "null";
                         myObj.algorithms[i].coloredNodes = "null";
@@ -153,6 +153,7 @@ function sendAlgorithms(selected) {
                 x += "<b>" + "<a " + " id = " + "showJsonText " + " onclick=" + "showAndHide()" + " >" + "Das ganze Ergebnis in JSON Format anzeigen"
                     + "</a>" + "</b>";
                 x += "<pre>" + JSON.stringify(myObj, null, '\t') + "</pre>";
+                x += "<b>" + "<a " + " id = " + "showJsonTh " + " onclick=" + "hide()" + " >" + "</a>" + "</b>";
                 x += "<hr>" + "</div>";
                 document.getElementById("showmyjson").innerHTML = x;
 
@@ -172,9 +173,20 @@ function showAndHide() {
             "block" : "none";
     if (document.getElementsByTagName('pre')[0].style.display === "block") {
         document.getElementById("showJsonText").innerText = "Das Ergebnis ausblenden"
+        document.getElementById("showJsonTh").innerText = "Das Ergebnis ausblenden"
     } else {
         document.getElementById("showJsonText").innerText = "Das ganze Ergebnis in JSON Format anzeigen"
+        document.getElementById("showJsonTh").innerText = ""
     }
+}
+
+function hide() {
+    document.getElementsByTagName('pre')[0].style.display =
+        (document.getElementsByTagName('pre')[0].style.display !== "block") ?
+            "none" : "";
+    document.getElementById("showJsonTh").innerText = ""
+    document.getElementById("showJsonText").innerText = "Das ganze Ergebnis in JSON Format anzeigen"
+
 }
 
 function isJson(str) {

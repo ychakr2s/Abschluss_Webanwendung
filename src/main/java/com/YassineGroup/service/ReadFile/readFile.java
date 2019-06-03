@@ -66,13 +66,15 @@ public class readFile {
 //        String[] splited = line.split("\\s+");
         int vertex = 0;
 
-        for (int j = 0; j < arr.length; j++) {
+        int j = 0;
+        while (j < arr.length) {
             if (arr[j] != 0) {
                 int color = arr[j];
                 sd.setColor(vertex, color);
                 sd.setFixedColor(vertex);
             }
             vertex++;
+            j++;
         }
         return sd;
     }

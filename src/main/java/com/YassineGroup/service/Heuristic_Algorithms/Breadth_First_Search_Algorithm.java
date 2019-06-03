@@ -19,9 +19,6 @@ public class Breadth_First_Search_Algorithm extends GraphColoring {
     public Breadth_First_Search_Algorithm(Graph g) {
         super(g);
 
-        // Mark all the vertices as not visited(By default set as false)
-        this.visited = new boolean[V];
-
         this.resultColors = new int[V];
         Arrays.fill(resultColors, -1);
 
@@ -57,7 +54,6 @@ public class Breadth_First_Search_Algorithm extends GraphColoring {
 
             // Get all adjacent vertices of the dequeued vertex s.
             // If a adjacent has not been visited, then mark it visited and enqueue it.
-
             for (int n : graph.getEdges(s)) {
                 if (!visited[n]) {
                     visited[n] = true;
@@ -76,8 +72,12 @@ public class Breadth_First_Search_Algorithm extends GraphColoring {
 
     @Override
     public Algorithm executeGraphAlgorithm() {
+        // Mark all the vertices as not visited(By default set as false)
+        this.visited = new boolean[V];
+
         Random rn = new Random();
         int chooseStart = rn.nextInt(V);
+
         utilBFS(chooseStart);
         for (int i = 0; i < V; i++) {
 
