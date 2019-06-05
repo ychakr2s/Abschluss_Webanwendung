@@ -80,7 +80,7 @@ h3 {
 }
 
 .slider .carousel-inner h2 span {
-    color: #FFEBCD;
+    color: #130e13c9;
     font-weight: bold;
     font-style: oblique;
     z-index: 3;
@@ -128,11 +128,26 @@ h3 {
 }
 
 .slider .carousel-indicators li {
-    height: 8px;
+    height: 6px;
     cursor: pointer;
 }
 
-/*  ----------------------------------------- End Slider-- ----------------------------------------------------------*/
+/* ------------------------------------------ Start Slider for implementeirung -------------------------------*/
+.slider .carousel-twwo {
+    background-image: url('../images/Graph.jpg');
+}
+
+.slider .carousel-thhree {
+    background-image: url('../images/sudoku4.png');
+}
+
+.slider .carousel-foour {
+    background-image: url('../images/Graph1.jpg');
+}
+
+/* ------------------------------------------ End Slider for implementeirung ----------------------------------*/
+
+/*  ----------------------------------------- End Slider ------------------------------------------------------------*/
 /*  ----------------------------------------- Start Einfuerung-- ----------------------------------------------------*/
 .startBody .myHeading h1 {
     font-size: 2em;
@@ -193,6 +208,62 @@ h3 {
 /*  ----------------------------------------- End Einfuerung-- -------------------------------------------------------*/
 
 /* -------------------------------- Start Upload File for Coloring -------------------------------------------- */
+/* -- Start Anweisung -- */
+.anweisung h3 {
+    font-size: 20px;
+    line-height: 1.17;
+    letter-spacing: 1.2px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.anweisung ul {
+    clear: both;
+    list-style-type: none;
+    padding: 0 0 30px 13%;
+    color: #000;
+    /* font-family: 'Moderat'; */
+    clear: both;
+    list-style-type: none;
+    padding: 0 0 30px 13%;
+}
+
+.anweisung ul li {
+    line-height: 24pt;
+    margin-bottom: 10px;
+    position: relative;
+    color: #000;
+    font-size: 15pt
+    /* font-family: 'Moderat'; */
+}
+
+.anweisung ul li span {
+    color: #000;
+    font-family: 'Moderat';
+    font-size: 15pt;
+}
+
+.anweisung ul li::before {
+    color: #33ccb5;
+    content: ">";
+    font-size: 18pt;
+    font-weight: 400;
+    left: -35px;
+    margin-top: -1px;
+    position: absolute;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 40%;
+    padding: 5px;
+}
+
+/* -- End Anweisung -- */
+
 .dropdown {
     display: block;
     margin-bottom: 10px;
@@ -489,3 +560,56 @@ td input {
 }
 
 /* --------------------------------------------End Sudoku --------------------------------------------------------- */
+/* ---------------------------------- Start footer ----------------------------------- */
+.bd-footer {
+    padding: 4rem 0;
+    margin-top: 4rem;
+    font-size: 85%;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+footer {
+    display: block;
+}
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.bd-footer {
+    padding: 4rem 0;
+    margin-top: 4rem;
+    font-size: 85%;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.bd-footer {
+    text-align: left;
+}
+
+.bd-footer-links {
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+.bd-footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.bd-footer a {
+    font-weight: 500;
+    color: #464a4c;
+}
+
+.bd-footer p {
+    margin-bottom: 0;
+}
+
+/* ------------------------------- End footer -----------------------------------  */

@@ -9,15 +9,26 @@ $(function () {
 
 
 // ++++++++++++++++++++++++++ Start Change the Color if the link is clicked +++++++++++++++++++++++++++++++++++++++++
-var header = document.getElementById("myDIV");
-var btns = header.getElementsByClassName("nav-item");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
-}
+// var header = document.getElementById("myDIV");
+// var btns = header.getElementsByClassName("nav-item");
+// for (var i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener("click", function () {
+//         var current = document.getElementsByClassName("active");
+//         current[0].className = current[0].className.replace(" active", "");
+//         this.className += " active";
+//     });
+// }
+
+// var header = document.getElementById("myDIVimple");
+// var btns = header.getElementsByClassName("nav-impl");
+// for (var i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener("click", function () {
+//         var current = document.getElementsByClassName("active");
+//         current[0].className = current[0].className.replace(" active", "");
+//         this.className += " active";
+//     });
+// }
+
 // ++++++++++++++++++++++++++ End Change the Color if the link is clicked +++++++++++++++++++++++++++++++++++++++++++
 
 // ++++++++++++++++++++++++++++++ Start scroll from navbar to the determined element ++++++++++++++++++++++++++++++++
@@ -57,15 +68,6 @@ $('.nav-item .heuristische').click(function () {
     }, 1000);
 });
 
-$('.nav-item .implementier').click(function () {
-
-    $('html, body').animate({
-
-        scrollTop: $('.implemen').offset().top
-
-    }, 1000);
-});
-
 $('.nav-item .observat').click(function () {
 
     $('html, body').animate({
@@ -74,6 +76,25 @@ $('.nav-item .observat').click(function () {
 
     }, 1000);
 });
+
+// $('.nav-impl #impllement').click(function () {
+//
+//     $('html, body').animate({
+//
+//         scrollTop: $('.implemen').offset().top
+//
+//     }, 1000);
+// });
+
+$('.nav-impl #ssudoku').click(function () {
+
+    $('html, body').animate({
+
+        scrollTop: $('.mySudoku').offset().top
+
+    }, 1000);
+});
+
 // ++++++++++++++++++++++++++++++ Start Select Algorithmen +++++++++++++++++++++++++++++++++
 var expanded = false;
 
@@ -96,14 +117,18 @@ function showCheckboxes() {
 function submitSelectedAlgorithms() {
     /* declare an checkbox array */
     var chkArray = [];
-
+    let mNumber;
+    let selected;
     /* look for all checkboes that have a class 'chk' attached to it and check if it was checked */
     $(".chk:checked").each(function () {
         chkArray.push($(this).val());
     });
+<<<<<<< HEAD
 
     let mNumber;
     let selected;
+=======
+>>>>>>> 54d3cdb328f1679c0d1520aba6b5ba499699f45a
     if (chkArray.length === 0) {
         Swal.fire({
             type: "warning",
@@ -112,46 +137,33 @@ function submitSelectedAlgorithms() {
         })
     } else if (chkArray.includes("Backtracking")) {
 
-        mNumber = prompt("bitte geben Sie m numberColors für Backtracking:",);
+        mNumber = prompt(" geben Sie fuer Backtracking Problem Anzahl der m Farben ein:",);
+
         if (is_natural(mNumber)) {
             if (mNumber == null || mNumber === "") {
                 alert("Sie haben den Vorgang abgebrochen");
             } else {
-                sendMcoloringToController(mNumber);
+
+                chkArray.push(mNumber);
             }
-            selected = JSON.stringify(chkArray);
-            sendAlgorithms(selected);
         }
+        selected = JSON.stringify(chkArray);
+        sendAlgorithms(selected);
     } else {
         selected = JSON.stringify(chkArray);
         sendAlgorithms(selected);
     }
 }
 
-function sendMcoloringToController(mNumber) {
-    console.log("send Backtracking");
-    $.ajax({
-        contentType: "application/json",
-        type: "POST",
-        data: mNumber,
-        url: "/backtracking",
-        success: function (data) {
-            console.log('mColring is there');
-        },
-        error: function (jqXHR, textStatus, errorThrown) {
-            console.log('error while post to java');
-        }
-    });
-}
 
 function sendAlgorithms(selected) {
+    let x = "";
     $.ajax({
         contentType: "application/json",
         type: "POST",
         data: selected,
         url: "/check",
         success: function (data) {
-            console.log('done done done');
 
             if (isJson(data)) {
                 let myObj = JSON.parse(data);
@@ -159,13 +171,20 @@ function sendAlgorithms(selected) {
                 x = "<div>" + "<hr>";
                 x += "<h4>" + "Das Ergebnis der Implementierung der Algorithmen:" + "</h4>";
                 for (var i = 0; i < myObj.algorithms.length; i++) {
-                    y += "<p>" + "Es wird für " + myObj.algorithms[i].algorithm + " " + myObj.algorithms[i].numberColors +
-                        " Farben gebraucht." + "</p>"
+                    if (myObj.algorithms[i].numberColors === 0) {
+                        y += "<p>" + "Der Graph mit " + myObj.algorithms[i].algorithm + " kann nicht gefärbt werden" + "</p>";
+                        myObj.algorithms[i].numberColors = "null";
+                        myObj.algorithms[i].usedColors = "null";
+                        myObj.algorithms[i].coloredNodes = "null";
+                    } else
+                        y += "<p>" + "Es wird für " + myObj.algorithms[i].algorithm + " " + myObj.algorithms[i].numberColors +
+                            " Farben gebraucht." + "</p>"
                 }
                 x += "<p>" + y + "</p>";
                 x += "<b>" + "<a " + " id = " + "showJsonText " + " onclick=" + "showAndHide()" + " >" + "Das ganze Ergebnis in JSON Format anzeigen"
                     + "</a>" + "</b>";
                 x += "<pre>" + JSON.stringify(myObj, null, '\t') + "</pre>";
+                x += "<b>" + "<a " + " id = " + "showJsonTh " + " onclick=" + "hide()" + " >" + "</a>" + "</b>";
                 x += "<hr>" + "</div>";
                 document.getElementById("showmyjson").innerHTML = x;
 
@@ -185,9 +204,20 @@ function showAndHide() {
             "block" : "none";
     if (document.getElementsByTagName('pre')[0].style.display === "block") {
         document.getElementById("showJsonText").innerText = "Das Ergebnis ausblenden"
+        document.getElementById("showJsonTh").innerText = "Das Ergebnis ausblenden"
     } else {
         document.getElementById("showJsonText").innerText = "Das ganze Ergebnis in JSON Format anzeigen"
+        document.getElementById("showJsonTh").innerText = ""
     }
+}
+
+function hide() {
+    document.getElementsByTagName('pre')[0].style.display =
+        (document.getElementsByTagName('pre')[0].style.display !== "block") ?
+            "none" : "";
+    document.getElementById("showJsonTh").innerText = ""
+    document.getElementById("showJsonText").innerText = "Das ganze Ergebnis in JSON Format anzeigen"
+
 }
 
 function isJson(str) {

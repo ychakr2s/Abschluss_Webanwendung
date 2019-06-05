@@ -61,11 +61,12 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link implementier" href="#">Implementierung</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link observat" href="#">Observation</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="http://localhost:8089/implementierung">Implementierung</a>
+                </li>
+
             </ul>
         </div>
     </div>
@@ -217,243 +218,25 @@
             </div>
         </div>
     </div>
-    <!-- End Algorithmen  -->
-    <!--  Start IMPLEMENTIERUNG  -->
-    <div class="implementierung">
-        <div class="container">
-            <div class="myHeading">
-                <h2 class="implemen"> Implementierung der Algorithmen</h2>
-                <h3>Implementierung der exakten / heuristische Algorithmen</h3>
-            </div>
 
-            <div class="uploadContainer">
-                <div class="upload-header">
-                    <h3>Graph Hochladen / Das Ergebnis der Färbungsalgorithmen</h3>
-                </div>
-                <div class="upload-content">
-                    <div class="single-upload">
-                        <h3>File Hochladen</h3>
-                        <form method="POST" action="/upload" target="_blank" enctype="multipart/form-data">
-                            <input type="file" name="file" id="myGraphSubmit" required=""/>
-                            <button type="submit" class="primary submit-btn">Hochladen</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <div class="submitAlgor">
-                <div class="multiselect">
-                    <div class="selectBox" onclick="showCheckboxes()">
-                        <select>
-                            <option>Algorithmus auswählen</option>
-                        </select>
-                        <div class="overSelect"></div>
-                    </div>
-                    <form class="CheckBox" action="editCustomer" method="post">
-                        <div id="checkboxes">
-                            <option class="divide">Exakte Algorithmen</option>
-                            <label>
-                                <input type="checkbox" class="chk" value="Backtracking"/>Backtracking Algorithm</label>
-                            <label>
-                                <input type="checkbox" class="chk" value="Lineare Programmierung"/>Lineare
-                                Programmierung</label>
-
-                            <option class="divide">Heuristische Algorithmen</option>
-                            <!-- <br/> -->
-                            <label>
-                                <input type="checkbox" class="chk" value="Greedy"/>Greedy Algorithmus</label>
-                            <label>
-                                <input type="checkbox" class="chk" value="Largest First"/>Largest First </label>
-                            <label>
-                                <input type="checkbox" class="chk" value="DSATUR"/>DSATUR Algorithmus</label>
-                            <label>
-                                <input type="checkbox" class="chk" value="Recursive Largest First"/>Recursive Largest
-                                First</label>
-                            <label>
-                                <input type="checkbox" class="chk" value="Welsh Powell"/>Welsh Powell</label>
-                            <label>
-                                <input type="checkbox" class="chk" value="Tiefensuche"/>Tiefensuche</label>
-                            <label>
-                                <input type="checkbox" class="chk" value="Breitensuche"/>Breitensuche</label>
-                        </div>
-
-                    </form>
-                </div>
-                <button class="submitAlgorithm">Submit</button>
-                <!--onclick="shwoJson()-->
-            </div>
-            <div>
-                <div id="showmyjson">
-                </div>
-                <div id="backtracking">
-                </div>
-
-            </div>
-
-
-            <div class="myHeading">
-                <h3>Softwarearchitektur</h3>
-                <div class="sudokuSolver">
-                    <h3>Sudoku-Löser</h3>
-                    <p> Gib die Ziffern deines Sudokurätsels ein und klick auf "Lösung(en) suchen"!
-                    </p>
-                    <section id="logosection">
-                        <img class="myLogo" src="images/sudoku.png"/>
-                    </section>
-                    <center>
-                        <form id="formwrapper">
-                            <span id="newGame" class="formbutton"> Gave me another</span>
-                            <span id="myOwn" class="formbutton">Enter my Own </span>
-                        </form>
-                    </center>
-                    <table class="inner myContainer" align="center" id="grid">
-                        <tr>
-                            <td id="t0r1"><input id="t0x0" type="text"/></td>
-                            <td id="t0r2"><input id="t0x1" type="text"/></td>
-
-                            <td id="t0r3"><input id="t0x2" type="text"/></td>
-                            <td id="t0r4"><input id="t0x3" type="text"/></td>
-                            <td id="t0r5"><input id="t0x4" type="text"/></td>
-
-                            <td id="t0r6"><input id="t0x5" type="text"/></td>
-                            <td id="t0r7"><input id="t0x6" type="text"/></td>
-                            <td id="t0r8"><input id="t0x7" type="text"/></td>
-                            <td id="t0r0"><input id="t0x8" type="text"/></td>
-
-                        </tr>
-
-                        <tr>
-                            <td id="t1r0"><input id="t1x0" type="text"/></td>
-                            <td id="t1r1"><input id="t1x1" type="text"/></td>
-                            <td id="t1r2"><input id="t1x2" type="text"/></td>
-
-                            <td id="t1r3"><input id="t1x3" type="text"/></td>
-                            <td id="t1r4"><input id="t1x4" type="text"/></td>
-                            <td id="t1r5"><input id="t1x5" type="text"/></td>
-
-                            <td id="t1r6"><input id="t1x6" type="text"/></td>
-                            <td id="t1r7"><input id="t1x7" type="text"/></td>
-                            <td id="t1r8"><input id="t1x8" type="text"/></td>
-                        </tr>
-
-                        <tr>
-                            <td id="t2r0"><input id="t2x0" type="text"/></td>
-                            <td id="t2r1"><input id="t2x1" type="text"/></td>
-                            <td id="t2r2"><input id="t2x2" type="text"/></td>
-
-                            <td id="t2r3"><input id="t2x3" type="text"/></td>
-                            <td id="t2r4"><input id="t2x4" type="text"/></td>
-                            <td id="t2r5"><input id="t2x5" type="text"/></td>
-
-                            <td id="t2r6"><input id="t2x6" type="text"/></td>
-                            <td id="t2r7"><input id="t2x7" type="text"/></td>
-                            <td id="t2r8"><input id="t2x8" type="text"/></td>
-                        </tr>
-
-                        <tr>
-                            <td id="t3r0"><input id="t3x0" type="text"/></td>
-                            <td id="t3r1"><input id="t3x1" type="text"/></td>
-                            <td id="t3r2"><input id="t3x2" type="text"/></td>
-
-                            <td id="t3r3"><input id="t3x3" type="text"/></td>
-                            <td id="t3r4"><input id="t3x4" type="text"/></td>
-                            <td id="t3r5"><input id="t3x5" type="text"/></td>
-
-                            <td id="t3r6"><input id="t3x6" type="text"/></td>
-                            <td id="t3r7"><input id="t3x7" type="text"/></td>
-                            <td id="t3r8"><input id="t3x8" type="text"/></td>
-                        </tr>
-
-                        <tr>
-                            <td id="t4r0"><input id="t4x0" type="text"/></td>
-                            <td id="t4r1"><input id="t4x1" type="text"/></td>
-                            <td id="t4r2"><input id="t4x2" type="text"/></td>
-
-                            <td id="t4r3"><input id="t4x3" type="text"/></td>
-                            <td id="t4r4"><input id="t4x4" type="text"/></td>
-                            <td id="t4r5"><input id="t4x5" type="text"/></td>
-
-                            <td id="t4r6"><input id="t4x6" type="text"/></td>
-                            <td id="t4r7"><input id="t4x7" type="text"/></td>
-                            <td id="t4r8"><input id="t4x8" type="text"/></td>
-                        </tr>
-
-                        <tr>
-                            <td id="t5r0"><input id="t5x0" type="text"/></td>
-                            <td id="t5r1"><input id="t5x1" type="text"/></td>
-                            <td id="t5r2"><input id="t5x2" type="text"/></td>
-
-                            <td id="t5r3"><input id="t5x3" type="text"/></td>
-                            <td id="t5r4"><input id="t5x4" type="text"/></td>
-                            <td id="t5r5"><input id="t5x5" type="text"/></td>
-
-                            <td id="t5r6"><input id="t5x6" type="text"/></td>
-                            <td id="t5r7"><input id="t5x7" type="text"/></td>
-                            <td id="t5r8"><input id="t5x8" type="text"/></td>
-                        </tr>
-
-                        <tr>
-                            <td><input id="t6x0" type="text"/></td>
-                            <td><input id="t6x1" type="text"/></td>
-                            <td id="t6r2"><input id="t6x2" type="text"/></td>
-
-                            <td><input id="t6x3" type="text"/></td>
-                            <td><input id="t6x4" type="text"/></td>
-                            <td id="t6r5"><input id="t6x5" type="text"/></td>
-
-                            <td><input id="t6x6" type="text"/></td>
-                            <td><input id="t6x7" type="text"/></td>
-                            <td><input id="t6x8" type="text"/></td>
-                        </tr>
-
-                        <tr>
-                            <td><input id="t7x0" type="text"/></td>
-                            <td><input id="t7x1" type="text"/></td>
-                            <td id="t7r2"><input id="t7x2" type="text"/></td>
-
-                            <td><input id="t7x3" type="text"/></td>
-                            <td><input id="t7x4" type="text"/></td>
-                            <td id="t7r5"><input id="t7x5" type="text"/></td>
-
-                            <td><input id="t7x6" type="text"/></td>
-                            <td><input id="t7x7" type="text"/></td>
-                            <td><input id="t7x8" type="text"/></td>
-                        </tr>
-
-                        <tr>
-                            <td><input id="t8x0" type="text"/></td>
-                            <td><input id="t8x1" type="text"/></td>
-                            <td id="t8r2"><input id="t8x2" type="text"/></td>
-
-                            <td><input id="t8x3" type="text"/></td>
-                            <td><input id="t8x4" type="text"/></td>
-                            <td id="t8r5"><input id="t8x5" type="text"/></td>
-
-                            <td><input id="t8x6" type="text"/></td>
-                            <td><input id="t8x7" type="text"/></td>
-                            <td><input id="t8x8" type="text"/></td>
-                        </tr>
-                    </table>
-                    <center>
-                        <span id="finished" class="formbutton">Submit</span>
-                    </center>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--  End IMPLEMENTIERUNG -->
-    <!--  Start OBSERVATION  -->
     <div class="observation">
         <div class="container">
             <div class="observ">
 
             </div>
-            <!-- font-family: 'Quattrocento', serif; -->
         </div>
-
     </div>
+
+    <footer class="bd-footer text-muted">
+        <div class="container">
+            <ul class="bd-footer-links">
+                <li><a href="https://github.com/ychakr2s/WebAbschlussRepository">GitHub</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <p>Entworfen und gebaut mit all der Liebe der Welt von @Yassine Chakri.</p>
+        </div>
+    </footer>
 </div>
-<!-- End OBSERVATION -->
 
 <script src="js/jquery-3.4.0.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -462,193 +245,25 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script language="javascript" type="text/javascript">
     //<![CDATA[
-    var puzzle;
-    var selectedTile;
     var matrix = [];
-    var myMatrix = [];
     $(document).ready(function () {
-        init(); //444
-        $("#newGame").click(function () {
-            init();
-        });
 
         $("#grid").fadeIn(900);
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("nav-item");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
 
-        $("#myOwn").click(function () {
-            initMyOwn();
-        });
-
-        $('.submitAlgorithm').click(function () {
-            submitSelectedAlgorithms();
-        });
-
-        $("#finished").click(function () {
-            readTableToSend();
-            sendArrayToJava();
-        });
         console.log("Salam i am from Ready jQuery: ", matrix);
     });
 
-    function init() {
-        puzzle = new generateSudoku();
-
-        for (var i = 0; i < 9; i++) {
-            for (var j = 0; j < 9; j++) {
-                var tile = document.getElementById("t" + i + "x" + j);
-                if (puzzle.getTileNumber(i, j) === 0) {
-                    tile.className = "cell";
-                    tile.value = "";
-                    tile.style.backgroundColor = "#FFFFFF";
-                    tile.disabled = true;
-                    tile.onclick = tOnClick;
-                } else {
-                    tile.style.backgroundColor = "#33FFD5";
-                    tile.className = "cell";
-                    tile.value = puzzle.getTileNumber(i, j);
-                    tile.disabled = true;
-                }
-            }
-        }
-    }
-
-    function ownInput() {
-        puzzle = new generateMyOwn();
-
-        for (var i = 0; i < 9; i++) {
-            for (var j = 0; j < 9; j++) {
-                var tile = document.getElementById("t" + i + "x" + j);
-                if (puzzle.getTileNumber(i, j) === 0) {
-                    tile.className = "emptyCell";
-                    tile.value = "";
-                    tile.style.backgroundColor = "#FFFFFF";
-                    tile.disabled = false;
-                    tile.onclick = tOnClick;
-                } else {
-                    tile.className = "cell";
-                    tile.value = puzzle.getTileNumber(i, j);
-                }
-            }
-        }
-    }
-
-    /*
-    This method should serve to read and fill the Matrix with the inputed value from HTML
-    */
-    function readTableToSend() {
-        for (let i = 0; i < 9; i++) {
-            matrix[i] = [];
-            for (let j = 0; j < 9; j++) {
-                let tile = document.getElementById("t" + i + "x" + j);
-                if (tile === "") {
-                    matrix[i][j] = 0;
-                } else {
-                    matrix[i][j] = tile.value;
-                }
-            }
-        }
-    }
-
-    /*
-   This Method generates a table which read from java and print the results in Browser
-    */
-    function printSudoku(array) {
-        let count = 0;
-        for (let i = 0; i < 9; i++) {
-            for (let j = 0; j < 9; j++) {
-                let tile = document.getElementById("t" + i + "x" + j);
-                if (tile.value === "") {
-
-                    tile.style.backgroundColor = "#FFFFFF";
-                    tile.disabled = true;
-                    tile.value = array[count];
-                } else {
-                    tile.style.backgroundColor = "#33ffd5";
-                    tile.disabled = true;
-                }
-                count++;
-            }
-        }
-    }
-
-
-    function tOnClick() {
-        if (selectedTile == null) {
-            selectedTile = this;
-            selectedTile.className = "emptyCell selected";
-        } else {
-            deselect();
-        }
-    }
-
-    function deselect() {
-        selectedTile.className = "emptyCell";
-        selectedTile = null;
-    }
-
-    function initMyOwn() {
-        ownInput();
-    }
-
-    /*
-    * This method convert a Matrix, which is self entered or generated with the Button "gave me another" to Array in
-    * order to send it to the java server to solve the Problem Sudoku.
-    */
-    function convertMarixToArray(matrix) {
-        let myArray = Array(81);
-        let count = 0;
-        for (let i = 0; i < 9; i++) {
-            for (let j = 0; j < 9; j++) {
-                myArray[count] = matrix[i][j];
-                count++;
-            }
-        }
-        return myArray;
-    }
-
-    /*
-    * This Methode send an array to java using ajax and get the response as Array.
-    * This response will be printed using Method generate_Table()
-    */
-    function sendArrayToJava() {
-        // console.log("i am the matrix " + matrix);
-        if (isValid(matrix)) {
-            let dataArrayToSend = convertMarixToArray(matrix);
-
-            if (!isSolved(dataArrayToSend)) {
-
-                $.ajax({
-                    contentType: "application/json",
-                    type: "POST",
-                    data: JSON.stringify(dataArrayToSend),
-                    url: "/appUrl",
-                    success: function (data) {
-                        printSudoku(data)
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        console.log('error while post');
-                    }
-                });
-            }
-        } else {
-            Swal.fire({
-                title: "Ein­ga­be­feh­ler",
-                text: "Halten Sie bitte die Regeln des Sudoku Spiels ein!" +
-                    "Es darf nur die Zahlen 1 bis 9 eingegeben werden",
-                type: "warning"
-            })
-        }
-    }
-
-    function isSolved(dataArrayToSend) {
-        for (var i = 0; i < 81; i++) {
-            if (dataArrayToSend[i] === '') {
-                return false;
-            }
-        }
-        return true;
-    }
-
     //]]>
+
 </script>
 
 </body>

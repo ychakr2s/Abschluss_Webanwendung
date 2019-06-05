@@ -32,6 +32,13 @@ public class UploadController {
 
         return "index";
     }
+    @GetMapping("/implementierung")
+    public String indexStatus() {
+        readFile.deleteFiles(UPLOADED_FOLDER);
+        fileName = "";
+
+        return "implementierung";
+    }
 
     @PostMapping("/upload") //new annotation since 4.3
     public String singleFileUpload(@RequestParam("file") MultipartFile file,
