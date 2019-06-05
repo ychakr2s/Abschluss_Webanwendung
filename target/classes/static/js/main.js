@@ -9,15 +9,26 @@ $(function () {
 
 
 // ++++++++++++++++++++++++++ Start Change the Color if the link is clicked +++++++++++++++++++++++++++++++++++++++++
-var header = document.getElementById("myDIV");
-var btns = header.getElementsByClassName("nav-item");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
-}
+// var header = document.getElementById("myDIV");
+// var btns = header.getElementsByClassName("nav-item");
+// for (var i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener("click", function () {
+//         var current = document.getElementsByClassName("active");
+//         current[0].className = current[0].className.replace(" active", "");
+//         this.className += " active";
+//     });
+// }
+
+// var header = document.getElementById("myDIVimple");
+// var btns = header.getElementsByClassName("nav-impl");
+// for (var i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener("click", function () {
+//         var current = document.getElementsByClassName("active");
+//         current[0].className = current[0].className.replace(" active", "");
+//         this.className += " active";
+//     });
+// }
+
 // ++++++++++++++++++++++++++ End Change the Color if the link is clicked +++++++++++++++++++++++++++++++++++++++++++
 
 // ++++++++++++++++++++++++++++++ Start scroll from navbar to the determined element ++++++++++++++++++++++++++++++++
@@ -57,15 +68,6 @@ $('.nav-item .heuristische').click(function () {
     }, 1000);
 });
 
-// $('.nav-item .implementier').click(function () {
-//
-//     $('html, body').animate({
-//
-//         scrollTop: $('.implemen').offset().top
-//
-//     }, 1000);
-// });
-
 $('.nav-item .observat').click(function () {
 
     $('html, body').animate({
@@ -74,6 +76,25 @@ $('.nav-item .observat').click(function () {
 
     }, 1000);
 });
+
+// $('.nav-impl #impllement').click(function () {
+//
+//     $('html, body').animate({
+//
+//         scrollTop: $('.implemen').offset().top
+//
+//     }, 1000);
+// });
+
+$('.nav-impl #ssudoku').click(function () {
+
+    $('html, body').animate({
+
+        scrollTop: $('.mySudoku').offset().top
+
+    }, 1000);
+});
+
 // ++++++++++++++++++++++++++++++ Start Select Algorithmen +++++++++++++++++++++++++++++++++
 var expanded = false;
 

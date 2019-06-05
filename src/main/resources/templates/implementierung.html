@@ -6,19 +6,107 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
-    <title>Implementeirung</title>
+    <title>Implementierung</title>
 </head>
 <body>
 
-<!-- End Algorithmen  -->
-<!--  Start IMPLEMENTIERUNG  -->
+<!--  Start Upper Bar -->
+<div class="upper-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <i class="fa fa-envelope"></i> <span>yassine.chakri@smail.inf.h-brs.de</span>
+            </div>
+            <div class="col-sm text-right bs">
+                Bachelorarbeit im Studiengang Informatik
+            </div>
+            <div class="col-sm">
+                <span class="get-quote">Hochschule Bonn-Rhein-Sieg</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Upper Bar -->
+<!-- Start Nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <span>Graph </span><span>Coloring</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto" id="myDIVimple">
+                <li class="nav-impl">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-impl">
+                    <a class="nav-link" id="impllement" href="#impl">Implementierung</a>
+                </li>
+                <li class="nav-impl">
+                    <a class="nav-link" id="ssudoku" href="#">Sudoku</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Nav Bar -->
+
+<!-- Start Slider -->
+<div class="slider">
+    <div id="main-slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <h2><span>Implementierung von Färbungsalgorithmen</span>
+            </h2>
+            <div class="overlay"></div>
+            <div class="carousel-item carousel-twwo active">
+            </div>
+            <div class="carousel-item carousel-thhree">
+            </div>
+            <div class="carousel-item carousel-foour">
+            </div>
+        </div>
+
+        <ol class="carousel-indicators">
+            <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#main-slider" data-slide-to="1"></li>
+            <li data-target="#main-slider" data-slide-to="2"></li>
+        </ol>
+
+    </div>
+</div>
+<!-- End Slider -->
+
 <div class="startBody">
 
     <div class="implementierung">
         <div class="container">
             <div class="myHeading">
-                <h2 class="implemen"> Implementierung der Algorithmen</h2>
+                <h2 class="implemen" id="impl"> Implementierung der Algorithmen</h2>
                 <h3>Implementierung der exakten / heuristische Algorithmen</h3>
+            </div>
+
+            <div class="anweisung">
+                <h3>3 SCHRITTE FÜR Die Implementeirung
+                </h3>
+                <ul>
+                    <li>Eine Graph-Datei hochladen. Die Datei muss wie eine von diesen Fotos aussehen.</li>
+                    <div class="row">
+                        <div class="column">
+                            <img src="images/Graph_Impl0.PNG" height="550" width="500"/>
+                        </div>
+                        <div class="column">
+                            <img src="images/Graph_Impl1.PNG" height="550" width="500"/>
+                        </div>
+                    </div>
+                    <li>mindestens ein Algorithmus muss ausgewählt werden.</li>
+                    <li>den Submit Button Klicken</li>
+                </ul>
             </div>
 
             <div class="uploadContainer">
@@ -48,7 +136,8 @@
                         <div id="checkboxes">
                             <option class="divide">Exakte Algorithmen</option>
                             <label>
-                                <input type="checkbox" class="chk" value="Backtracking"/>Backtracking Algorithm</label>
+                                <input type="checkbox" class="chk" value="Backtracking"/>Backtracking
+                                Algorithm</label>
                             <label>
                                 <input type="checkbox" class="chk" value="Lineare Programmierung"/>Lineare
                                 Programmierung</label>
@@ -62,7 +151,8 @@
                             <label>
                                 <input type="checkbox" class="chk" value="DSATUR"/>DSATUR Algorithmus</label>
                             <label>
-                                <input type="checkbox" class="chk" value="Recursive Largest First"/>Recursive Largest
+                                <input type="checkbox" class="chk" value="Recursive Largest First"/>Recursive
+                                Largest
                                 First</label>
                             <label>
                                 <input type="checkbox" class="chk" value="Welsh Powell"/>Welsh Powell</label>
@@ -71,23 +161,26 @@
                             <label>
                                 <input type="checkbox" class="chk" value="Breitensuche"/>Breitensuche</label>
                         </div>
-
                     </form>
                 </div>
                 <button class="submitAlgorithm">Submit</button>
-                <!--onclick="shwoJson()-->
             </div>
             <div>
                 <div id="showmyjson">
                 </div>
             </div>
 
-
             <div class="myHeading">
-                <h3>Softwarearchitektur</h3>
+                <!--<h3>Softwarearchitektur</h3>-->
+                <h2 class="mySudoku" id="mySud">Sudoku-Löser</h2>
                 <div class="sudokuSolver">
-                    <h3>Sudoku-Löser</h3>
-                    <p> Gib die Ziffern deines Sudokurätsels ein und klick auf "Lösung(en) suchen"!
+                    <!--<h3>Sudoku-Löser</h3>-->
+                    <p> In diesem Projekt habe ich eine Sudoku-Solver-Anwendung mit Färbungsproblem erstellt. Jeder
+                        Knoten in Sudoku erhält eine Farbe von 1 bis 9. Ein modifizierter Backtracking-Algorithmus,
+                        bei
+                        dem eine einmal in der Eingabe zugewiesene Farbe bis zum Ende unverändert bleibt.
+                        Unten können Sie selbst ein Soduko-Problem eingeben und mithilfe des Färbungsproblems wird
+                        gelöst.
                     </p>
                     <section id="logosection">
                         <img class="myLogo" src="images/sudoku.png"/>
@@ -233,20 +326,17 @@
             </div>
         </div>
     </div>
+    <footer class="bd-footer text-muted">
+        <div class="container">
+            <ul class="bd-footer-links">
+                <li><a href="https://github.com/ychakr2s/WebAbschlussRepository">GitHub</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <p>Entworfen und gebaut mit all der Liebe der Welt von @Yassine Chakri.</p>
+        </div>
+    </footer>
 </div>
 <!--  End IMPLEMENTIERUNG -->
-<!--  Start OBSERVATION  -->
-<div class="observation">
-    <div class="container">
-        <div class="observ">
-
-        </div>
-        <!-- font-family: 'Quattrocento', serif; -->
-    </div>
-
-</div>
-<!--</div>-->
-<!-- End OBSERVATION -->
 
 
 <script src="js/jquery-3.4.0.min.js"></script>
@@ -260,6 +350,17 @@
     var selectedTile;
     var matrix = [];
     $(document).ready(function () {
+
+        // var header = document.getElementById("myDIVimple");
+        // var btns = header.getElementsByClassName("nav-impl");
+        // for (var i = 0; i < btns.length; i++) {
+        //     btns[i].addEventListener("click", function () {
+        //         var current = document.getElementsByClassName("active");
+        //         current[0].className = current[0].className.replace("active", "");
+        //         this.className += "active";
+        //     });
+        // }
+
         init();
         $("#newGame").click(function () {
             init();
