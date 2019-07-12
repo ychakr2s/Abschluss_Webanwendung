@@ -19,7 +19,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 
 @Controller
-public class UploadController {
+public class WebAppController {
 
     public static String UPLOADED_FOLDER = "uploadingDir/";
     private String fileName = "";
@@ -87,7 +87,7 @@ public class UploadController {
             readFile rd = new readFile();
             Graph gr = rd.readGraph(fileName);
             System.out.println(m);
-            Context imp = new Context(FactoryAlgorithms.getAlgorithms(selected, gr, this.m));
+            Context imp = new Context(FactoryAlgorithms.getAlgorithms(selected, gr));
             imp.execute();
             JsonOutput jso = new JsonOutput(gr, imp.execute());
             Gson gs = new Gson();

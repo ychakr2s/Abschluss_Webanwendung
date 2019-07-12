@@ -30,6 +30,7 @@ public class Largest_First_Algorithm extends GraphColoring {
 
     @Override
     public Algorithm executeGraphAlgorithm() {
+        double start = System.currentTimeMillis();
         int count = 1;
         /*
          * Assign the first color to first vertex with highest degree
@@ -53,8 +54,8 @@ public class Largest_First_Algorithm extends GraphColoring {
             remainingVertices = remove(remainingVertices, vertex);
         }
 
-        printSolution();
-        return new Algorithm("Largest First Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
+        double end = (System.currentTimeMillis() - start) / 1000;
+        return new Algorithm("Largest First Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }
 
     @Override

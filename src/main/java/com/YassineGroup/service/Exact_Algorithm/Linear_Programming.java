@@ -20,16 +20,22 @@ public class Linear_Programming extends GraphColoring {
 
     @Override
     public Algorithm executeGraphAlgorithm() {
+        double start = System.currentTimeMillis();
+        double end = 0;
 
+        IloCplex model = null;
         try {
             // Instantiate an empty model
-            IloCplex model = new IloCplex();
+            model = new IloCplex();
+            /*
+             * set Parameter if the Graph has big data, than set some Constraints according to the execution time and the Gap
+             */
+            model.setParam(IloCplex.Param.TimeLimit, 240 * 60);
 
             // Define an array of decision variables
             IloIntVar[][] x = new IloIntVar[V][V];
 
             for (int i = 0; i < V; i++) {
-
                 // Define each variable's range from 0 to 1
                 for (int j = 0; j < V; j++) {
                     x[i][j] = model.intVar(0, 1);
@@ -58,11 +64,12 @@ public class Linear_Programming extends GraphColoring {
             model.addMinimize(obj);
 
             /*
-             * +++++++++++++++++ Define the constraints ++++++++++++++++++++
+             * +++++++++++++++++++++++++++++++++ Define the constraints ++++++++++++++++++++++++++++++++++++
              * first Constraint: Sum(Xi,k) = 1. Equation ensures that each vertex receives exactly one color.
              */
             for (int i = 0; i < V; i++) { // for each variable
                 IloLinearNumExpr constraint = model.linearNumExpr();
+
                 for (int j = 0; j < V; j++) {
                     constraint.addTerm(1, x[i][j]);
                 }
@@ -70,8 +77,8 @@ public class Linear_Programming extends GraphColoring {
             }
 
             /*
-             * Second Constraint:  Xi,j - Yj <= 1. for all i,k= 1,..,n. The next condition combines the two types of variables,
-             * one Vertex can only be colored with color j if Yj = 1.
+             * Second Constraint:  Xi,j - Yj <= 1. for all i,k= 1,..,n. The next condition combines the two types of
+             * variables, one Vertex can only be colored with color j if Yj = 1.
              */
             for (int i = 0; i < V; i++) {
                 for (int j = 0; j < V; j++) {
@@ -83,17 +90,17 @@ public class Linear_Programming extends GraphColoring {
             }
 
             /*
-             * Third Constraint:  Xic + Xjc <= 1. This restrictions ensures that at most one of the two variables will be true,
+             * Third Constraint:  Xic + Xjc <= Y[j]. This restrictions ensures that at most one of the two variables will be true,
              * effectively avoiding color conflicts.
              */
             for (int i = 0; i < V; i++) {
                 for (int j = 0; j < V; j++) {
                     for (int j2 = 0; j2 < V; j2++) {
                         IloLinearNumExpr constraint = model.linearNumExpr();
-                        if (graph.isEdges(i, j2)) {
+                        if (graph.isEdges(i, j2) && graph.isEdges(j2, i)) {
                             constraint.addTerm(1.0, x[i][j]);
                             constraint.addTerm(1.0, x[j2][j]);
-                            model.add(model.addLe(constraint, 1));
+                            model.add(model.addLe(constraint, Y[j]));
                         }
                     }
                 }
@@ -106,6 +113,7 @@ public class Linear_Programming extends GraphColoring {
                 for (int j = 0; j < V; j++) {
                     IloLinearNumExpr constraint = model.linearNumExpr();
                     constraint.addTerm(1.0, x[i][j]);
+
                     model.add(model.addLe(constraint, 1));
                     model.add(model.addGe(constraint, 0));
                 }
@@ -140,6 +148,7 @@ public class Linear_Programming extends GraphColoring {
                 // Print out the objective function
                 System.out.println("obj_val = " + model.getObjValue());
 
+
                 // Fill ArrayList Colors with the used Colors
                 ArrayList<Integer> colors = new ArrayList<>();
                 for (int i = 0; i < V; i++) { // for each variable
@@ -155,13 +164,14 @@ public class Linear_Programming extends GraphColoring {
             } else {
                 System.out.println("Model not solved :(");
             }
-
         } catch (Exception e) {
             e.getMessage();
         }
 
         printSolution();
-        return new Algorithm("Linear Programming Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
+        end = (System.currentTimeMillis() - start) / 1000;
+
+        return new Algorithm("Linear Programming Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }
 
     @Override

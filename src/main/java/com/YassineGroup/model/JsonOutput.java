@@ -17,7 +17,6 @@ public class JsonOutput {
 
     public String toString() {
         String rueckgabe = graph.toString();
-//        rueckgabe+= algorithms.
         return rueckgabe;
     }
 }

@@ -21,7 +21,7 @@
                 Bachelorarbeit im Studiengang Informatik
             </div>
             <div class="col-sm">
-                <span class="get-quote">Hochschule Bonn-Rhein-Sieg</span>
+                <span class="get-quote"><a class="hbsNavbar" target="_blank" href="https://www.h-brs.de/de"> Hochschule Bonn-Rhein-Sieg  </a></span>
             </div>
         </div>
     </div>
@@ -88,14 +88,17 @@
         <div class="container">
             <div class="myHeading">
                 <h2 class="implemen" id="impl"> Implementierung der Algorithmen</h2>
-                <h3>Implementierung der exakten / heuristische Algorithmen</h3>
             </div>
 
             <div class="anweisung">
                 <h3>3 SCHRITTE FÜR Die Implementeirung
                 </h3>
+                <p>Um die Algorithmen an dem Graphen implementieren zu können, müssen die folgenden drei Schritten
+                    gefolgt werden:</p>
                 <ul>
-                    <li>Eine Graph-Datei hochladen. Die Datei muss wie eine von diesen Fotos aussehen.</li>
+                    <li>Eine Graph-Datei hochladen. Die Datei muss wie eine von diesen Fotos aussehen.<br/>
+                        Beachten Sie, dass die maximal zulässige Größe des Graphen ist 1048.576 kb.
+                    </li>
                     <div class="row">
                         <div class="column">
                             <img src="images/Graph_Impl0.PNG" height="550" width="500"/>
@@ -108,10 +111,15 @@
                     <li>den Submit Button Klicken</li>
                 </ul>
             </div>
+            <div class="myHeading">
+                <!--<h2 class="implemen" id="impl"> Implementierung der Algorithmen</h2>-->
+                <h3>Implementierung der exakten und heuristischen Algorithmen / Das Ergebnis der
+                    Färbungsalgorithmen</h3>
+            </div>
 
             <div class="uploadContainer">
                 <div class="upload-header">
-                    <h3>Graph Hochladen / Das Ergebnis der Färbungsalgorithmen</h3>
+                    <h3>Graph Hochladen</h3>
                 </div>
                 <div class="upload-content">
                     <div class="single-upload">
@@ -175,12 +183,17 @@
                 <h2 class="mySudoku" id="mySud">Sudoku-Löser</h2>
                 <div class="sudokuSolver">
                     <!--<h3>Sudoku-Löser</h3>-->
-                    <p> In diesem Projekt habe ich eine Sudoku-Solver-Anwendung mit Färbungsproblem erstellt. Jeder
+                    <p align="justify"> In diesem Projekt habe ich eine Sudoku-Solver-Anwendung mithilfe vom
+                        Färbungsproblem erstellt.
+                        Jeder
                         Knoten in Sudoku erhält eine Farbe von 1 bis 9. Ein modifizierter Backtracking-Algorithmus,
                         bei
-                        dem eine einmal in der Eingabe zugewiesene Farbe bis zum Ende unverändert bleibt.
-                        Unten können Sie selbst ein Soduko-Problem eingeben und mithilfe des Färbungsproblems wird
-                        gelöst.
+                        dem eine einmal in der Eingabe zugewiesene Farbe bis zum Ende unverändert bleibt. <br/>
+                        Unten können Sie durch ein Generator ein Soduko-Problem generieren lassen, einfach drücken Sie
+                        den Button "Gave me another"
+                        oder können Sie selbst ein Soduko-Problem eintippen, indem Sie den Button "Enter my Own"
+                        drücken. Danach drücken den Button "Submit".
+                        Es wird das Problem mittels Färbungsproblem gelöst.
                     </p>
                     <section id="logosection">
                         <img class="myLogo" src="images/sudoku.png"/>
@@ -350,16 +363,6 @@
     var selectedTile;
     var matrix = [];
     $(document).ready(function () {
-
-        // var header = document.getElementById("myDIVimple");
-        // var btns = header.getElementsByClassName("nav-impl");
-        // for (var i = 0; i < btns.length; i++) {
-        //     btns[i].addEventListener("click", function () {
-        //         var current = document.getElementsByClassName("active");
-        //         current[0].className = current[0].className.replace("active", "");
-        //         this.className += "active";
-        //     });
-        // }
 
         init();
         $("#newGame").click(function () {

@@ -9,6 +9,8 @@ import java.util.Arrays;
 public class Backtracking extends GraphColoring {
     private int m;
     private int[] resultColors;
+    private double start = System.currentTimeMillis();
+    private double end = start + 15 * 60 * 1000; // 60 seconds * 1000 ms/sec
 
     public Backtracking(Graph g, int m) {
         super(g);
@@ -32,11 +34,15 @@ public class Backtracking extends GraphColoring {
      * A recursive utility function to solve m coloring problem
      */
     private boolean graphColoringUtil(int v) {
+
         /*
          * base case: If all vertices are assigned a color then return true
          */
         if (v == V)
             return true;
+        else if (System.currentTimeMillis() > end) {
+            return false;
+        }
 
         /*
          * Consider this vertex v and try different colors
@@ -52,13 +58,12 @@ public class Backtracking extends GraphColoring {
                  */
                 if (graphColoringUtil(v + 1))
                     return true;
+                /*
+                 * If no color can be assigned to this vertex then return false
+                 */
                 setColor(v, -1, resultColors);
             }
         }
-
-        /*
-         * If no color can be assigned to this vertex then return false
-         */
         return false;
     }
 
@@ -69,13 +74,16 @@ public class Backtracking extends GraphColoring {
      */
     @Override
     public Algorithm executeGraphAlgorithm() {
+//        long start = System.currentTimeMillis();
         if (graphColoringUtil(0)) {
             printSolution();
         } else
             System.out.println("the JsonOutput does not exists");
+        double ende = (System.currentTimeMillis() - start) / 1000;
 
-        return new Algorithm("Backtracking", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
+        return new Algorithm("Backtracking", computeResultsColors(resultColors), usedColor(resultColors), resultColors, ende);
     }
+
 
     @Override
     public void description() {

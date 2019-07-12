@@ -20,6 +20,14 @@ Theme Name: Yassine Chakri
     margin-left: 120px;
 }
 
+.hbsNavbar {
+    color: #000000;
+}
+
+.upper-bar span .hbsNavbar:hover {
+    color: #000000;
+}
+
 /* ----------------------------------------- End Upper Bar -----------------------------------------------------*/
 
 /* ------------------------------------------Start NAV BAR ---------------------------------------------------- */
@@ -80,7 +88,7 @@ h3 {
 }
 
 .slider .carousel-inner h2 span {
-    color: #130e13c9;
+    color: #f8f9fa;
     font-weight: bold;
     font-style: oblique;
     z-index: 3;
@@ -90,6 +98,7 @@ h3 {
 .slider .carousel-inner h2 span span {
     background-color: #ec1c23;
     padding: 2px 8px;
+    border-radius: 10px;
 }
 
 .slider .carousel-inner .overlay {
@@ -120,7 +129,7 @@ h3 {
 }
 
 .slider .carousel-three {
-    background-image: url('../images/hbrs1.jpg');
+    background-image: url('../images/Abb5.PNG');
 }
 
 .slider .carousel-four {
@@ -145,7 +154,7 @@ h3 {
     background-image: url('../images/Graph1.jpg');
 }
 
-/* ------------------------------------------ End Slider for implementeirung ----------------------------------*/
+/* ------------------------------------------ End Slider for implementierung ----------------------------------*/
 
 /*  ----------------------------------------- End Slider ------------------------------------------------------------*/
 /*  ----------------------------------------- Start Einfuerung-- ----------------------------------------------------*/

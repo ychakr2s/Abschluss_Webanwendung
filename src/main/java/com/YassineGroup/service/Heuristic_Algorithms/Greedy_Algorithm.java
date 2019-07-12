@@ -8,8 +8,7 @@ import com.YassineGroup.service.Graph.Graph;
 import java.util.Arrays;
 
 public class Greedy_Algorithm extends GraphColoring {
-    //    private Graph graph;
-    //    private int V;
+
     private int[] resultColors;
 
     /*
@@ -19,13 +18,12 @@ public class Greedy_Algorithm extends GraphColoring {
         super(graph);
         this.resultColors = new int[V];
         Arrays.fill(resultColors, -1);
-
-
     }
 
     @Override
     public Algorithm executeGraphAlgorithm() {
         // Assign the first color to first vertex
+        double start = System.currentTimeMillis();
         setColor(0, 0, resultColors);
 
         // Assign colors to remaining V-1 vertices
@@ -38,15 +36,15 @@ public class Greedy_Algorithm extends GraphColoring {
             boolean[] available = new boolean[V];
             Arrays.fill(available, true);
 
-
             int cr = findRightColor(graph, vertex, resultColors, available);
             setColor(vertex, cr, resultColors); // Assign the found color
 
             // Reset the values back to true for the next iteration
             Arrays.fill(available, true);
         }
-        printSolution();
-        return new Algorithm("Greedy Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
+
+        double end = (System.currentTimeMillis() - start) / 1000;
+        return new Algorithm("Greedy Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }
 
     @Override

@@ -123,12 +123,6 @@ function submitSelectedAlgorithms() {
     $(".chk:checked").each(function () {
         chkArray.push($(this).val());
     });
-<<<<<<< HEAD
-
-    let mNumber;
-    let selected;
-=======
->>>>>>> 54d3cdb328f1679c0d1520aba6b5ba499699f45a
     if (chkArray.length === 0) {
         Swal.fire({
             type: "warning",
@@ -145,9 +139,11 @@ function submitSelectedAlgorithms() {
             } else {
 
                 chkArray.push(mNumber);
+                console.log(chkArray);
             }
         }
         selected = JSON.stringify(chkArray);
+        console.log(selected);
         sendAlgorithms(selected);
     } else {
         selected = JSON.stringify(chkArray);
@@ -381,6 +377,15 @@ function is_natural(s) {
         return true;
     } else {
         let n = parseInt(s);
+        return n > 0 && n.toString() === s;
+    }
+}
+
+function isNatural(s) {
+    if (s === "") {
+        return true;
+    } else {
+        let n = parseInt(s);
         return n > 0 && n < 10 && n.toString() === s;
     }
 }
@@ -392,7 +397,7 @@ function isValid(arraySolution) {
 
             let value = arraySolution[y][x];
 
-            if (is_natural(value)) {
+            if (isNatural(value)) {
                 if (value) {
                     // Check the line
                     for (let x2 = 0; x2 < 9; ++x2) {

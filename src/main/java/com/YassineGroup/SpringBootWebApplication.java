@@ -1,6 +1,6 @@
 package com.YassineGroup;
 
-import com.YassineGroup.controller.UploadController;
+import com.YassineGroup.controller.WebAppController;
 import org.apache.coyote.http11.AbstractHttp11Protocol;
 import org.apache.tomcat.util.http.fileupload.FileUtils;
 import org.springframework.boot.SpringApplication;
@@ -18,8 +18,8 @@ public class SpringBootWebApplication {
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(SpringBootWebApplication.class, args);
-        FileUtils.deleteDirectory(new File(UploadController.UPLOADED_FOLDER));
-        new File(UploadController.UPLOADED_FOLDER).mkdir();
+        FileUtils.deleteDirectory(new File(WebAppController.UPLOADED_FOLDER));
+        new File(WebAppController.UPLOADED_FOLDER).mkdir();
     }
 
     @Bean

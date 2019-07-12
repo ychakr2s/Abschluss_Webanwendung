@@ -15,8 +15,6 @@ import java.util.ArrayList;
 public class FactoryAlgorithms {
     private static int m;
 
-    static int m;
-
     FactoryAlgorithms() {
     }
 

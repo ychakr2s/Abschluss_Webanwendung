@@ -123,12 +123,6 @@ function submitSelectedAlgorithms() {
     $(".chk:checked").each(function () {
         chkArray.push($(this).val());
     });
-<<<<<<< HEAD
-
-    let mNumber;
-    let selected;
-=======
->>>>>>> 54d3cdb328f1679c0d1520aba6b5ba499699f45a
     if (chkArray.length === 0) {
         Swal.fire({
             type: "warning",
@@ -136,68 +130,36 @@ function submitSelectedAlgorithms() {
             text: "Bitte mindestens eines der Checkboxen anzreuzen",
         })
     } else if (chkArray.includes("Backtracking")) {
-<<<<<<< HEAD
 
-        mNumber = prompt("bitte geben Sie m numberColors für Backtracking:",);
-=======
         mNumber = prompt(" geben Sie fuer Backtracking Problem Anzahl der m Farben ein:",);
 
->>>>>>> 54d3cdb328f1679c0d1520aba6b5ba499699f45a
         if (is_natural(mNumber)) {
             if (mNumber == null || mNumber === "") {
                 alert("Sie haben den Vorgang abgebrochen");
             } else {
-<<<<<<< HEAD
-                sendMcoloringToController(mNumber);
-            }
-            selected = JSON.stringify(chkArray);
-            sendAlgorithms(selected);
-        }
-=======
+
                 chkArray.push(mNumber);
+                console.log(chkArray);
             }
         }
         selected = JSON.stringify(chkArray);
+        console.log(selected);
         sendAlgorithms(selected);
->>>>>>> 54d3cdb328f1679c0d1520aba6b5ba499699f45a
     } else {
         selected = JSON.stringify(chkArray);
         sendAlgorithms(selected);
     }
 }
 
-<<<<<<< HEAD
-function sendMcoloringToController(mNumber) {
-    console.log("send Backtracking");
-    $.ajax({
-        contentType: "application/json",
-        type: "POST",
-        data: mNumber,
-        url: "/backtracking",
-        success: function (data) {
-            console.log('mColring is there');
-        },
-        error: function (jqXHR, textStatus, errorThrown) {
-            console.log('error while post to java');
-        }
-    });
-}
 
 function sendAlgorithms(selected) {
-=======
-function sendAlgorithms(selected) {
     let x = "";
->>>>>>> 54d3cdb328f1679c0d1520aba6b5ba499699f45a
     $.ajax({
         contentType: "application/json",
         type: "POST",
         data: selected,
         url: "/check",
         success: function (data) {
-<<<<<<< HEAD
-            console.log('done done done');
-=======
->>>>>>> 54d3cdb328f1679c0d1520aba6b5ba499699f45a
 
             if (isJson(data)) {
                 let myObj = JSON.parse(data);
@@ -205,10 +167,6 @@ function sendAlgorithms(selected) {
                 x = "<div>" + "<hr>";
                 x += "<h4>" + "Das Ergebnis der Implementierung der Algorithmen:" + "</h4>";
                 for (var i = 0; i < myObj.algorithms.length; i++) {
-<<<<<<< HEAD
-                    y += "<p>" + "Es wird für " + myObj.algorithms[i].algorithm + " " + myObj.algorithms[i].numberColors +
-                        " Farben gebraucht." + "</p>"
-=======
                     if (myObj.algorithms[i].numberColors === 0) {
                         y += "<p>" + "Der Graph mit " + myObj.algorithms[i].algorithm + " kann nicht gefärbt werden" + "</p>";
                         myObj.algorithms[i].numberColors = "null";
@@ -217,16 +175,12 @@ function sendAlgorithms(selected) {
                     } else
                         y += "<p>" + "Es wird für " + myObj.algorithms[i].algorithm + " " + myObj.algorithms[i].numberColors +
                             " Farben gebraucht." + "</p>"
->>>>>>> 54d3cdb328f1679c0d1520aba6b5ba499699f45a
                 }
                 x += "<p>" + y + "</p>";
                 x += "<b>" + "<a " + " id = " + "showJsonText " + " onclick=" + "showAndHide()" + " >" + "Das ganze Ergebnis in JSON Format anzeigen"
                     + "</a>" + "</b>";
                 x += "<pre>" + JSON.stringify(myObj, null, '\t') + "</pre>";
-<<<<<<< HEAD
-=======
                 x += "<b>" + "<a " + " id = " + "showJsonTh " + " onclick=" + "hide()" + " >" + "</a>" + "</b>";
->>>>>>> 54d3cdb328f1679c0d1520aba6b5ba499699f45a
                 x += "<hr>" + "</div>";
                 document.getElementById("showmyjson").innerHTML = x;
 
@@ -423,6 +377,15 @@ function is_natural(s) {
         return true;
     } else {
         let n = parseInt(s);
+        return n > 0 && n.toString() === s;
+    }
+}
+
+function isNatural(s) {
+    if (s === "") {
+        return true;
+    } else {
+        let n = parseInt(s);
         return n > 0 && n < 10 && n.toString() === s;
     }
 }
@@ -434,7 +397,7 @@ function isValid(arraySolution) {
 
             let value = arraySolution[y][x];
 
-            if (is_natural(value)) {
+            if (isNatural(value)) {
                 if (value) {
                     // Check the line
                     for (let x2 = 0; x2 < 9; ++x2) {
