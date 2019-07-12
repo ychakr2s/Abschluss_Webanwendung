@@ -14,8 +14,6 @@ import java.io.File;
 @SpringBootApplication
 public class SpringBootWebApplication {
 
-//    private int maxUploadSizeInMb = 10 * 1024 * 1024; // 10 MB
-
     public static void main(String[] args) throws Exception {
         SpringApplication.run(SpringBootWebApplication.class, args);
         FileUtils.deleteDirectory(new File(WebAppController.UPLOADED_FOLDER));

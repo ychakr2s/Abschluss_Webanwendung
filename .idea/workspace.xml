@@ -2,47 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92cc3c9b-2076-487f-8c82-372b15adad8e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/SpringBootWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/SpringBootWebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/WebAppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/factory/FactoryAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/factory/FactoryAlgorithms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/model/JsonOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/model/JsonOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/AbstractGraphColoring/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/AbstractGraphColoring/Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Exact_Algorithm/Backtracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Exact_Algorithm/Backtracking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Exact_Algorithm/Linear_Programming.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Exact_Algorithm/Linear_Programming.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Depth_First_Search_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Depth_First_Search_Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Greedy_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Greedy_Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Largest_First_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Largest_First_Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/dSatur_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/dSatur_Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/welsh_Powell_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/welsh_Powell_Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/implementierung.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/implementierung.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/SpringBootWebApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/SpringBootWebApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/controller/UploadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/factory/FactoryAlgorithms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/factory/FactoryAlgorithms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/model/JsonOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/model/JsonOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/AbstractGraphColoring/Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/AbstractGraphColoring/Algorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Exact_Algorithm/Backtracking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Exact_Algorithm/Backtracking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Exact_Algorithm/Linear_Programming.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Exact_Algorithm/Linear_Programming.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/Breadth_First_Search_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/Breadth_First_Search_Algorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/Depth_First_Search_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/Depth_First_Search_Algorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/Greedy_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/Greedy_Algorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/Largest_First_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/Largest_First_Algorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/dSatur_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/dSatur_Algorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/welsh_Powell_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/welsh_Powell_Algorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Graph_Impl3.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/implementierung.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/implementierung.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploadingDir/johnson8-2-4.clq" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,11 +14,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/SpringBootWebApplication.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="-2001">
+              <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/implementierung.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Exact_Algorithm/Backtracking.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1452">
+              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="12" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,42 +45,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Depth_First_Search_Algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1081">
-              <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/classes/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1518">
-              <caret line="66" column="79" selection-start-line="66" selection-start-column="79" selection-end-line="66" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/classes/templates/indexStatus.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/classes/templates/implementierung.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/WebAppController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1725">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="595">
+              <caret line="101" column="1" lean-forward="true" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,10 +99,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Largest_First_Algorithm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/welsh_Powell_Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/implementierung.html" />
         <option value="$PROJECT_DIR$/target/classes/templates/index.html" />
         <option value="$PROJECT_DIR$/target/classes/templates/implementierung.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/WebAppController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/SpringBootWebApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/implementierung.html" />
       </list>
     </option>
   </component>
@@ -237,7 +185,32 @@
               <item name="WebFinal_Bachelor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebFinal_Bachelor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebFinal_Bachelor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="Exact_Algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebFinal_Bachelor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebFinal_Bachelor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="Heuristic_Algorithms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebFinal_Bachelor" type="b2602c69:ProjectViewProjectNode" />
@@ -245,7 +218,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebFinal_Bachelor" type="b2602c69:ProjectViewProjectNode" />
@@ -270,7 +242,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562965075366" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562966700672" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -364,18 +336,18 @@
       <workItem from="1562786942181" duration="12609000" />
       <workItem from="1562833439670" duration="12026000" />
       <workItem from="1562929650528" duration="1751000" />
-      <workItem from="1562964233423" duration="840000" />
+      <workItem from="1562964233423" duration="2462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54870000" />
+    <option name="totallyTimeSpent" value="56492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86372006" visible="true" weight="0.24026845" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86372006" visible="true" weight="0.24026845" />
       <window_info id="Structure" order="1" sideWeight="0.13627993" side_tool="true" weight="0.19463088" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -385,7 +357,7 @@
       <window_info id="Web" order="7" sideWeight="0.50213677" side_tool="true" weight="0.24966443" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.17569546" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.12884334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -479,20 +451,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/indexStatus.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -530,16 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Depth_First_Search_Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -603,27 +555,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/implementierung.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="146" column="59" selection-start-line="146" selection-start-column="59" selection-end-line="146" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Exact_Algorithm/Backtracking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="12" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -655,27 +590,37 @@
         <state relative-caret-position="-828" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/target/classes/templates/implementierung.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1518">
-          <caret line="66" column="79" selection-start-line="66" selection-start-column="79" selection-end-line="66" selection-end-column="79" />
+        <state relative-caret-position="161">
+          <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/templates/indexStatus.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/templates/implementierung.html">
+    <entry file="file://$PROJECT_DIR$/target/classes/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
+        <state relative-caret-position="276">
+          <caret line="66" column="79" selection-start-line="66" selection-start-column="79" selection-end-line="66" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/SpringBootWebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -689,13 +634,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/SpringBootWebApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/indexStatus.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="-2001">
+          <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Exact_Algorithm/Backtracking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1452">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="12" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Depth_First_Search_Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="101" column="1" lean-forward="true" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/implementierung.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
         </state>
       </provider>
     </entry>
