@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /*
  * The Context class doesn't implement an algorithm directly.
- * Instead, Context refers to the Strategy interface for performing an algorithm (algorithm.execute()),
+ * Instead, Context refers to the Strategy interface for performing an algorithm (algorithm.executeGraphAlgorithm()),
  * which makes Context independent of how an algorithm is implemented.
  */
 public class Context {

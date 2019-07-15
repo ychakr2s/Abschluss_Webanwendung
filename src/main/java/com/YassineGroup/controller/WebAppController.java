@@ -4,7 +4,7 @@ import com.YassineGroup.service.Applications.Solve_Sudoku;
 import com.YassineGroup.service.Graph.Graph;
 import com.YassineGroup.factory.FactoryAlgorithms;
 import com.YassineGroup.model.Context;
-import com.YassineGroup.service.ReadFile.readFile;
+import com.YassineGroup.service.ReadFile.readFile_Graph;
 import com.YassineGroup.model.JsonOutput;
 import com.google.gson.Gson;
 import org.springframework.stereotype.Controller;
@@ -27,14 +27,14 @@ public class WebAppController {
 
     @GetMapping("/")
     public String index() {
-        readFile.deleteFiles(UPLOADED_FOLDER);
+        readFile_Graph.deleteFiles(UPLOADED_FOLDER);
         fileName = "";
-
         return "index";
     }
+
     @GetMapping("/implementierung")
     public String indexStatus() {
-        readFile.deleteFiles(UPLOADED_FOLDER);
+        readFile_Graph.deleteFiles(UPLOADED_FOLDER);
         fileName = "";
 
         return "implementierung";
@@ -53,7 +53,7 @@ public class WebAppController {
              * This checks whether a directory contains a file or not. If yes than delete everything and add
              * the new File to the directory.
              */
-            readFile.deleteFiles(UPLOADED_FOLDER);
+            readFile_Graph.deleteFiles(UPLOADED_FOLDER);
 
             // Upload the new File to the Directory "uploadingDir"
             byte[] bytes = file.getBytes();
@@ -72,7 +72,6 @@ public class WebAppController {
     @RequestMapping(value = "/backtracking", method = RequestMethod.POST)
     public @ResponseBody
     void notAloneBacktracking(@RequestBody int selected) {
-
         this.m = selected;
         System.out.println(m);
     }
@@ -84,8 +83,8 @@ public class WebAppController {
         if (fileName.equals("")) {
             return "Bitte laden Sie eine Graph-Datei hoch";
         } else {
-            readFile rd = new readFile();
-            Graph gr = rd.readGraph(fileName);
+            readFile_Graph rd = new readFile_Graph();
+            Graph gr = rd.dimacsToGraph(fileName);
             System.out.println(m);
             Context imp = new Context(FactoryAlgorithms.getAlgorithms(selected, gr));
             imp.execute();
@@ -100,7 +99,7 @@ public class WebAppController {
     public @ResponseBody
     int[] sudoku(@RequestBody int[] dataArrayToSend) {
 
-        Solve_Sudoku sd = readFile.readGraphSudoku(dataArrayToSend);
+        Solve_Sudoku sd = readFile_Graph.readGraphSudoku(dataArrayToSend);
 
         String out = sd.executeGraphAlgorithm();
         String[] splited = out.split("\\s+");
@@ -116,5 +115,4 @@ public class WebAppController {
     public String uploadStatus() {
         return "indexStatus";
     }
-
 }

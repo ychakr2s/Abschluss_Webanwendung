@@ -3,16 +3,20 @@ package com.YassineGroup.service.ReadFile;
 
 import com.YassineGroup.service.Applications.Solve_Sudoku;
 import com.YassineGroup.service.Graph.Graph;
+import com.google.gson.Gson;
 
 import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.Objects;
 
-public class readFile {
+public class readFile_Graph {
 
-    public readFile() {
+    public int edges;
+
+    public readFile_Graph() {
     }
 
     public static void deleteFiles(String filename) {
@@ -28,11 +32,9 @@ public class readFile {
     /*
      * This method read a File and produce a Graph.
      */
-    public Graph readGraph(String filename) {
-
+    public Graph dimacsToGraph(String filename) {
         Path path = Paths.get(filename);
         Graph gr = null;
-
         try {
             BufferedReader reader = new BufferedReader(new FileReader(String.valueOf(path)));
             String line = reader.readLine();
@@ -40,13 +42,13 @@ public class readFile {
                 String[] splited = line.split("\\s+");
                 if (splited[0].equals("p")) {
                     gr = new Graph(Integer.parseInt(splited[2]));
+                    gr.setEdge(Integer.parseInt(splited[3]));
+                    gr.computeDensity();
                 }
-
                 if (splited[0].equals("e")) {
                     assert gr != null;
                     gr.addEdge(Integer.parseInt(splited[1]) - 1, Integer.parseInt(splited[2]) - 1);
                 }
-
                 line = reader.readLine();
             }
             reader.close();
@@ -58,7 +60,40 @@ public class readFile {
     }
 
     /*
-     * This method read a Sudoku File and produce from him a Sudoku Table.
+     * this method get a Json file and parse it to Java. It is parsed to Graph.
+     */
+    public Graph jsonToGraph(String filename) {
+
+        Gson gson = new Gson();
+        Graph gr = new Graph(0);
+
+        try {
+            BufferedReader br = new BufferedReader(
+                    new FileReader(filename));
+
+            //convert the json string back to object
+            Graph graph = gson.fromJson(br, Graph.class);
+
+            gr = new Graph(graph.getNumVertices());
+
+            for (int i = 0; i < graph.getNumVertices(); i++) {
+                Iterator itr = graph.getEdges(i).iterator();
+                while (itr.hasNext()) {
+
+                    double a = (double) itr.next();
+                    int c = (int) a;
+                    gr.addEdge(i, c);
+                }
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return gr;
+    }
+
+    /*
+     * This method read a Sudoku File and produce from him a Sudoku File.
      */
     public static Solve_Sudoku readGraphSudoku(int[] arr) {
         Solve_Sudoku sd = new Solve_Sudoku();

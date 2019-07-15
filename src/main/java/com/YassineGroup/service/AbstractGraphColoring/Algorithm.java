@@ -1,7 +1,9 @@
 package com.YassineGroup.service.AbstractGraphColoring;
 
 public class Algorithm {
-
+    /*
+     * This Class contains these Attributes to describe the Algorithm, which have to be outputed in Json-Format
+     */
     private String algorithm;
     private int numberColors;
     private int[] usedColors;
@@ -13,7 +15,7 @@ public class Algorithm {
         this.numberColors = num;
         this.usedColors = colors;
         this.coloredNodes = coloredNodes;
-        this.time= time;
+        this.time = time;
     }
 }
 

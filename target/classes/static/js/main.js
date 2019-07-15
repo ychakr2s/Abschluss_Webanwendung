@@ -6,32 +6,9 @@ $(function () {
     var navH = $('.navbar').innerHeight();
     $('.slider, .carousel-item').height(windowHeigh - (upperH + navH));
 });
+// ++++++++++++++++++++++++++ End Change the Color if the link is clicked ++++++++++++++++++++++++++++++++++++++++++//
 
-
-// ++++++++++++++++++++++++++ Start Change the Color if the link is clicked +++++++++++++++++++++++++++++++++++++++++
-// var header = document.getElementById("myDIV");
-// var btns = header.getElementsByClassName("nav-item");
-// for (var i = 0; i < btns.length; i++) {
-//     btns[i].addEventListener("click", function () {
-//         var current = document.getElementsByClassName("active");
-//         current[0].className = current[0].className.replace(" active", "");
-//         this.className += " active";
-//     });
-// }
-
-// var header = document.getElementById("myDIVimple");
-// var btns = header.getElementsByClassName("nav-impl");
-// for (var i = 0; i < btns.length; i++) {
-//     btns[i].addEventListener("click", function () {
-//         var current = document.getElementsByClassName("active");
-//         current[0].className = current[0].className.replace(" active", "");
-//         this.className += " active";
-//     });
-// }
-
-// ++++++++++++++++++++++++++ End Change the Color if the link is clicked +++++++++++++++++++++++++++++++++++++++++++
-
-// ++++++++++++++++++++++++++++++ Start scroll from navbar to the determined element ++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++ Start scroll from navbar to the determined element +++++++++++++++++++++++++++++++//
 $('.nav-item .einfuer').click(function () {
 
     $('html, body').animate({
@@ -77,15 +54,6 @@ $('.nav-item .observat').click(function () {
     }, 1000);
 });
 
-// $('.nav-impl #impllement').click(function () {
-//
-//     $('html, body').animate({
-//
-//         scrollTop: $('.implemen').offset().top
-//
-//     }, 1000);
-// });
-
 $('.nav-impl #ssudoku').click(function () {
 
     $('html, body').animate({
@@ -110,16 +78,16 @@ function showCheckboxes() {
 }
 
 /*
-* in this methods send a list of Algorithms to Java Server in order to implement this selected Algorithms and send it
+* In this methods send a list of Algorithms to Java Server in order to implement this selected Algorithms and send it
 * back using AJAX.
- */
+*/
 
 function submitSelectedAlgorithms() {
     /* declare an checkbox array */
     var chkArray = [];
     let mNumber;
     let selected;
-    /* look for all checkboes that have a class 'chk' attached to it and check if it was checked */
+    /* look for all checkboxes that have a class 'chk' attached to it and check if it was checked */
     $(".chk:checked").each(function () {
         chkArray.push($(this).val());
     });
@@ -131,7 +99,7 @@ function submitSelectedAlgorithms() {
         })
     } else if (chkArray.includes("Backtracking")) {
 
-        mNumber = prompt(" geben Sie fuer Backtracking Problem Anzahl der m Farben ein:",);
+        mNumber = prompt(" geben Sie für den Backtracking-Algorithmus Anzahl der m Farben ein:",);
 
         if (is_natural(mNumber)) {
             if (mNumber == null || mNumber === "") {
@@ -150,7 +118,6 @@ function submitSelectedAlgorithms() {
         sendAlgorithms(selected);
     }
 }
-
 
 function sendAlgorithms(selected) {
     let x = "";
@@ -225,8 +192,9 @@ function isJson(str) {
     return true;
 }
 
-// ++++++++++++++++++++++++++++++ End Select Algorithmen +++++++++++++++++++++++++++++++++++++++++++++++++++++
-// ++++++++++++++++++++++++++++++ Start Susoku +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++ End Select Algorithmen +++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+// ++++++++++++++++++++++++++++++ Start Susoku +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
 function generateSudoku() {
 
