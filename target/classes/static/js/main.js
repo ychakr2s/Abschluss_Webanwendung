@@ -6,7 +6,7 @@ $(function () {
     var navH = $('.navbar').innerHeight();
     $('.slider, .carousel-item').height(windowHeigh - (upperH + navH));
 });
-// ++++++++++++++++++++++++++ End Change the Color if the link is clicked ++++++++++++++++++++++++++++++++++++++++++//
+// // ++++++++++++++++++++++++++ End Change the Color if the link is clicked ++++++++++++++++++++++++++++++++++++++++++//
 
 // ++++++++++++++++++++++++++++++ Start scroll from navbar to the determined element +++++++++++++++++++++++++++++++//
 $('.nav-item .einfuer').click(function () {
@@ -364,7 +364,6 @@ function isValid(arraySolution) {
         for (let x = 0; x < 9; ++x) {
 
             let value = arraySolution[y][x];
-
             if (isNatural(value)) {
                 if (value) {
                     // Check the line

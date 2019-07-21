@@ -40,6 +40,16 @@ public class WebAppController {
         return "implementierung";
     }
 
+    @GetMapping("/references")
+    public String reference() {
+        return "references";
+    }
+
+    @GetMapping("/impressum")
+    public String impressum() {
+        return "impressum";
+    }
+
     @PostMapping("/upload") //new annotation since 4.3
     public String singleFileUpload(@RequestParam("file") MultipartFile file,
                                    RedirectAttributes redirectAttributes) {

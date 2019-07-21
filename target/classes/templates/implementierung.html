@@ -133,9 +133,9 @@
                     </div>
                 </div>
 
-                <div th:if="${message}">
-                    <h2 th:text="${message}"/>
-                </div>
+                <!--<div th:if="${message}">-->
+                    <!--<h2 th:text="${message}"/>-->
+                <!--</div>-->
             </div>
 
             <div class="submitAlgor">
@@ -200,7 +200,7 @@
                         dem eine einmal in der Eingabe zugewiesene Farbe bis zum Ende unverändert bleibt, wird das
                         Sudoku-Problem gelöst.<br/>
                         Unten können Sie durch ein Generator ein Soduko-Problem generieren lassen, einfach drücken Sie
-                        den Button "Gave me another"
+                        den Button "Give me another"
                         oder können Sie selbst ein Soduko-Problem eintippen, indem Sie den Button "Enter my Own"
                         drücken. Danach drücken den Button "Submit".
                         Es wird das Problem mittels Färbungsproblem gelöst.
@@ -227,7 +227,7 @@
                     </section>
                     <center>
                         <form id="formwrapper">
-                            <span id="newGame" class="formbutton"> Gave me another</span>
+                            <span id="newGame" class="formbutton"> Give me another</span>
                             <span id="myOwn" class="formbutton">Enter my Own </span>
                         </form>
                     </center>
@@ -373,6 +373,8 @@
             <ul class="bd-footer-links">
                 <li><a href="https://github.com/ychakr2s/WebAbschlussRepository">GitHub</a></li>
                 <li><a href="#">About</a></li>
+                <li><a href="/references">References</a></li>
+                <li><a href="/impressum">Imprint</a></li>
             </ul>
             <p>Entworfen und gebaut mit all der Liebe der Welt von @Yassine Chakri.</p>
         </div>
@@ -392,6 +394,7 @@
     var selectedTile;
     var matrix = [];
     $(document).ready(function () {
+// ++++++++++++++++++++++++++ End Change the Color if the link is clicked ++++++++++++++++++++++++++++++++++++++++++//
         init();
         $("#newGame").click(function () {
             init();
@@ -514,7 +517,7 @@
     }
 
     /*
-    * This method convert a Matrix, which is self entered or generated with the Button "gave me another" to Array in
+    * This method convert a Matrix, which is self entered or generated with the Button "give me another" to Array in
     * order to send it to the java server to solve the Problem Sudoku.
     */
     function convertMarixToArray(matrix) {

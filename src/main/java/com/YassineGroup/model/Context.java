@@ -1,6 +1,5 @@
 package com.YassineGroup.model;
 
-
 import com.YassineGroup.service.AbstractGraphColoring.Algorithm;
 import com.YassineGroup.service.AbstractGraphColoring.GraphColoring;
 
@@ -26,5 +25,4 @@ public class Context {
         }
         return alg;
     }
-
 }
