@@ -55,7 +55,11 @@ public class WebAppController {
                                    RedirectAttributes redirectAttributes) {
         if (file.isEmpty()) {
             redirectAttributes.addFlashAttribute("message", "Please select a file to upload");
-            return "redirect:indexStatus";
+            return "redirect:/uploadStatus";
+        }
+        if (file.getSize() > 1048576) {
+            redirectAttributes.addFlashAttribute("message", "Die Datei ist zu groß: Die Datei muss die Größe 1048.576 kb nicht überschreiten.");
+            return "redirect:/uploadStatus";
         }
 
         try {
@@ -94,7 +98,10 @@ public class WebAppController {
             return "Bitte laden Sie eine Graph-Datei hoch";
         } else {
             readFile_Graph rd = new readFile_Graph();
-            Graph gr = rd.dimacsToGraph(fileName);
+            Graph gr = rd.readByMethode(fileName);
+            if (gr == null) {
+                return "Die Datei konnte nich eingelesen werden.!! Sehen Sie bitte oben die Anweisungen";
+            }
             System.out.println(m);
             Context imp = new Context(FactoryAlgorithms.getAlgorithms(selected, gr));
             imp.execute();
