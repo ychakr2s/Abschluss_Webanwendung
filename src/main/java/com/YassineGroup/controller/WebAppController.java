@@ -58,7 +58,7 @@ public class WebAppController {
             return "redirect:/uploadStatus";
         }
         if (file.getSize() > 1048576) {
-            redirectAttributes.addFlashAttribute("message", "Die Datei ist zu groß: Die Datei muss die Größe 1048.576 kb nicht überschreiten.");
+            redirectAttributes.addFlashAttribute("message", "Die Datei ist zu groß: Die Datei muss die Größe 1048.576 kb nicht überschreiten.!!!");
             return "redirect:/uploadStatus";
         }
 
@@ -92,15 +92,20 @@ public class WebAppController {
 
     @RequestMapping(value = "/check", method = RequestMethod.POST)
     public @ResponseBody
-    String yourMethod(@RequestBody ArrayList<String> selected) {
+    String yourMethod(@RequestBody ArrayList<String> selected) throws IOException {
 
         if (fileName.equals("")) {
             return "Bitte laden Sie eine Graph-Datei hoch";
         } else {
             readFile_Graph rd = new readFile_Graph();
+
+            if (!rd.isSuitable(fileName)) {
+                return "Graph-Datei entspricht nicht den festgelegten Maßstäbe ";
+            }
             Graph gr = rd.readByMethode(fileName);
+
             if (gr == null) {
-                return "Die Datei konnte nich eingelesen werden.!! Sehen Sie bitte oben die Anweisungen";
+                return "Die Datei konnte nicht eingelesen werden.!! Sehen Sie bitte oben die Anweisungen";
             }
             System.out.println(m);
             Context imp = new Context(FactoryAlgorithms.getAlgorithms(selected, gr));

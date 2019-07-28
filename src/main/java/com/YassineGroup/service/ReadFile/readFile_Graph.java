@@ -90,7 +90,6 @@ public class readFile_Graph {
         return gr;
     }
 
-
     /*
      * this method get a Json file and parse it to Java. It is parsed to Graph.
      */
@@ -150,27 +149,9 @@ public class readFile_Graph {
                         }
                         line = reader.readLine();
                     }
-//                        String lin = reader.readLine();
-//                    String split[] = lin.split("\\s+");
-
                 }
                 line = reader.readLine();
             }
-//            while (line != null) {
-//                String[] splited = line.split("\\s+");
-//                if (splited[0].equals("p")) {
-//                    gr = new Graph(Integer.parseInt(splited[1]));
-//                    gr.setEdge(Integer.parseInt(splited[2]));
-//                    gr.computeDensity();
-//                } else if (splited[0].equals("")) {
-//                    break;
-//                } else {
-//                    assert gr != null;
-//                    gr.addEdge(Integer.parseInt(splited[0]), Integer.parseInt(splited[1]));
-//                }
-//
-//                line = reader.readLine();
-//            }
 
             reader.close();
         } catch (IOException e) {
@@ -180,12 +161,53 @@ public class readFile_Graph {
     }
 
     /*
+     * This Method tests wether the Graph-File is suitable to implement algorithms on it.
+     */
+    public boolean isSuitable(String filename) throws IOException {
+
+        Path path = Paths.get(filename);
+
+        BufferedReader reader = new BufferedReader(new FileReader(String.valueOf(path)));
+        String line = reader.readLine();
+        while (line != null) {
+            String[] splited = line.split("\\s+");
+            if (splited[0].equals("c")) {
+                while (line != null) {
+                    splited = line.split("\\s+");
+                    if (!splited[0].equals("c")) {
+                        if (!splited[0].equals("p")) {
+                            while (line != null) {
+                                splited = line.split("\\s+");
+
+                                if (!splited[0].equals("e")) {
+                                    return false;
+                                }
+                                line = reader.readLine();
+                            }
+                        }
+                    }
+                    line = reader.readLine();
+                }
+                reader.close();
+            } else if (splited[0].equals("p")) {
+                line = reader.readLine();
+                while (line != null) {
+                    splited = line.split("\\s+");
+                    if (!isNumeric(splited[0])) {
+                        return false;
+                    }
+                    line = reader.readLine();
+                }
+            }
+        }
+        return true;
+    }
+
+    /*
      * This method read a Sudoku File and produce from him a Sudoku File.
      */
     public static Solve_Sudoku readGraphSudoku(int[] arr) {
         Solve_Sudoku sd = new Solve_Sudoku();
-
-//        String[] splited = line.split("\\s+");
         int vertex = 0;
 
         int j = 0;
@@ -201,10 +223,11 @@ public class readFile_Graph {
         return sd;
     }
 
-    public static boolean isNumeric(String str) {
+    private static boolean isNumeric(String str) {
         try {
             Double.parseDouble(str);
-            return true;
+            double a = Double.parseDouble(str);
+            return !(a < 0);
         } catch (NumberFormatException e) {
             return false;
         }

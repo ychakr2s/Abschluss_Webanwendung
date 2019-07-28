@@ -23,7 +23,7 @@ public class welsh_Powell_Algorithm extends GraphColoring {
     }
 
     /*
-     * This Method sorted the the Vertices descending according to the Vertex degree
+     * This Method sorted the Vertices descending according to the Vertex degree
      */
     private int[] sortDesc(int[] a) {
         int[] ret = new int[V];
