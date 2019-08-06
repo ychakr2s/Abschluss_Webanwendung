@@ -6,10 +6,10 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 public class Graph {
-    // No. of vertices
+    // No. of nodes
     private int V;
     // Adjacency List
-    private int[] vertices;
+    private int[] nodes;
     private HashSet[] edges;
     private int edge;
     private double density;
@@ -24,19 +24,19 @@ public class Graph {
         for (int i = 0; i < V; ++i)
             edges[i] = new HashSet<>();
 
-        this.vertices = new int[V];
+        this.nodes = new int[V];
         for (int i = 0; i < V; i++) {
-            vertices[i] = i;
+            nodes[i] = i;
         }
     }
 
     /*
-     * The first method returns the vertices of this Graph.
-     * the second method returns the number of the vertices.
+     * The first method returns the nodes of this Graph.
+     * the second method returns the number of the nodes.
      * the third returns all edges of an vertex
      */
-    public int[] getVertices() {
-        return this.vertices;
+    public int[] getNodes() {
+        return this.nodes;
     }
 
     public int getNumVertices() {
@@ -60,7 +60,7 @@ public class Graph {
      */
     public void addEdge(int from, int to) {
         if (to > getNumVertices() || from > getNumVertices())
-            System.out.println("The vertices does not exists");
+            System.out.println("The nodes does not exists");
         else {
             if (from != to) {
                 getEdges(from).add(to);
@@ -70,7 +70,7 @@ public class Graph {
     }
 
     /*
-     * This method checks whether there is an Edge between two vertices
+     * This method checks whether there is an Edge between two nodes
      */
     public boolean isEdges(int v1, int v2) {
         Iterator<Integer> it = getEdges(v1).iterator();
