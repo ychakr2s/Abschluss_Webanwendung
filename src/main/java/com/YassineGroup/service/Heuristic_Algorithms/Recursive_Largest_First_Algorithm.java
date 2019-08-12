@@ -89,7 +89,7 @@ public class Recursive_Largest_First_Algorithm extends GraphColoring {
         double start = System.currentTimeMillis();
         // now i will produce Color for the uncolored Vertices
 
-        X = graph.getVertices();
+        X = graph.getNodes();
         int si = 0;
         while (V > 0) {
             while (X.length >= 1) {

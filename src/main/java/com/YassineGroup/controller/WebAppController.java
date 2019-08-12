@@ -89,6 +89,32 @@ public class WebAppController {
         this.m = selected;
         System.out.println(m);
     }
+    @RequestMapping(value = "/graphZeigen", method = RequestMethod.POST)
+    public @ResponseBody
+    String graphAnzeigen(@RequestBody ArrayList<String> selected) throws IOException {
+
+        if (fileName.equals("")) {
+            return "Bitte laden Sie eine Graph-Datei hoch";
+        } else {
+            readFile_Graph rd = new readFile_Graph();
+
+            if (!rd.isSuitable(fileName)) {
+                return "Graph-Datei entspricht nicht den festgelegten Maßstäbe ";
+            }
+            Graph gr = rd.readByMethode(fileName);
+
+            if (gr == null) {
+                return "Die Datei konnte nicht eingelesen werden.!! Sehen Sie bitte oben die Anweisungen";
+            }
+//            System.out.println(m);
+//            Context imp = new Context(FactoryAlgorithms.getAlgorithms(selected, gr));
+//            imp.execute();
+//            JsonOutput jso = new JsonOutput(gr, imp.execute());
+            Gson gs = new Gson();
+
+            return gs.toJson(gr);
+        }
+    }
 
     @RequestMapping(value = "/check", method = RequestMethod.POST)
     public @ResponseBody

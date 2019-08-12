@@ -88,7 +88,7 @@ public class dSatur_Algorithm extends GraphColoring {
              * The uncolored vertex that has the largest degree in the degree set 𝐷𝑒𝑔(𝑣𝑖) is selected for coloring.
              * The selected vertex is colored with first color.
              */
-            int v0 = vertexHighstAdjDegree(graph.getVertices());
+            int v0 = vertexHighstAdjDegree(graph.getNodes());
             colorVertex(v0, 0);
             // calculate the number adjacent vertices which are colored with different colors for every uncolored vertex.
             calculateDsatur(v0);

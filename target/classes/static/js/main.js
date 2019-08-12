@@ -105,7 +105,6 @@ function submitSelectedAlgorithms() {
             if (mNumber == null || mNumber === "") {
                 alert("Sie haben den Vorgang abgebrochen");
             } else {
-
                 chkArray.push(mNumber);
                 console.log(chkArray);
             }
@@ -115,12 +114,79 @@ function submitSelectedAlgorithms() {
         sendAlgorithms(selected);
     } else {
         selected = JSON.stringify(chkArray);
-        sendAlgorithms(selected);
+        var a = sendAlgorithms(selected);
+        console.log(a);
     }
+}
+
+// Initialise sigma and Create Graph with help of Sigma Library
+function createGraph(myObject) {
+    // Initialise sigma:
+    var s = new sigma(
+        {
+            renderer: {
+                container: document.getElementById("sigmaContainer"),
+                type: 'canvas'
+            },
+            settings: {
+                edgeLabelSize: 'proportional',
+                minArrowSize: 10
+            }
+        }
+    );
+
+    // Generate a random graph:
+    var graph = {
+        nodes: [],
+        edges: []
+    };
+    var edge = myObject.graph.edges;
+    for (i = 0; i < myObject.graph.V; i++) {
+        graph.nodes.push({
+            id: i,
+            label: 'Node ' + i,
+            x: Math.random(),
+            y: Math.random(),
+            size: 1,
+            color: '#EE651D'
+        });
+    }
+
+    var idd = 0;
+    for (j = 0; j < edge.length; j++) {
+        for (i = 0; i < edge[j].length; i++) {
+            graph.edges.push({
+                id: idd,
+                // label: 'Edge ' +idd,
+                source: '' + j,
+                target: '' + edge[j][i],
+                color: '#cd0000',
+                type: 'curvedArrow',
+            });
+            console.log(edge[j][i]);
+            ++idd;
+        }
+    }
+
+    // load the graph
+    s.graph.read(graph);
+    // draw the graph
+    s.refresh();
+    // launch force-atlas for 5sec
+    s.startForceAtlas2();
+    window.setTimeout(function () {
+        s.killForceAtlas2()
+    }, 100);
+}
+
+function fillGraph(myGraph) {
+    var graph = myGraph;
+    console.log(graph);
 }
 
 function sendAlgorithms(selected) {
     let x = "";
+
     $.ajax({
         contentType: "application/json",
         type: "POST",
@@ -130,6 +196,8 @@ function sendAlgorithms(selected) {
 
             if (isJson(data)) {
                 let myObj = JSON.parse(data);
+
+                fillGraph(myObj.graph);
                 let y = "";
                 x = "<div>" + "<hr>";
                 x += "<h4>" + "Das Ergebnis der Implementierung der Algorithmen:" + "</h4>";
@@ -150,6 +218,7 @@ function sendAlgorithms(selected) {
                 x += "<b>" + "<a " + " id = " + "showJsonTh " + " onclick=" + "hide()" + " >" + "</a>" + "</b>";
                 x += "<hr>" + "</div>";
                 document.getElementById("showmyjson").innerHTML = x;
+                // createGraph(myObj);
 
             } else
                 document.getElementById("showmyjson").innerHTML = "<h3>" + data + "!" + "</h3>";
@@ -158,6 +227,7 @@ function sendAlgorithms(selected) {
             console.log('error while post to java');
         }
     });
+    // return myObjectt;
 }
 
 function showAndHide() {
@@ -307,7 +377,6 @@ function hideTiles(aGrid, hiddenGrid) {
             hiddenGrid[i][k] = 0;
             hiddenGrid[8 - i][8 - k] = 0;
             numTiles--;
-
         }
     }
 

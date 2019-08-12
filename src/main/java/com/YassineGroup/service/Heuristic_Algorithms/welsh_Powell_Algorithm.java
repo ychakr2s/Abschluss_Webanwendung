@@ -63,7 +63,7 @@ public class welsh_Powell_Algorithm extends GraphColoring {
         double start = System.currentTimeMillis();
 
         // List the vertices in order of descending valence i.e.valence degree(v(i)) >= degree(v(i+1)) .
-        int[] verts = sortDesc(graph.getVertices());
+        int[] verts = sortDesc(graph.getNodes());
         // Colour the first vertex in the list.
         int color = 0;
         ArrayList<Integer> alreadyColored = new ArrayList<>();
