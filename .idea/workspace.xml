@@ -3,17 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="92cc3c9b-2076-487f-8c82-372b15adad8e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/WebAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/WebAppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/welsh_Powell_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/welsh_Powell_Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/ReadFile/readFile_Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/ReadFile/readFile_Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/Graph_Impl0.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/Graph_Impl2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/Graph_Impl2.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/implementierung.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/implementierung.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/controller/WebAppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/controller/WebAppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/ReadFile/readFile_Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/ReadFile/readFile_Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Graph_Impl0.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Graph_Impl2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/images/Graph_Impl2.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/implementierung.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/implementierung.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploadingDir/self_Generated.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,32 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/WebAppController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/implementierung.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="52" column="44" lean-forward="true" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1292#1293#0" expanded="true" />
-                <element signature="e#1327#1328#0" expanded="true" />
-                <element signature="e#1390#1391#0" expanded="true" />
-                <element signature="e#1424#1425#0" expanded="true" />
-                <element signature="e#4589#4590#0" expanded="true" />
-                <element signature="e#4625#4626#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="12029">
+              <caret line="523" column="32" selection-start-line="523" selection-start-column="32" selection-end-line="523" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/service/ReadFile/readFile_Graph.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2737">
-              <caret line="128" column="17" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1200">
+              <caret line="273" column="5" lean-forward="true" selection-start-line="264" selection-start-column="38" selection-end-line="273" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -118,7 +97,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/model/Context.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/model/JsonOutput.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/main.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/refer.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/impressum.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
@@ -129,6 +107,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/implementierung.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/ReadFile/readFile_Graph.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/WebAppController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/main.js" />
       </list>
     </option>
   </component>
@@ -172,7 +151,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,77 +189,6 @@
               <item name="WebFinal_Bachelor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebFinal_Bachelor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebFinal_Bachelor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebFinal_Bachelor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebFinal_Bachelor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebFinal_Bachelor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebFinal_Bachelor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebFinal_Bachelor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebFinal_Bachelor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebFinal_Bachelor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebFinal_Bachelor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="AbstractGraphColoring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebFinal_Bachelor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebFinal_Bachelor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="Applications" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebFinal_Bachelor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebFinal_Bachelor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -298,12 +205,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebFinal_Bachelor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebFinal_Bachelor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -326,7 +243,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564180182362" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565175420303" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Graph_Algorithm_Second" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
@@ -431,17 +348,19 @@
       <workItem from="1563967212877" duration="26602000" />
       <workItem from="1564260992103" duration="1646000" />
       <workItem from="1564302814747" duration="540000" />
+      <workItem from="1565267272279" duration="1504000" />
+      <workItem from="1565640103910" duration="1534000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168915000" />
+    <option name="totallyTimeSpent" value="173214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86372006" visible="true" weight="0.24630873" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86372006" visible="true" weight="0.19127516" />
       <window_info id="Structure" order="1" sideWeight="0.13627993" side_tool="true" weight="0.19463088" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -451,7 +370,7 @@
       <window_info id="Web" order="7" sideWeight="0.50213677" side_tool="true" weight="0.24966443" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21083455" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18594436" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3909224" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -660,13 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/indexStatus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/model/JsonOutput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-117">
@@ -685,31 +597,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/refer.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/impressum.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2369">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1791">
           <caret line="584" column="12" selection-start-line="584" selection-start-column="12" selection-end-line="584" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="29" selection-start-line="3" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="157" column="10" lean-forward="true" selection-start-line="157" selection-start-column="10" selection-end-line="157" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -915,36 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/references.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/implementierung.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="105" column="56" selection-start-line="105" selection-start-column="56" selection-end-line="105" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/WebAppController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="52" column="44" lean-forward="true" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1390#1391#0" expanded="true" />
-            <element signature="e#1424#1425#0" expanded="true" />
-            <element signature="e#4589#4590#0" expanded="true" />
-            <element signature="e#4625#4626#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/service/ReadFile/readFile_Graph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2737">
@@ -952,6 +813,62 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/references.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/indexStatus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/impressum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="244" column="45" selection-start-line="244" selection-start-column="45" selection-end-line="244" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/WebAppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="88" column="26" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1390#1391#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/implementierung.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12029">
+          <caret line="523" column="32" selection-start-line="523" selection-start-column="32" selection-end-line="523" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1200">
+          <caret line="273" column="5" lean-forward="true" selection-start-line="264" selection-start-column="38" selection-end-line="273" selection-end-column="5" />
         </state>
       </provider>
     </entry>

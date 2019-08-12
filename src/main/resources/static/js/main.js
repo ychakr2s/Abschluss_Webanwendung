@@ -180,7 +180,6 @@ function hide() {
             "none" : "";
     document.getElementById("showJsonTh").innerText = ""
     document.getElementById("showJsonText").innerText = "Das ganze Ergebnis in JSON Format anzeigen"
-
 }
 
 function isJson(str) {
