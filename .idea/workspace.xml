@@ -2,411 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c00b30d-3bdc-41e4-b162-3a7b454a04ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.exporters.svg.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.layout.forceAtlas2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.layout.noverlap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.neo4j.cypher.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.parsers.gexf.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.parsers.json.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.pathfinding.astar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.plugins.animate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.plugins.dragNodes.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.plugins.filter.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.plugins.neighborhoods.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.plugins.relativeSize.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.renderers.customEdgeShapes.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.renderers.customShapes.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.renderers.edgeDots.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.renderers.edgeLabels.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.renderers.parallelEdges.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.renderers.snapshot.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/plugins/sigma.statistics.HITS.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/sigma.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/sigma.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/build/sigma.require.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/CONTRIBUTING.draft.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/Gruntfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/add-node-on-click.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/animate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/api-candy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/custom-edge-renderer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/custom-node-renderer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/data/arctic.gexf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/data/arctic.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/data/geolocalized.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/data/moroccan-ediaspora.gexf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/data/standard_graph.gexf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/drag-nodes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/edge-renderers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/events.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/filters.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/force.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/img/img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/img/img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/img/img3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/img/img4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/lib/jquery-2.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/load-external-gexf.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/load-external-json.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/load-neo4j-cypher-query.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/neighborhoods-plugin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/noverlap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/parallel-edges.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/plugin-customEdgeShapes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/plugin-customShapes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/plugin-edgeDots.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/plugin-snapshot.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/scrollable-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/share-camera.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/svg-export.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/svg-freestyle-renderer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/examples/svg-renderer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.exporters.svg/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.exporters.svg/sigma.exporters.svg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/Gruntfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/supervisor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/tasks/forceAtlas2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.layout.noverlap/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.layout.noverlap/sigma.layout.noverlap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.neo4j.cypher/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.neo4j.cypher/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.neo4j.cypher/sigma.neo4j.cypher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.parsers.gexf/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.parsers.gexf/gexf-parser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.parsers.gexf/sigma.parsers.gexf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.parsers.json/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.parsers.json/sigma.parsers.json.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.pathfinding.astar/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.pathfinding.astar/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.pathfinding.astar/sigma.pathfinding.astar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.plugins.animate/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.plugins.animate/sigma.plugins.animate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.plugins.dragNodes/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.plugins.dragNodes/sigma.plugins.dragNodes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.plugins.filter/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.plugins.filter/sigma.plugins.filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.plugins.neighborhoods/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.plugins.neighborhoods/sigma.plugins.neighborhoods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.plugins.relativeSize/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.plugins.relativeSize/sigma.plugins.relativeSize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.dashed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.dotted.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.parallel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.tapered.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.dashed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.dotted.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.parallel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.tapered.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customShapes/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customShapes/shape-library.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customShapes/sigma.renderers.customShapes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeDots/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeDots/sigma.canvas.edges.dotCurve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeDots/sigma.canvas.edges.dotCurvedArrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeLabels/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeLabels/settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeLabels/sigma.canvas.edges.labels.curve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeLabels/sigma.canvas.edges.labels.curvedArrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeLabels/sigma.canvas.edges.labels.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.parallelEdges/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.parallelEdges/sigma.canvas.edgehovers.curve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.parallelEdges/sigma.canvas.edgehovers.curvedArrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.parallelEdges/sigma.canvas.edges.curve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.parallelEdges/sigma.canvas.edges.curvedArrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.parallelEdges/sigma.canvas.edges.labels.curve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.parallelEdges/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.snapshot/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.renderers.snapshot/sigma.renderers.snapshot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/plugins/sigma.statistics.HITS/sigma.statistics.HITS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/captors/sigma.captors.mouse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/captors/sigma.captors.touch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/classes/sigma.classes.camera.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/classes/sigma.classes.configurable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/classes/sigma.classes.dispatcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/classes/sigma.classes.edgequad.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/classes/sigma.classes.graph.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/classes/sigma.classes.quad.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/conrad.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/middlewares/sigma.middlewares.copy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/middlewares/sigma.middlewares.rescale.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/misc/sigma.misc.animation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/misc/sigma.misc.bindDOMEvents.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/misc/sigma.misc.bindEvents.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/misc/sigma.misc.drawHovers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edgehovers.arrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edgehovers.curve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edgehovers.curvedArrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edgehovers.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edges.arrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edges.curve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edges.curvedArrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edges.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.extremities.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.hovers.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.labels.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.nodes.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/sigma.renderers.canvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/sigma.renderers.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/sigma.renderers.svg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/sigma.renderers.webgl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/svg/sigma.svg.edges.curve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/svg/sigma.svg.edges.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/svg/sigma.svg.hovers.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/svg/sigma.svg.labels.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/svg/sigma.svg.nodes.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/svg/sigma.svg.utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.edges.arrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.edges.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.edges.fast.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.edges.thickLine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.edges.thickLineCPU.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.edges.thickLineGPU.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.nodes.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.nodes.fast.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/sigma.core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/sigma.export.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/sigma.settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/utils/sigma.polyfills.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/src/utils/sigma.utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/test/qunit/qunit.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/test/qunit/qunit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/test/unit.HITS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/test/unit.animation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/test/unit.camera.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/test/unit.configurable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/test/unit.core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/test/unit.dispatcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/test/unit.edgequad.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/test/unit.graph.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/test/unit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/test/unit.plugins.filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/test/unit.quad.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/sigma.js-1.2.1/test/unit.utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.exporters.svg.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.layout.forceAtlas2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.layout.noverlap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.neo4j.cypher.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.parsers.gexf.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.parsers.json.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.pathfinding.astar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.plugins.animate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.plugins.dragNodes.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.plugins.filter.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.plugins.neighborhoods.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.plugins.relativeSize.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.renderers.customEdgeShapes.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.renderers.customShapes.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.renderers.edgeDots.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.renderers.edgeLabels.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.renderers.parallelEdges.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.renderers.snapshot.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/plugins/sigma.statistics.HITS.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/sigma.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/sigma.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/build/sigma.require.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/CONTRIBUTING.draft.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/Gruntfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/add-node-on-click.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/animate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/api-candy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/custom-edge-renderer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/custom-node-renderer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/data/arctic.gexf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/data/arctic.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/data/geolocalized.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/data/moroccan-ediaspora.gexf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/data/standard_graph.gexf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/drag-nodes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/edge-renderers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/events.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/filters.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/force.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/img/img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/img/img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/img/img3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/img/img4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/lib/jquery-2.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/load-external-gexf.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/load-external-json.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/load-neo4j-cypher-query.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/neighborhoods-plugin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/noverlap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/parallel-edges.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/plugin-customEdgeShapes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/plugin-customShapes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/plugin-edgeDots.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/plugin-snapshot.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/scrollable-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/share-camera.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/svg-export.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/svg-freestyle-renderer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/examples/svg-renderer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.exporters.svg/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.exporters.svg/sigma.exporters.svg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/Gruntfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/supervisor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/tasks/forceAtlas2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.layout.noverlap/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.layout.noverlap/sigma.layout.noverlap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.neo4j.cypher/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.neo4j.cypher/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.neo4j.cypher/sigma.neo4j.cypher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.parsers.gexf/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.parsers.gexf/gexf-parser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.parsers.gexf/sigma.parsers.gexf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.parsers.json/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.parsers.json/sigma.parsers.json.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.pathfinding.astar/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.pathfinding.astar/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.pathfinding.astar/sigma.pathfinding.astar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.plugins.animate/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.plugins.animate/sigma.plugins.animate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.plugins.dragNodes/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.plugins.dragNodes/sigma.plugins.dragNodes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.plugins.filter/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.plugins.filter/sigma.plugins.filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.plugins.neighborhoods/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.plugins.neighborhoods/sigma.plugins.neighborhoods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.plugins.relativeSize/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.plugins.relativeSize/sigma.plugins.relativeSize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.dashed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.dotted.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.parallel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.tapered.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.dashed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.dotted.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.parallel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.tapered.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customShapes/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customShapes/shape-library.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.customShapes/sigma.renderers.customShapes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeDots/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeDots/sigma.canvas.edges.dotCurve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeDots/sigma.canvas.edges.dotCurvedArrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeLabels/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeLabels/settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeLabels/sigma.canvas.edges.labels.curve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeLabels/sigma.canvas.edges.labels.curvedArrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.edgeLabels/sigma.canvas.edges.labels.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.parallelEdges/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.parallelEdges/sigma.canvas.edgehovers.curve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.parallelEdges/sigma.canvas.edgehovers.curvedArrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.parallelEdges/sigma.canvas.edges.curve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.parallelEdges/sigma.canvas.edges.curvedArrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.parallelEdges/sigma.canvas.edges.labels.curve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.parallelEdges/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.snapshot/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.renderers.snapshot/sigma.renderers.snapshot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/plugins/sigma.statistics.HITS/sigma.statistics.HITS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/captors/sigma.captors.mouse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/captors/sigma.captors.touch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/classes/sigma.classes.camera.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/classes/sigma.classes.configurable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/classes/sigma.classes.dispatcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/classes/sigma.classes.edgequad.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/classes/sigma.classes.graph.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/classes/sigma.classes.quad.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/conrad.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/middlewares/sigma.middlewares.copy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/middlewares/sigma.middlewares.rescale.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/misc/sigma.misc.animation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/misc/sigma.misc.bindDOMEvents.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/misc/sigma.misc.bindEvents.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/misc/sigma.misc.drawHovers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edgehovers.arrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edgehovers.curve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edgehovers.curvedArrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edgehovers.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edges.arrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edges.curve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edges.curvedArrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edges.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.extremities.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.hovers.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.labels.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.nodes.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/sigma.renderers.canvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/sigma.renderers.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/sigma.renderers.svg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/sigma.renderers.webgl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/svg/sigma.svg.edges.curve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/svg/sigma.svg.edges.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/svg/sigma.svg.hovers.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/svg/sigma.svg.labels.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/svg/sigma.svg.nodes.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/svg/sigma.svg.utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.edges.arrow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.edges.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.edges.fast.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.edges.thickLine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.edges.thickLineCPU.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.edges.thickLineGPU.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.nodes.def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.nodes.fast.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/sigma.core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/sigma.export.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/sigma.settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/utils/sigma.polyfills.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/src/utils/sigma.utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/test/qunit/qunit.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/test/qunit/qunit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/test/unit.HITS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/test/unit.animation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/test/unit.camera.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/test/unit.configurable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/test/unit.core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/test/unit.dispatcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/test/unit.edgequad.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/test/unit.graph.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/test/unit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/test/unit.plugins.filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/test/unit.quad.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/sigma.js-1.2.1/test/unit.utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/WebAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/WebAppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Graph/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Largest_First_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Largest_First_Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/dSatur_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/dSatur_Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/welsh_Powell_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/YassineGroup/service/Heuristic_Algorithms/welsh_Powell_Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/implementierung.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/implementierung.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/impressum.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/impressum.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/references.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/references.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/controller/WebAppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/controller/WebAppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Graph/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Graph/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/Largest_First_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/Largest_First_Algorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/dSatur_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/dSatur_Algorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/welsh_Powell_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/YassineGroup/service/Heuristic_Algorithms/welsh_Powell_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/implementierung.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/implementierung.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/impressum.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/impressum.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/references.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/references.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploadingDir/C125.9.clq" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -416,10 +21,94 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="265" column="19" selection-start-line="265" selection-start-column="9" selection-end-line="265" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/implementierung.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-77">
+              <caret line="450" lean-forward="true" selection-start-line="450" selection-end-line="450" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/WebAppController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="124" column="27" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1292#1293#0" expanded="true" />
+                <element signature="e#1327#1328#0" expanded="true" />
+                <element signature="e#1390#1391#0" expanded="true" />
+                <element signature="e#1424#1425#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/service/ReadFile/readFile_Graph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="537">
+              <caret line="177" column="54" lean-forward="true" selection-start-line="177" selection-start-column="54" selection-end-line="177" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="456" column="21" selection-start-line="456" selection-start-column="21" selection-end-line="456" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>finished</find>
+      <find>showmyjson</find>
+      <find>st</find>
+      <find>conta</find>
+      <find>documen</find>
+      <find>upper-bar</find>
+      <find>id</find>
+      <find>h2</find>
+      <find>sigmaContainer</find>
+      <find>graphAnzeigen</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/main.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/main.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/implementierung.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/WebAppController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="88" />
+    <option name="y" value="43" />
+    <option name="width" value="1530" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -474,6 +163,16 @@
               <item name="WebFinal_Bachelor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="YassineGroup" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebFinal_Bachelor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebFinal_Bachelor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -483,6 +182,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebFinal_Bachelor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebFinal_Bachelor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebFinal_Bachelor" type="b2602c69:ProjectViewProjectNode" />
@@ -509,9 +217,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565645315231" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566248316617" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -555,12 +269,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565644609285</updated>
-      <workItem from="1565644616414" duration="772000" />
+      <workItem from="1565644616414" duration="8631000" />
+      <workItem from="1566114884203" duration="28360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="772000" />
+    <option name="totallyTimeSpent" value="36991000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -574,41 +289,42 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1932886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" weight="0.329429" />
-      <window_info anchor="bottom" id="Terminal" weight="0.329429" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.22401172" />
-      <window_info anchor="bottom" id="Java Enterprise" weight="0.329429" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Duplicate detector" weight="0.5549048" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329429" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21083455" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.23718888" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329429" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Mongo Explorer" />
-      <window_info anchor="right" id="Snyk" side_tool="true" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.329429" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.329429" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.22401172" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.329429" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Snyk" order="6" side_tool="true" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Mongo Explorer" order="11" weight="0.3295302" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,10 +338,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1380" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/indexStatus.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/popper.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="127" column="33" selection-start-line="127" selection-start-column="24" selection-end-line="127" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/references.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="456" column="21" selection-start-line="456" selection-start-column="21" selection-end-line="456" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="157" column="30" lean-forward="true" selection-start-line="157" selection-start-column="30" selection-end-line="157" selection-end-column="30" />
+        <state relative-caret-position="92">
+          <caret line="265" column="19" selection-start-line="265" selection-start-column="9" selection-end-line="265" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/implementierung.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-77">
+          <caret line="450" lean-forward="true" selection-start-line="450" selection-end-line="450" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/controller/WebAppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="124" column="27" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1390#1391#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/YassineGroup/service/ReadFile/readFile_Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="177" column="54" lean-forward="true" selection-start-line="177" selection-start-column="54" selection-end-line="177" selection-end-column="54" />
         </state>
       </provider>
     </entry>

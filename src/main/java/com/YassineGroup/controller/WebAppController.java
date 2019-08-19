@@ -89,9 +89,10 @@ public class WebAppController {
         this.m = selected;
         System.out.println(m);
     }
-    @RequestMapping(value = "/graphZeigen", method = RequestMethod.POST)
+
+    @RequestMapping(value = "/graphZeigen", method = RequestMethod.GET)
     public @ResponseBody
-    String graphAnzeigen(@RequestBody ArrayList<String> selected) throws IOException {
+    String graphAnzeigen() throws IOException {
 
         if (fileName.equals("")) {
             return "Bitte laden Sie eine Graph-Datei hoch";
@@ -106,10 +107,6 @@ public class WebAppController {
             if (gr == null) {
                 return "Die Datei konnte nicht eingelesen werden.!! Sehen Sie bitte oben die Anweisungen";
             }
-//            System.out.println(m);
-//            Context imp = new Context(FactoryAlgorithms.getAlgorithms(selected, gr));
-//            imp.execute();
-//            JsonOutput jso = new JsonOutput(gr, imp.execute());
             Gson gs = new Gson();
 
             return gs.toJson(gr);

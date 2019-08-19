@@ -130,19 +130,23 @@
                         <form method="POST" action="/upload" target="_blank" enctype="multipart/form-data">
                             <input type="file" name="file" id="myGraphSubmit" required=""/>
                             <button type="submit" class="primary submit-btn">Hochladen</button>
-                            <!--<button class="graphAnzeigen">Graph anzeigen</button>-->
                         </form>
-                        <!--<form method="POST" action="/upload" target="_blank" enctype="multipart/form-data">-->
-                        <!--&lt;!&ndash;<input type="file" name="file" id="myGraphSubmit" required=""/>&ndash;&gt;-->
-                        <!--<button type="submit" class="primary submit-btn">Hochladen</button>-->
-                        <button class="graphAnzeigen">Graph anzeigen</button>
-                        <!--</form>-->
                     </div>
                 </div>
+            </div>
 
-                <!--<div th:if="${message}">-->
-                <!--<h2 th:text="${message}"/>-->
-                <!--</div>-->
+            <div class="anzeigen">
+                <div class="upload-header">
+                    <h4>Graph Anzeigen</h4>
+                </div>
+                <button id="graphAnzeigen">Anzeigen</button>
+            </div>
+
+            <!--<div id="sigmaContainer">-->
+            <!--</div>-->
+            <div id="sigmaContainerParent">
+                <div id="sigmaContainer">
+                </div>
             </div>
 
             <div class="submitAlgor">
@@ -172,11 +176,12 @@
                             <label>
                                 <input type="checkbox" class="chk" value="DSATUR"/>DSATUR Algorithmus</label>
                             <label>
-                                <input type="checkbox" class="chk" value="Recursive Largest First"/>Recursive
-                                Largest
-                                First</label>
+                                <input type="checkbox" class="chk" value="Recursive Largest First"/>
+                                Recursive Largest First
+                            </label>
                             <label>
-                                <input type="checkbox" class="chk" value="Welsh Powell"/>Welsh Powell</label>
+                                <input type="checkbox" class="chk" value="Welsh Powell"/> Welsh Powell
+                            </label>
                             <label>
                                 <input type="checkbox" class="chk" value="Tiefensuche"/>Tiefensuche</label>
                             <label>
@@ -186,11 +191,8 @@
                 </div>
                 <button class="submitAlgorithm">Submit</button>
             </div>
-            <div id="sigmaContainer">
-            </div>
-            <div>
-                <div id="showmyjson">
-                </div>
+
+            <div id="showmyjson">
             </div>
 
             <!--End Algorithm Implementation-->
@@ -419,8 +421,9 @@
             initMyOwn();
         });
 
-        $(".graphAnzeigen").click(function () {
+        $("#graphAnzeigen").click(function () {
             graphzeigen();
+            myFunction();
         });
 
         $('.submitAlgorithm').click(function () {
@@ -437,15 +440,21 @@
     function graphzeigen() {
         $.ajax({
             contentType: "application/json",
-            type: "POST",
+            type: "GET",
             // data: 0,
             url: "/graphZeigen",
             success: function (data) {
                 if (isJson(data)) {
                     // Initialise sigma:
                     let myObject = JSON.parse(data);
+                    console.log("DATA: " + data);
+                    console.log("myObject: " + myObject.edges);
+                    var edge = myObject.edges;
 
-                    var s = new sigma(
+                    // var sigRoot = document.getElementById('sigmaContainer');
+                    // var s = sigma.init();
+
+                    s = new sigma(
                         {
                             renderer: {
                                 container: document.getElementById("sigmaContainer"),
@@ -457,14 +466,19 @@
                             }
                         }
                     );
+                    // jQuery('#sigmaContainer').html(data);
+                    // eval(data);
+
+                    // var edge = myObject.graph.V;
+                    console.log("Zurück: " + edge);
 
                     // Generate a random graph:
                     var graph = {
                         nodes: [],
                         edges: []
                     };
-                    var edge = myObject.graph.edges;
-                    for (i = 0; i < myObject.graph.V; i++) {
+
+                    for (i = 0; i < myObject.V; i++) {
                         graph.nodes.push({
                             id: i,
                             label: 'Node ' + i,
@@ -474,7 +488,7 @@
                             color: '#EE651D'
                         });
                     }
-
+                    //
                     var idd = 0;
                     for (j = 0; j < edge.length; j++) {
                         for (i = 0; i < edge[j].length; i++) {
@@ -486,22 +500,19 @@
                                 color: '#cd0000',
                                 type: 'curvedArrow',
                             });
-                            console.log(edge[j][i]);
+                            // console.log(edge[j][i]);
                             ++idd;
                         }
                     }
-
-                    // load the graph
+                    // // load the graph
                     s.graph.read(graph);
                     // draw the graph
                     s.refresh();
-                    // launch force-atlas for 5sec
-                    s.startForceAtlas2();
-                    window.setTimeout(function () {
-                        s.killForceAtlas2()
-                    }, 100);
-
-
+                    // // launch force-atlas for 5sec
+                    // s.startForceAtlas2();
+                    // window.setTimeout(function () {
+                    //     s.killForceAtlas2()
+                    // }, 100);
                 } else
                     document.getElementById("showmyjson").innerHTML = "<h3>" + data + "!" + "</h3>";
             },

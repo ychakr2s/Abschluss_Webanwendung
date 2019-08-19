@@ -262,6 +262,16 @@ function isJson(str) {
 }
 
 // ++++++++++++++++++++++++++++++ End Select Algorithmen +++++++++++++++++++++++++++++++++++++++++++++++++++++//
+// ++++++++++++++++++++++++++++++ Start Show Graph +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+function myFunction() {
+    var x = document.getElementById("sigmaContainerParent");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+// ++++++++++++++++++++++++++++++ End hide Graph +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // ++++++++++++++++++++++++++++++ Start Susoku +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 

@@ -177,7 +177,6 @@ h3 {
     border-bottom: 2px solid #a9d6f2;
     display: block;
     margin-top: 1em !important;
-
 }
 
 .startBody .myHeading h3 {
@@ -361,6 +360,30 @@ h3 {
     border-radius: 2px;
 }
 
+.anzeigen {
+    max-width: 750px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.2);
+    min-height: 100px;
+    position: relative;
+    padding: 20px;
+}
+
+.anzeigen button.primary {
+    display: block;
+    margin-top: 15px;
+    min-width: 100px;
+    background-color: #128ff2;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    border: 1px solid transparent;
+    min-height: 38px;
+    /*min-width: 100px;*/
+    border-radius: 2px;
+}
+
 /* --------------------------------End Upload File ---------------------------------------- */
 
 /* -------------------------------- Start Select Algorithm --------------------------------------------- */
@@ -431,6 +454,16 @@ h3 {
 
 /* -------------------------------- End Select Algorithm --------------------------------------------- */
 /* -------------------------------- Start Show Ergebnisse in JSON ------------------------------------ */
+#sigmaContainerParent {
+    position: relative;
+    display: none;
+}
+
+#sigmaContainer {
+    position: relative;
+    width: 1200px;
+    height: 1200px;
+}
 
 #showmyjson div {
     margin: 10px 0px;
