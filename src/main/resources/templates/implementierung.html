@@ -448,6 +448,7 @@
                     // Initialise sigma:
                     let myObject = JSON.parse(data);
                     var edge = myObject.edges;
+                    console.log(edge);
 
                     s = new sigma(
                         {
@@ -465,9 +466,10 @@
                     // eval(data);
 
                     // var edge = myObject.graph.V;
-                    console.log("Zurück: " + edge);
+                    // console.log("Zurück: " + edge);
 
                     // Generate a random graph:
+
                     var graph = {
                         nodes: [],
                         edges: []
@@ -485,6 +487,8 @@
                     }
                     //
                     var idd = 0;
+                    var l;
+                    var k;
                     for (j = 0; j < edge.length; j++) {
                         for (i = 0; i < edge[j].length; i++) {
                             graph.edges.push({
@@ -499,6 +503,7 @@
                             ++idd;
                         }
                     }
+                    console.log(graph.edges);
                     // // load the graph
                     s.graph.read(graph);
                     // draw the graph
