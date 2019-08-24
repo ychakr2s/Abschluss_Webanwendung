@@ -261,19 +261,23 @@ function isJson(str) {
     return true;
 }
 
-// ++++++++++++++++++++++++++++++ End Select Algorithmen +++++++++++++++++++++++++++++++++++++++++++++++++++++//
+// ++++++++++++++++++++++++++++++ End Select Algorithmen ++++++++++++++++++++++++++++++++++++++++++++++++++++//
 // ++++++++++++++++++++++++++++++ Start Show Graph +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 function myFunction() {
     var x = document.getElementById("sigmaContainerParent");
-    if (x.style.display === "none") {
+    document.getElementById("sigmaContainer").innerHTML = "";
+    if (x.style.display === "none" && document.getElementById('graphAnzeigen').firstChild.data === "Anzeigen") {
         x.style.display = "block";
+        document.getElementById('graphAnzeigen').firstChild.data = "Ausblenden";
     } else {
         x.style.display = "none";
+        document.getElementById('graphAnzeigen').firstChild.data = "Anzeigen";
     }
 }
-// ++++++++++++++++++++++++++++++ End hide Graph +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// ++++++++++++++++++++++++++++++ Start Susoku +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+// +++++++++++++++++++++++++++++++++++ End hide Graph +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+// +++++++++++++++++++++++++++++++++++ Start Susoku +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
 function generateSudoku() {
 
@@ -370,7 +374,6 @@ function shuffle(grid) {
 }
 
 function hideTiles(aGrid, hiddenGrid) {
-
     // Randomly hide tiles, no guarantee for a unique solution
     let numTiles, k;
 

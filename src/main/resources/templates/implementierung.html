@@ -135,20 +135,6 @@
                 </div>
             </div>
 
-            <div class="anzeigen">
-                <div class="upload-header">
-                    <h4>Graph Anzeigen</h4>
-                </div>
-                <button id="graphAnzeigen">Anzeigen</button>
-            </div>
-
-            <!--<div id="sigmaContainer">-->
-            <!--</div>-->
-            <div id="sigmaContainerParent">
-                <div id="sigmaContainer">
-                </div>
-            </div>
-
             <div class="submitAlgor">
                 <div class="multiselect">
                     <div class="selectBox" onclick="showCheckboxes()">
@@ -193,6 +179,18 @@
             </div>
 
             <div id="showmyjson">
+            </div>
+
+            <div class="anzeigen">
+                <div class="upload-header">
+                    <h4>Graph Anzeigen</h4>
+                </div>
+                <button id="graphAnzeigen">Anzeigen</button>
+            </div>
+
+            <div id="sigmaContainerParent" style="display: none;">
+                <div id="sigmaContainer">
+                </div>
             </div>
 
             <!--End Algorithm Implementation-->
@@ -422,8 +420,8 @@
         });
 
         $("#graphAnzeigen").click(function () {
+            // myFunction();
             graphzeigen();
-            myFunction();
         });
 
         $('.submitAlgorithm').click(function () {
@@ -441,14 +439,15 @@
         $.ajax({
             contentType: "application/json",
             type: "GET",
-            // data: 0,
             url: "/graphZeigen",
             success: function (data) {
+                myFunction();
+
                 if (isJson(data)) {
                     // Initialise sigma:
                     let myObject = JSON.parse(data);
                     var edge = myObject.edges;
-                    console.log(edge);
+                    // console.log(edge);
 
                     s = new sigma(
                         {
@@ -462,13 +461,6 @@
                             }
                         }
                     );
-                    // jQuery('#sigmaContainer').html(data);
-                    // eval(data);
-
-                    // var edge = myObject.graph.V;
-                    // console.log("Zurück: " + edge);
-
-                    // Generate a random graph:
 
                     var graph = {
                         nodes: [],
@@ -482,13 +474,13 @@
                             x: Math.random(),
                             y: Math.random(),
                             size: 1,
-                            color: '#EE651D'
+                            color: '#ee59cb'
                         });
                     }
                     //
                     var idd = 0;
-                    var l;
-                    var k;
+                    // var l;
+                    // var k;
                     for (j = 0; j < edge.length; j++) {
                         for (i = 0; i < edge[j].length; i++) {
                             graph.edges.push({
@@ -496,7 +488,7 @@
                                 // label: 'Edge ' +idd,
                                 source: '' + j,
                                 target: '' + edge[j][i],
-                                color: '#cd0000',
+                                color: '#808080',
                                 type: 'curvedArrow',
                             });
                             // console.log(edge[j][i]);

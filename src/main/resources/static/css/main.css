@@ -371,6 +371,7 @@ h3 {
     padding: 20px;
 }
 
+
 .anzeigen button.primary {
     display: block;
     margin-top: 15px;
@@ -382,6 +383,16 @@ h3 {
     min-height: 38px;
     /*min-width: 100px;*/
     border-radius: 2px;
+}
+
+#graphAnzeigen {
+    background-color: #1275e0;
+    border: #ffffff;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 /* --------------------------------End Upload File ---------------------------------------- */
@@ -456,13 +467,18 @@ h3 {
 /* -------------------------------- Start Show Ergebnisse in JSON ------------------------------------ */
 #sigmaContainerParent {
     position: relative;
-    display: none;
+    /*display: none;*/
 }
 
 #sigmaContainer {
     position: relative;
     width: 1200px;
     height: 1200px;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
+
 }
 
 #showmyjson div {
